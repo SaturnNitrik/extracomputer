@@ -1,0 +1,1601 @@
+/* Author: Stephane Demots */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #160298;
+    /*background-color: white;*/
+    height: 100%;
+    margin: 0;
+    background-image: url(img/bluespace.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: verdana, Arial, sans-serif;
+    cursor: default;
+}
+
+/* START SCREEN ********************************************/
+
+.clLoading{
+    width: 100%;
+    height: 200vh; 
+    text-align: center;
+    margin:auto;
+    display: flex;
+}
+
+.loader {
+    border: 1px solid transparent;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    text-align: center;
+    margin:0.5em;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.clStartButton{
+    width: 40%;
+    font-size: large;
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.clLangButton{
+    font-size: medium;
+    height: initial;
+    margin-bottom: 0.5em;
+}
+
+
+.clStartScreen {
+    width: 100%;
+    height:60vh;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.clGameScreen {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.clMiddleText{
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "verdana", Arial, sans-serif;
+    font-size: large;
+}
+
+#idNoContinue{
+    margin:0;
+    font-size: normal;
+    font-style: italic;
+    color: grey;
+    display: none;
+}
+
+#idNewsWindow {
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+    font-family: "verdana", Arial, sans-serif;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+/* SET PLAYERS ********************************************/
+
+.clNbPlayer{
+    font-family: "Audiowide", sans-serif;
+    font-weight: normal;
+    font-size: 6vh;
+    vertical-align: middle;
+    margin: 2%;
+}
+
+/* SLIDER */
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 20px;
+    background: #f9f2d6;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: orange;
+    cursor: pointer;
+}
+
+.clTitle {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classPlayerSetup{
+    text-align: center; 
+    margin: auto;
+    width: 60%;
+    height: 60vh;
+}
+
+.classSetPlayerFrame,
+.classPlayerFrame{
+    /* background-color: #f9f2d6; */
+    background-image: url(img/player.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: black;
+    border: 3px solid;
+    text-align: center;
+    cursor: pointer;
+    border-color: white;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    max-width: 10rem;
+}
+
+.classPlayerRaceName
+{
+    font-family: verdana, Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.clFill30{ height: 30%;}
+.clFill70{ height: 70%;}
+
+.clSideMargin{
+  margin: auto;
+  display: inherit;
+  width: 100%;
+}
+
+.clTopTable{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 25%;
+}
+
+.clCenterTable{
+    display: flex;
+    height: 50%;
+}
+
+.clLeftTable{
+    display: grid;
+    width: 25%;
+}
+
+.clTable{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/8p.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.clRightTable{
+    display: grid;
+    width: 25%;
+}
+
+.clSetColor {
+    background-color: #112B9B;
+    color: #ffffff;
+    min-width: 40px;
+    min-height: 20px;
+    line-height: 60px;
+    text-align: center;
+    margin: 10px;
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px 20px;
+    border: 4px solid rgba(0, 0, 0, 0.11);
+}
+
+.clSetFaction {
+    color: white;
+    width: 12vw;
+    font-family: "verdana", Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.11);
+    background-image: url(img/smallspace.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.highlight {
+    border: 4px solid orange;
+}
+
+.black {background-color: black;}
+.blue {background-color: blue; }
+.green {background-color: green;}
+.purple {background-color: purple;}
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.orange {background-color: orange;}
+.grey {background-color: grey;}
+
+.clColorList{
+    overflow: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.clFactionList{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.classCenter {
+  text-align: center;
+}
+
+.clSpeakerWin{
+    display: flex;
+    width: 100%;
+}
+
+
+.clCenterlist{
+    list-style-position: outside;
+    margin:auto;
+    text-align: center;
+    width: 40%;
+}
+
+
+/* OPTIONS ********************************************/
+
+/* checkbox */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 22px;
+}
+
+.switch input {display:none;}
+
+.checker {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.checker:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 22px;
+  left: 10px;
+  top: 3px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .checker {
+  background-color: #64A8DC;
+}
+
+input:focus + .checker {
+  box-shadow: 0 0 1px #64A8DC;
+}
+
+input:checked + .checker:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+
+.clLine{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.clFloatRight{
+    float: right;
+}
+
+.displayNone {
+    display: none;
+}
+
+.clNumberInput{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2em;
+}
+
+
+/* Add a light grey background on mouse-over */
+.btnFilter:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btnFilter.activeFilter {
+  background-color: #666;
+  color: white;
+}
+
+/* GALAXY ************************************************************/
+
+#idGalaxyAnim{max-height:40vh;}
+
+/* VICTORY POINTS + CLOCK ********************************************/
+
+.header {
+  padding: 6px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+}
+
+.clVPPlayerCase{
+    border: 3px solid red;
+    border-radius: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    width: fit-content;
+    padding-right: 0.4vw;
+    padding-left: 0.4vw;
+    margin-right: 0.4vw;
+    margin-left:  0.4vw;
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+    cursor: pointer;
+
+}
+
+.clSpeakerBg{
+    background-image: url(img/speaker.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.clVPFactionIcon{
+    background-image: url(img/sol.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: left;
+}
+.clVPFactionName{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.clVPButtons{
+    opacity: 1;
+    /* display: inline-grid;    */
+    display: none;
+    font-size: small;
+    font-family: verdana, Arial, sans-serif;
+    text-shadow: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.clVPButton{
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.clVPCount{
+    font-stretch: expanded;
+    cursor: pointer;
+}
+
+.clArrow2{
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 0.1rem;
+    margin-right: 0.02rem;
+    display: none;
+}
+
+/* NAVBAR ********************************************/
+.clNavBar {
+    overflow: hidden;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.clNavItem {
+    display: inline-block;
+    width: 33vw;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* TABS ********************************************/
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 1vw;
+    min-width: unset;
+    height: 3em;
+}
+
+.tablinks{color: white;}
+
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 0px 6px;
+    border-top: none;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.clClk{
+    cursor: pointer;
+    color: white;
+    margin-top: 1px;
+    width: 10vw;
+}
+
+.clTime{
+    vertical-align: middle;
+    font-size: 1.8em;
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 4vh;
+    margin-left: 20px;
+}
+
+.clTime:hover{ background-color: #ddd;}
+
+
+.clPhase{
+    color: white;
+    font-family: "Audiowide";
+    font-size: x-large;
+    line-height: 4vh;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%
+}
+
+.clAbout{
+    background-image: url(img/icon_white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 5vw;
+    height: 4vh;
+    float: right;
+}
+
+.clAbout:hover{
+    background-color: transparent;
+    //opacity: 0.5;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: inline-block;
+    text-shadow: none;
+    font-family: "Audiowide";
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+    margin-top: 3.8vh;
+    right: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:active {
+    color: blue;
+    display: none;
+}
+
+.tabcontent p{
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+/* .tabcontent span{ */
+    /* text-shadow: */
+    /* -1px -1px 0 #000, */
+    /* 1px -1px 0 #000, */
+    /* -1px 1px 0 #000, */
+    /* 1px 1px 0 #000;  */
+/* } */
+.tabcontent h1{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+.tabcontent h2{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.tabcontent h3{
+    color: white;
+    font-size: x-large;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+
+h1 {
+    font-family: "Audiowide", Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+h2, .clh2{
+    font-family: "Audiowide", Arial, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+h3 , .clh3{
+    text-shadow: -0px 0 black, 0 0px black, 0px 0 black, 0 -0px black;
+    font-weight: normal;
+    font-family: "Audiowide", Arial, sans-serif;
+    font-size: 1.5em;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+
+p{
+    font-family: verdana, Arial, sans-serif;
+    font-size: large;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+a{
+    color: #ffd17d;
+}
+
+.clBold{font-weight: bold;}
+
+button{
+    background-color: #f9f2d6;
+    color: black;
+    font-family: "Aldrich", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+    border-right: transparent;
+    border-left: transparent;
+    cursor: pointer;
+    min-width: 10vw;
+    height: 3em;
+}
+
+button:hover{
+    background-color: orange;
+    border-top: 4px solid darkorange;
+    border-bottom: 4px solid darkorange;
+}
+
+button:disabled{
+    background-color: darkgrey;
+    border-top: 5px solid grey ;
+    border-bottom: 5px solid grey ;
+    cursor: default;
+}
+
+.clMarginAutoOnly{margin: auto;}
+
+.clMarginAuto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(1, 3, 31, 0.73);
+}
+.modalStop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 50, 0, 0.6);
+}
+
+/* Modal Content/Box */
+.modalcontent {
+    background-color: transparent;
+    background-image: url(img/frame.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top : 8vh;
+    margin-bottom:9vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 2vh;
+    width: 75%;
+    min-height: 75vh;
+}
+
+.modalcontentStop {
+    background-color: transparent;
+    background-image: url(img/alertStop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    width: 40%;
+}
+
+.clModal  {
+    text-shadow: none;
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clModalText{
+    margin-left: 20px;
+}
+
+/* --------------------------------------- */
+/* STRATEGY TAB
+/* --------------------------------------- */
+
+.classStrategyTable{
+    flex: 1 1 auto;
+    width: 100%;
+    table-layout : fixed;
+    border-spacing: 2px 0;
+}
+
+
+[class*="classStrategyFrame"]{
+    overflow: hidden;
+    border: 8px solid;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0px 0px 6px -1px rgba(255,255,255,1);
+}
+
+.classStrategyFrameActive{
+}
+
+.classStrategyFrame h2, 
+.classStrategyFrameSelected h2,
+.classStrategyFrameNaaluSelected h2{
+    color: white;
+}
+
+/* Change background color of buttons on hover */
+.classStrategyFrame:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.classStrategyFrameSelected,
+.classStrategyFrameNaaluSelected {
+    border: none;
+}
+
+.classStrategyFrameCurrent {
+    border: 10px solid;
+    box-shadow: 0px 0px 30px 6px rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.classFactionChooser{
+    /* height: 20%; */
+    width: 100%;
+    position: absolute;
+    line-height: 1em;
+}
+
+.clStrategyTimer{
+    background-color: grey;
+    height: 20px;
+    width: 20%;
+    margin:auto;
+}
+
+.clStrategyTimerFill{
+    background-color: blue;
+    height: 100%;
+    width: 20%;
+    float: right;
+}
+
+.clStrategyRankArea{
+    width: 100%;
+    border: 8px solid yellow;
+}
+
+.classStrategyRankText{
+    font-family: "Audiowide", monospace;
+    font-size: 4em;
+    border: 8px solid transparent;
+    border-radius: 22px;
+}
+
+.StratButton, .DoneButton{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.2em;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    height: fit-content;
+    margin-top: 0.2em;
+}
+
+.classFactionIcon
+{
+    height: 2.5em;
+    margin-top: 1em;
+}
+
+.clTrade{transition-duration: 0.5s;}
+
+.clTradeNb{
+    font-family: "Audiowide", monospace;
+    font-size: 2.3em;
+    color: #ffe41f;
+}
+
+.clTradeIcon{
+    vertical-align: text-bottom;
+    width: 2.2em;
+}
+
+.clCard{
+    overflow: hidden;
+    border: 3px solid #5fafff;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(img/smallspace.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: inline-block;
+    width: 15vw;
+    height: 30vh;
+    margin: 1%;
+    font-size: large;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.clCard:hover{
+    border: 3px solid #ffa500;
+    cursor: pointer;
+}
+
+.clSwap{
+    border: 8px solid white;
+}
+
+.clSwap:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.clSwapSelect{
+    background-color: rgba(222, 222, 222, 1); 
+}
+
+#idPlayerFocus{
+    box-shadow: 0px 0px 30px 6px rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 10px orange;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8em;
+}
+
+#idFactionIcon{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/naalu.png);
+    margin: 0.2em;
+    height: 10em;
+}
+
+.clFocusBlockV{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clFocusBlockH{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clFocusItems{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clInline{
+    display: inline;
+}
+
+.clFlexGrow1{
+    flex-grow: 1;
+}
+
+.clFlexGrow2{
+    flex-grow: 2;
+}
+
+.clFlexGrow3{
+    flex-grow: 3;
+}
+
+.clFitContent{
+    width: fit-content;
+}
+
+.clActionActive {background-color: orange;}
+
+#idActionTxt{
+    line-height: 3em;
+}
+
+.clLink{
+    background-color: orange;
+    display: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.8%;
+}
+
+#idFactoinClk{
+    font-family: 'Share Tech Mono', monospace;    
+    font-size: 2.5em;
+}
+
+.clStratEndButton{
+    display: none;
+}
+
+
+/* --------------------------------------- */
+/* STATUS TAB
+/* --------------------------------------- */
+
+.clAlignText{
+    margin-left: 20vw;
+}
+
+#idStatus1 h3{
+    font-size: 1.8em;
+}
+
+#idInitOrderTitle{
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+}
+
+.clFactionStatus{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/naalu.png);
+    border: solid 4px orange;
+    border-radius: 10px;
+    margin: 0.2em;
+    padding: 0.2em;
+    text-align: center;
+    width: 8vw;
+    overflow: hidden;
+}
+
+.clArrow3{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.02rem;
+    display: none;
+}
+
+
+.card-container {
+    cursor: pointer;
+    height: 238px;
+    perspective: 600;
+    position: relative;
+    width: 276px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(img/mrex.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+    backface-visibility: hidden;
+    margin-top: 52px;
+    margin-left: 70px;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+
+#idMecatolFree2{
+    display: none;
+    
+}
+/* --------------------------------------- */
+/* AGENDA TAB
+/* --------------------------------------- */
+.clVoteType {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: x-large;
+    font-weight: bold;
+    width: 60vw;
+    height: auto;
+}
+
+
+/* --------------------------------------- */
+/* VOTE TAB
+/* --------------------------------------- */
+.classVoteTable{
+    flex: 1 1 auto;
+    margin: auto;
+    width: 98%;
+    table-layout : fixed;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+[class*="classVoteFrame"]{
+    border: 6px solid;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 0px 6px -1px rgba(255,255,255,1);
+}
+
+[class*="classVoteFrame"]:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+[class*="classVoteFrameSelected"]{
+    border: 10px solid;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.classVoteName{
+    height: 6rem;
+    line-height: 2rem;
+}
+
+.classVoteTotalInfluence{
+    height: 5rem;
+    font-size: 3em;
+}
+
+.classVotePlayers{
+    width: 100%;
+    font-family: verdana;
+    font-size: x-large;
+}
+
+.classVoteInterface{
+    margin: auto;
+    width: 80%;
+    height: 0rem;
+    display: flex;
+}
+
+.classVoteInterfaceON{
+    margin: auto;
+    width: 60%;
+    height: 5rem;
+    transition: height 2s;
+    display: flex;
+}
+
+.classNumKey{
+    cursor: pointer;
+    margin: auto;
+    border: 4px solid;
+    border-radius: 28px;
+    padding: 1%;
+    font-size: x-large;
+}
+
+.classNumKey:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#idInfluenceVote {
+    border: none;
+    font-size: xx-large;
+}
+#idInfluenceVote:hover{
+    background-color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
+
+.clVotePlayerLineNoInfluence{
+    display: none;
+}
+
+.classPlanetList {
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clfilterBar{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.btnFilter {
+  border: none;
+  outline: none;
+  padding: 5px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.filterDiv {
+    float: left;
+    background-color: #112B9B;
+    color: #ffffff;
+    width: 120px;
+    min-height: 5vh;
+    text-align: center;
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Aldrich", Arial, sans-serif;
+    font-size: x-large;
+    padding: 5px;
+    background-image: url(img/smallspace.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.filterDiv :hover{
+    background-color: rgba(1, 1, 1, 0.7);
+}
+
+.filterDivLaw, .filterDivOther, .filterDivObj {
+    float: left;
+    background-color: #112B9B;
+    color: #ffffff;
+    width: 200px;
+    min-height: 5vh;
+    text-align: center;
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Aldrich", Arial, sans-serif;
+    font-size: x-large;
+    padding: 5px;
+    background-image: url(img/smallspace.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* --------------------------------------- */
+/* END TAB
+/* --------------------------------------- */
+
+#idEndScreen{
+    margin-top: 2rem;
+    font-family: "audiowide", arial;
+    font-size: large;
+}
+
+#idEmperor{
+    border: 6px double;
+    border-radius: 10px;
+    max-height: 30vh;
+    max-width: 30vw;
+    display: block; /*remove to not-center the image */
+    margin: 0 auto;
+    opacity: 0;
+    transition-delay: 3s;
+    transition-duration: 4s;
+}
+
+#idStats{
+    margin: 2em auto;
+    width: 80vw;
+    opacity: 0;
+    transition-delay: 7s;
+    transition-duration: 1s;
+}
+
+#idStatsList{
+    display: flex;
+}
+
+#idRanking{
+    margin-left: 10vw;
+    display: block;
+    table-layout: auto;
+    /* position: absolute; */
+    border: 6px solid;
+    border-radius: 15px;
+    padding: 1em;
+    margin-top: 1em;
+    width: fit-content;
+    display: inline-block;
+    margin: auto;
+    border-spacing: 4px
+}
+
+#idRk0 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#idEndTiming{
+    display: inline-block;
+    /* position: absolute; */
+    /* margin: 1rem; */
+    border: 6px solid;
+    border-radius: 15px;
+    padding: 1em;
+    margin: auto;
+}
+
+.clRk{
+    display: none;
+}
+
+.clRkIcon{
+    height: 2.2em;
+    padding: 0.3em;
+}
+
+.clRkFaction{
+    padding-left: 1em;
+}
+
+.clRkVP, .clRkTimer, .clRkSpeaker, .clRkInfluence{
+    text-align: center;
+}
+
+
+/* HISTORY */
+#infoChangeLog{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+
+/* SPEAKER TOKEN */
+#idSpeakerToken{
+    display: none;
+    position: absolute;
+    left: 1%;
+    bottom: 3%;
+    color: white;
+    z-index: 5;
+    background-image: url(img/speaker.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    width: 10vw;
+}
+
+/* END TOKEN */
+#idEndButton{
+    display: none;
+    position: absolute;
+    right: 1%;
+    bottom: 3%;
+    color: white;
+    z-index: 5;
+    background-image: url(img/endgame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    width: 10vw;
+    line-height: 10vh;
+}
+
+#idEndTxt{
+    font-size: X-large;
+    line-height: 1.2em;
+}
+
+#idSoon{
+    float: right;
+}
+
+/* --------------------------------------- */
+/* FAQ TAB
+/* --------------------------------------- */
+
+.clQuestion{
+    color: orange;
+    font-weight: bold;
+    margin-top: 3em;
+}
+
+/* INACTIVITY TIMER */
+.clMsgBox{
+    display: none;
+    background-color: orange;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1%;
+    z-index: 99;
+    margin-left: -25%; /* half of width */
+    left: 50%;
+    text-align: center;
+    text-shadow: none;
+    border-radius: 10px;
+}
+
+.clMsgBox p{
+    text-shadow: none;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* TRANSITION */
+.clModalTransition{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: none; /* Enable scroll if needed */
+    background-image: url(img/bluespace.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-animation: fadeinout 2s forwards;
+    -webkit-animation-delay: 0s;
+    animation: fadeinout 2s forwards;
+    animation-timing-function: linear;
+}
+
+.modalcontentTransition{
+    width: 100%;
+    border-top: 8px solid orange;
+    border-bottom: 8px solid orange;
+    background-color: white;
+    position: absolute;
+    left: -100%;
+    top: 25%;
+    font-family: xx-large;
+    -webkit-animation: slide 2s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 2s forwards;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes slide {
+    0%   {left: -100%;}
+    20%  {left: 0;}
+    80%  {left: 0;}
+    100% {left: -100%;}
+}
+
+@keyframes slide {
+    0%   {left: -100%;}
+    20%  {left: 0;}
+    80%  {left: 0;}
+    100% {left: -100%;}
+}
+
+@keyframes fadeinout {
+    0%   {opacity:1;}
+    20%  {opacity:1;}
+    90%  {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeinout {
+    0%   {opacity:1;}
+    20%  {opacity:1;}
+    80%  {opacity:1;}
+    100% {opacity:0;}
+}
+
+.clCenterText{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+/* The "show" class is added to the filtered elements */
+/* MUST BE IN THE END OF THE FILE */
+.show {
+    display: inline-block;
+}
+
+.showBlock {
+    display: block;
+}
+
+.showflex {
+    display: flex;
+}
+
+.clDisplayNone{
+    display: none;
+}
+
+.clOpacity1{opacity:1}
+.clOpacity0{opacity:0}
+
+/* Force Arrows on Number inputs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
