@@ -240,9 +240,9 @@ function fctEndGame()
 
 function fctSendReport(winner)
 {
-    if(document.getElementById("idGameReport"))
+    if(document.getElementById("idGameReport") || (gGameDuration < 3600 ))
     {
-        /* report already created, nothing to do */
+        /* report already created or duration less than 1h, nothing to do */
     }
     else
     {

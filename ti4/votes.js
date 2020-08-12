@@ -91,7 +91,21 @@ window.onclick = function(event) {
 function fctNewAgenda()
 {
     fctSetPhase(PHASE_AGENDA);
-    fctPrepareAgenda(1);
+    
+    if(document.getElementById("idAgendaPageCheck").checked == true)
+    {
+        // Show detailed voting page
+        document.getElementById("idAgendaStepPage").classList.remove("clDisplayNone");
+        document.getElementById("idAgendaVotePage").classList.add("clDisplayNone");
+        openTab("noButton", 'idAgendaTab');
+    }
+    else
+    {
+        // Show voting system
+        document.getElementById("idAgendaStepPage").classList.add("clDisplayNone");
+        document.getElementById("idAgendaVotePage").classList.remove("clDisplayNone");
+        fctPrepareAgenda(1);
+    }
 }
 
 function fctPrepareAgenda(s)
@@ -520,10 +534,13 @@ function fctAgendaNext()
     if(gAgendaStep == 1)
         fctPrepareAgenda(2);
     else
-    {
-        openTab('noButton', 'idTurnOrderTab');
-        fctNewTurn();
-    }
+        fctAgendaEnd();
+}
+
+function fctAgendaEnd()
+{
+    openTab('noButton', 'idTurnOrderTab');
+    fctNewTurn();
 }
 
 filterSelection("all")

@@ -43,7 +43,7 @@ function fctStartScreen(entry)
         document.getElementsByClassName("header")[0].style.display = "flex";
         document.getElementsByClassName("clNavBar")[0].style.display = "block";
     }
-    else if ( (entry == '_fr') || (entry == '_en') || (entry == '_de'))
+    else if ( (entry == '_fr') || (entry == '_en') || (entry == '_de') || (entry == '_ru'))
     {
         fctSwitchLang(entry);
     }
@@ -73,12 +73,14 @@ function fctSwitchLang(l)
     fctDisplayAll('_fr', "none");
     fctDisplayAll('_en', "none");
     fctDisplayAll('_de', "none");
+    fctDisplayAll('_ru', "none");
     
     switch(l)
     {
         case '_fr': gLang = LANG_FR; break;
         case '_en': gLang = LANG_EN; break;
         case '_de': gLang = LANG_DE; break;
+        case '_ru': gLang = LANG_RU; break;
     }
     
     /* reload variable */

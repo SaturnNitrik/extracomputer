@@ -1096,7 +1096,7 @@ button:disabled{
     font-size: 1.8em;
 }
 
-#idInitOrderTitle{
+.clOrderTitle{
     margin-top: 0.4em;
     margin-bottom: 0.2em;
 }
@@ -1339,6 +1339,8 @@ button:disabled{
     background-position: center;
 }
 
+
+
 /* --------------------------------------- */
 /* END TAB
 /* --------------------------------------- */
@@ -1571,6 +1573,12 @@ button:disabled{
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+}
+
+/* Hover */
+
+.clOverable:hover{
+    background-color: orange;
 }
 
 /* The "show" class is added to the filtered elements */

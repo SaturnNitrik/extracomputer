@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title lang="en">TI4 Online Strategy Guide - Extraboard.net</title>
+    <link rel="stylesheet" type="text/css" href="strategy.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rationale' rel='stylesheet'>
+    <meta name="author" content="Stephane Demots">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="pageInit()">
+<!-- BODY -->
+
+<div id="idHome">
+    <img id="TILogo" src="img/tilogo.png" alt="TWILIGHT IMPERIUM IV">
+    <div id="idIntroLogo" class="">STRATEGY GUIDE</div>
+    <h2 class="clReference clShadowText">Based on Adrim's Strategy Guide</h2>
+    <img id="idStartIcon" src="img/icon_white_search.png" onclick="fctGo()" alt="">
+    <h2 class="clReference clShadowText">Click the icon to start</h2>
+    <p id="idNotOfficial" class="clShadowText">THIS WEBSITE IS NOT OFFICIAL AND HAS NOT BEEN APPROVED BY FANTASY FLIGHT GAMES.</p>
+    <p class="clShadowText">Twilight Imperium IV, a game edited by Fantasy Flight Games. Copyrights <a href="https://www.fantasyflightgames.com">Fantasy Flight Games</a>.</p>
+    <p class="clShadowText">Desgined by Stephane Demots (Saturn Nitrik)</p>
+</div>
+
+<div id="idGlossary">
+
+<div id="idTopBar">
+<span id="idMiniLogo" class="clLogo">TI4 Strategy guide</span>
+<div id="idButtonBar">
+    <button class="clGuideGeneral clButtonOn" onclick="fctTarget('clGuideGeneral')">General</button>
+    <button class="clGuideFaction" onclick="fctTarget('clGuideFaction')">Factions</button>
+    <button class="clGuideUnit" onclick="fctTarget('clGuideUnit')">Units</button>
+    <button onclick="fctLang(this, '_fr')">Extraboard</button>
+</div>
+
+</div>
+
+<p id="idDebug"></p>
+
+<div id="idTopicList">
+    
+<!-- GENERAL -->
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">How to win the game</div>
+<div class="clTopicText">
+<p>Be objective focused</p>
+<ul>
+    <li>score atleast one public objective each round</li>
+</ul>
+<p>Try to score control objectives first because these are the most difficultto achieve</p>
+<p>Try to score tech objectives last because these cannot be taken away from you</p>
+<p>Save trade goods for spend objectives or emergencies (use justthe planets for build)</p>
+<p>Prepare for stage II objectives in advance</p>
+<p>Set up a big "swing round" (4 points in one round):</p>
+<ul>
+    <li>Timing Imperialrightis essentialforthis</li>
+    <li>Secret objectives that can be scored during the action phase are important(there are only 5)</li>
+    <li>Save powerful action cards forthis moment</li>
+</ul>
+<p>Anybody at 6 points is in striking distance</p>
+<p>"Win from behind" is usually a safer strategy than "win from ahead", butit depends on the faction </p>
+<ul>
+    <li>An early big lead will paint a target on your back</li>
+    <li>Don'trush to score easy secret objectives</li>
+</ul>
+<p>Rememberinitiative order when picking strategy cards if you suspectit will be the lastround</p>
+<p>Never give up - even if you are 5 points behind, you can still "swing" a victory (agenda phase, transactions and a good hand of action cards can often make the difference)</p>
+<p>Don't waste resources (command tk, fleets, cards) on an action ifit doesn't get you a point or prepare you for getting a point</p>
+<p>Being aggressive for no reason will only turn the meta-game against you</p>
+<p>If you completely ruin someone's chances to win you just made an enemy with no other goalthan to hunt you </p>
+<p>Always be open fortrade and negotiations (really help others achieve their goals, you just have to be more efficient at achieving yours)</p>
+<p>Play people against each other</p>
+</div></div>
+
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Game start</div>
+<div class="clTopicText">
+<p>Round 1:</p>
+<ul>
+<li>If you don’t start with 2 carriers and 4 infantry, your first priority is to get those</li>
+<li>If you don't have 2 starting tech,try to catch up</li>
+<li>Expand and try to fill your slice</li>
+</ul>
+<p>Round 2 (standard):</p>
+<ul>
+<li>Consolidate your position</li>
+<li>Prepare fleets, command tokens and action cards for a big round 3 (have objectives in mind)</li>
+</ul>
+<p>Round 2 (alternative): Mecatolrush</p>
+</div></div>
+
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Always</div>
+<div class="clTopicText">
+<p>At the beginning of each action phase prepare:</p>
+<ul>
+<li>Set planets in groups according to their intended use: unit production, command tokens, technology, objectives</li>
+<li>Prepare the plastic you intend to produce</li>
+<li>Prepare the action cards you want to play</li>
+</ul>
+<p>Have a tech path in mind - prepare in advance the tech cards you intend to research</p>
+<p>Know the promissory notes you got from other players and rememberto play them at the right time - also remember you can trade them</p>
+<p>Know your opponents status</p>
+<ul>
+<li>What abilities and technology they have</li>
+<li>How many command tokens (actions left)</li>
+<li>Trade goods, action cards, promissory notes</li>
+<li>What objectives are they trying to score next</li>
+</ul>
+<p>Remember that retreat is an important option</p>
+<ul>
+<li>Don’t forget the Announce Retreats step</li>
+<li>Always retreatif you are going to lose</li>
+<li>Avoid getting into big space combats without having where to retreat</li>
+</ul>
+<p>Use all your planets before you pass</p>
+<p>When you build in your home system, instead of activating it, use the secondary of Warfare</p>
+<p>With every build get at least 2 infantry units</p>
+<p>Countthe sabotage cards left (there are 4)</p>
+<p>Have a good Command Token (C.T.) economy</p>
+<ul>
+<li>CTs are the mostimportantresource in the game</li>
+<li>CTs fuel your actions and abilities</li>
+<li>CTs can be converted into anything via actions</li>
+</ul>
+<p>Save Riders for agendas that are “For or Against” (never play them on “Elect” agendas)</p>
+<p>Save atleast one vote forthe second agenda</p>
+</div></div>
+
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Objectives types</div>
+<div class="clTopicText">
+<p>Control Planets (3 stage I, 4 stage II, 4 secret)</p>
+<p>Control Space (1 stage I, 5 secret)</p>
+<p>Spend (4 stage I, 4 stage II)</p>
+<ul>
+<li>Influence,resources, TG's, command tokens + discard 5 action cards (secret objective)</li>
+</ul>
+<p>Own Technologies (2 stage I, 2 stage II, 2 secret)</p>
+<p>Own Units (3 secret objectives)</p>
+<ul>
+<li>3 Space Docks, 4 PDS, 5 Dreadnoughts</li>
+</ul>
+<p>Combat(5 secret- scored in action phase)</p>
+<ul>
+<li>Destroy war sun or flagship</li>
+<li>Destroy infantry using Bombardment</li>
+<li>Destroy ship using Space Canon</li>
+<li>Win a combat againstthe leader</li>
+<li>Win a space combat with your flagship</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Ground forces mobility</div>
+<div class="clTopicText">
+<p>Being able to quickly move yourinfantry where you need itis essential (attack or defense)</p>
+<p>Extending yourrange:</p>
+<ul>
+<li>makes it harderfor opponents to defend their planets against all of your of potential attacks</li>
+<li>gives you more flexibility</li>
+<li>makes you less predictable</li>
+</ul>
+<p>There are 3 solutions for ground force mobility:</p>
+<ul>
+<li>Gravity Drive with Dread2 and/or Carrier2 good for massive invasions or planet sniping</li>
+<li>Cruiser II with Dacxive Animators and Infantry2 greatfor sniping planets butlargerinvasions are more difficultto accomplish</li>
+<li>Space Dock II on the borders, expand from there</li>
+</ul>
+<p>With a yellow skip Transit Diodes is a great addition to any ofthese (especially for cruisers</p>
+</div></div>
+
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Tech Paths</div>
+<div class="clTopicText">
+<p>Optimaltech path should:</p>
+<ul>
+<li>have good synergy with yourfaction abilities</li>
+<li>solve ground force mobility problem</li>
+<li>have no "dead"tech (one that you never use)</li>
+<li>be ready fortech objectives:</li>
+    <ul>
+    <li>"own 2 tech in 2 colors"(stage I)</li>
+    <li>"own 2 unit upgrades"(stage I)</li>
+    <li>"own 3 unit upgrades"(stage II)</li>
+    </ul>
+</ul>
+<p>Otherthings to consider:</p>
+<ul>
+<li>faction tech can be decisive for some factions</li>
+<li>in a 10 point game you can research 5-7 techs</li>
+<li>tech skips allow for better synergies and open more creative tech path options</li>
+<li>Magen Defense Grid is almost never useful, it's usually betterto skip it</li>
+<li>similarlyGraviton Laser System isn’t much use if you don’t anticipate utilizing a PDS network</li>
+</ul>
+<p>Because of the "own 2 tech in 2 colors" objective there are 6 possible tech path starting points:</p>
+<p>2 Blue + 2 Green = best synergy</p>
+<ul><li>opens: Infantry II, Carrier II, Fighter II</li></ul>
+<p>2 Blue + 2 Yellow= very good synergy</p>
+<ul><li>opens: Dreadnought II, Carrier II, Space Dock II</li></ul>
+<p>2 Red + 2 Yellow= good synergy (with a red skip)</p>
+<ul><li>opens: PDS II, Space Dock II, Destroyer II, War Sun, Cruiser II</li></ul>
+<p>2 Green + 2 Yellow= some synergy</p>
+<ul><li>opens: Infantry II, Space Dock II, Cruiser II</li></ul>
+<p>2 Red + 2 Blue = bad synergy</p>
+<ul><li>opens: Carrier II, Destroyer II</li></ul>
+<p>2 Red + 2 Green = worst synergy</p>
+<ul><li>opens: Infantry II, Destroyer II, Cruiser II</li></ul>
+</div></div>
+ 
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Action cards</div>
+<div class="clTopicText">
+<p>You have two options for a steady flow of cards: either get Neural Motivator early or save more command tokens forthe secondary of Politics</p>
+<p>Always know your action cards and remember to play them atthe righttime (Timing Window)</p>
+<p>Play the junk action cards when you are closing on the seven cards hand size limit</p>
+<p>Consider saving the good cards forthe lastrounds</p>
+<p>Hold Public Disgrace untilthe lastround so you can block Imperialfor a potential winner</p>
+<p>Sabotage is the most important action card</p>
+<ul>
+<li>it can block someone from winning the game</li>
+<li>it can protect you when you take the last point</li>
+</ul>
+<p>Hold Sabotage for powerful cards like:</p>
+<ul>
+<li>Public Disgrace (return picked strategy card)</li>
+<li>Political Stability (keep the previous strategy c.)</li>
+<li>Rise of the Messiah (+1 infantry on every planet)</li>
+<li>Imperial Rider (gain aVictory Point)</li>
+<li>Parley (return enemy units to space area)</li>
+<li>Unexpected Action (remove your command t.)</li>
+<li>Signal Jamming (place a player's command t.)</li>
+<li>In the Silence of Space (move through ships)</li>
+<li>Reactor Meltdown (destroy a space dock)</li>
+<li>Spy (takes an action card from you)</li>
+</ul>
+<p>There are 7 cards that have 4 copies in the deck: Sabotage, Direct Hit, Flank Speed , Skilled Retreat, Morale Boost, Shields Holding, Maneuvering Jets</p>
+<ul><li>the other 52 are unique</li></ul>
+<p>Certain action cards have precise keywords that tell you when or how the card should be played:</p>
+<ul>
+<li>cards with the keyword “When” are played before cards with the keyword “After” (agenda phase)</li>
+<li>multiple effects separated by the keyword “then”: you must resolve all effects written on the card</li>
+<li>multiple effects separated by the keyword “and”: you must resolve as many effects as possible (but not necessarily all ofthem)</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideGeneral"><div class="clTopicName clShadowText">Strategy cards</div>
+<div class="clTopicText">
+<p>Initiative is always important but in the last round it is often the decisive factor in winning the game</p>
+<p>Warfare, Leadership, Technology</p>
+<ul>
+<li>are usually picked first(especially in early game)</li>
+<li>if you get one try to stall it as much as possible</li>
+</ul>
+<p>Trade</p>
+<ul>
+<li>before you take it, make sure you have neighbors and thatthey are willing to trade</li>
+<li>never replenish for free</li>
+</ul>
+<p>Politics</p>
+<ul>
+<li>always consider taking it if you are picking last</li>
+<li>consider selling the speaker token</li>
+<li>make sure you have the first pick in the last round of the game -for this you need to take Politics the round before (players at 5-6 points)</li>
+</ul>
+<p>Construction</p>
+<ul><li>play it on your firstturn so others can’t do the secondary without locking their systems</li></ul>
+<p>Imperial</p>
+<ul>
+<li>always consider taking it if you have Mecatol</li>
+<li>timing it right is essential for a "win from behind"</li>
+</ul>
+<p>Diplomacy</p>
+<p>Never pick it in Round 1 because you give out to the others much more than you gain.</p>
+<p>There are some exceptions to this:</p>
+<ul>
+<li>you have a faction that start with only 1 carrier, you pick last, you have a 5 resource system next to your home system</li>
+<li>Mentak - flip a green skip and get Cruiser II R1</li>
+<li>Xxcha - flip a blue skip and get Gravity Drive R1</li>
+</ul>
+</div>
+</div>
+
+<!-- UNITS -->
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Infantry</div>
+<div class="clTopicText">
+<p>The mostimportant unitin the game because infantry takes and defends planets</p>
+<p>It’s easierto defend than to take planets, that’s why the attacker has to bring more infantry</p>
+<p>To defend a planet you need at least one more unit than the sum of bombardment dice and infantry units the attacker can bring</p>
+<p>You don’t need to own the space area of a system if you have enough infantry on the planets</p>
+<p>Infantry II is the most important upgrade, always consider getting it</p>
+
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Carrier</div>
+<div class="clTopicText">
+<p>The mostimportant ship because ofit’s capacity</p>
+<p>The other ships are there only to protect your carrier and it’s precious cargo: yourinfantry</p>
+<p>The success of an invasion depends on how many infantry units you can carry</p>
+<p>Always have at least 2 carriers on the board, (no carriers = missed opportunities)</p>
+<p>When you switch focus from invading planets to space combat, carriers are also important because they carry the fighters: your armor</p>
+<p>Carrier II is situational</p>
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Cruiser</div>
+<div class="clTopicText">
+<p>Good in-between unit, but usually you get it when you don’t have enough resources for a dreadnought</p>
+<p>Cruiser II</p>
+<ul>
+<li>fastest ship in the game</li>
+<li>great for unexpected attacks</li>
+<li>great for sniping undefended planets</li>
+</ul>
+</div></div>
+ 
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">PDS</div>
+<div class="clTopicText">
+<p>Their main purpose is to defend planets by blocking Bombardment</p>
+<p>Firing before ground combat is also important</p>
+<p>It’s usually better to put only one on a planet</p>
+<ul>
+<li>more planets protected from Bombardment</li>
+<li>a wider defensive network</li>
+<li>better odds against action cards and other game effects thattarget PDS units</li>
+</ul>
+<p>PDS II network with Graviton Laser System is an amazing combo, but only helps defensively</p>
+
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Fighter</div>
+<div class="clTopicText">
+<p>Their main purpose is to shield your fleets (the cheapest way to absorb hits)</p>
+<p>Fighter II</p>
+<ul>
+<li>can be used offensively as a “swarm” by overwhelming the opponent</li>
+<li>can be used defensively as a network oflone fighters that block opponent’s movement</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Destroyer</div>
+<div class="clTopicText">
+<p>Their main purpose is to shield your fleets against“assign to non-fighter ship” abilities</p>
+<p>Can also be used:</p>
+<ul>
+<li>to block opponent’s movement</li>
+<li>to quickly get neighbors fortransactions</li>
+<li>for some objectives thatrequire space control</li>
+<li>against fighters (limited without upgrade)</li>
+</ul>
+<p>The worst unit in the game - usually you get it to fill the production capacity or because you don’t have enough resources for a better ship</p>
+<p>Main problem: the fleet supply itis much more important than the benefit a destroyer can bring</p>
+<p>Destroyer II is only useful against fighter swarms</p>
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Dreadnought</div>
+<div class="clTopicText">
+<p>The best ship in the game:</p>
+<ul>
+<li>it has capacity</li>
+<li>it has Bombard</li>
+<li>it hits very well</li>
+<li>it has reliable Sustain Damage (if upgraded)</li>
+<li>the most upgradeable unitin the game</li>
+<li>can be used offensively or defensively</li>
+</ul>
+<p>Dreadnought II is amazing and you get Gravity Drive and Sarween Tools as prerequisites ...</p>
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Space Dock</div>
+<div class="clTopicText">
+<p>Put it on high resource planets</p>
+<p>Consider putting two space docks in a double planet system</p>
+<p>Always have at least one fighter for protection against lone carriers</p>
+<p>Always build at least 2 infantry units</p>
+<p>Build as many units as production capacity allows (example: instead of building just 2 dreadnoughts, it’s better to get 1 cruiser, 2 infantry, 2 fighters and 1 dreadnought,for the same cost)</p>
+<p>Space Dock II is only worth it if you go heavy on fighters (or sometimes infantry)</p>
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">War sun</div>
+<div class="clTopicText">
+<p>Their main purpose is to "uproot" well defended planets by ignoring Planetary Shield and very good Bombardment</p>
+<p>it’s betterto think ofthem as big carriers</p>
+<ul><li>big capacity and always need an escort</li></ul>
+<p>vulnerable to</p>
+<ul>
+<li>counter-attacks</li>
+<li>Direct Hit action cards</li>
+<li>assign to non-fighter ship abilities</li>
+<li>pick target abilities</li>
+</ul>
+<p>It takes too long to gettech and gatherresources for a war sun, so it's only viable in a 14 point game</p>
+<p>In a 10 point game only if you have two tech skips (red-red or yellow-red) and you have the resources to getthem quickly on the board</p>
+<p>You are limited to only two war sun units, you can't have more</p>
+<p>There is a secret objective thattargets war suns (when you build a war sun you put a point on the table, so be ready to defend it)</p>
+</div></div>
+
+<div class="clTopic clGuideUnit"><div class="clTopicName clShadowText">Flagships types</div>
+<div class="clTopicText">
+<p>Only worth the VP</p>
+<ul>
+<li>bad ship build it only if you got that secret obj.</li>
+<li>Muaat, Winnu, Hacan</li>
+<p>Good ships to have in your fleet</p>
+<ul><li>Yssaril,Jol-Nar</li></ul>
+<p>Win more good, but you don’t necessarily need it</p>
+<ul>
+<li>makes you better at what you already excel</li>
+<li>Sol, Sardakk, Letnev (against non-PDS players)</li>
+</ul>
+<p>Essential to strategy</p>
+<ul>
+<li>important part of how you play that faction</li>
+<li>L1z1x, Letnev (against PDS)</li>
+</ul>
+<p>Hole plugger</p>
+<ul>
+<li>must get it because it fixes your weakness</li>
+<li>Xxcha, Nekro, Naalu, Creuss, Mentak</li>
+</ul>
+<p>Rainy day situational</p>
+<ul>
+<li>must getit only in some specific situations</li>
+<li>Arborec, Saar</li>
+<p>The gun on the table</p>
+<ul></i>Yin itrather helps your meta than your battles</li></ul>
+<p>Considerations regarding combat value:</p>
+<ul>
+<li>combat 5*2: can be considered good plain ships if you are low onfleet supply</li>
+<li>combat 7*2: you need to considertheir ability</li>
+<li>combat 9*2: has to have a very good ability</li>
+</ul>
+<p>There is a secret objective that targets flagships (when you build your flagship you put a point on the table, so be ready to defend it)</p>
+</div></div>
+
+<!-- FACTIONS -->
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Arborec</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>Flexible production via infantry</p>
+<p>Holding planets very well</p>
+<p>Snowballing into the late game</p>
+<p>Rebounding quickly with unit production</p>
+<h2>FEARS</h2>
+<p>Early aggression</p>
+<p>Bombardment: Letnev, Muaat, Sardakk, L1z1x</p>
+<p>Good infantry:Yin, Sardakk, Sol</p>
+<p>Naalu (flagship)</p>
+<p>Nekro --> don’tresearch Letani 2</p>
+<p>Fastfactions (early): Creuss, Saar, Sol</p>
+<p>X-89 Bacterial Weapon</p>
+<h2>GAME PLAN</h2>
+<p>You have a very slow start and you are very vulnerable early, so be cautious and prepare for stage two and secret objectives</p>
+<p>Try to start as speakerto secure the early survival</p>
+<p>Get Sarween Tools and second carrier round 1 or 2</p>
+<p>When moving, produce ground forces to increase production</p>
+<p>Do not rush to Mecatol Rex but holding it is relatively easy if you take it</p>
+<p>Don’t ever give yourfaction promissory note</p>
+<p>You have a command token problem -> Leadership</p>
+<p>“Root” into other people pie slices</p>
+<p>Flagship is good forrecovering after a critical loss:</p>
+<ul><li>- put 5 infantry and build again in production step</li></ul>
+<p>Optimal tech path: Green + Yellow/Red (+ g. skip)</p>
+<ul><li>- Sarween Tools, Letani Warrior 2, Cruiser II, PDS II</li></ul>
+<p>Alternative tech path: Blue + Yellow</p>
+<ul><li>- Sarween Tools, Carrier II, Dreadnought II, PDS II</li></ul>
+<p>Alternative tech path: Yellow + Blue (+ y. skip)</p>
+<ul><li>-rush Integrated Economy, Carrier II, Dreadnought II</li></ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Barony of Letnev</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: LOW</h2>
+<h2>STRENGTHS</h2>
+<p>Very few weaknesses, adaptability</p>
+<p>Best home system in the game</p>
+<p>Non-Euclidian Shielding</p>
+<h2>FEARS</h2>
+<p>Being perceived as a threat</p>
+<p>Mentak (flagship), Nekro, L1z1x (situational)</p>
+<p>Pick target abilities: Yin, Creuss, Sardakk</p>
+<h2>GAME PLAN</h2>
+<p>You are a flexible early faction, you have options:</p>
+<p>A. Lots of planets. Be aggressive early,focus on infantry, flagship and carriers in early game. Bombard and get double pie slice.Then dreds 2.</p>
+<p>B. Lots of tech. Score tech objectives. Get 2 tech every round if possible, get a red skip. You’ll have smaller fleets, so play friendly and defensive.</p>
+<p>C. Big fleets of big ships. Score battle objectives.</p>
+<p>D. Economy path. Save TG’s for spend objectives and re-rolls (Munitions Reserves). Be friends with a neighbor, save CC’s for fleet supply, build large fleets of cruisers and carriers. Dreads later or not.</p>
+<p>Put a second space dock in your home system</p>
+<p>Munitions Reserves is most efficient with a large fleet of smaller ships, so save TG’s for big combats</p>
+<p>Get Trade when you can -refresh only one person</p>
+<p>Try to make the other players realize what a powerful ally you can be, sell yourfriendship</p>
+<p>Winning space combats doesn’t get you points, not having enough infantry is your Achilles’ heel</p>
+<p>(A) safe tech path: Blue + Yellow</p>
+<ul><li>Carrier II, Dreadnought II, L4 Disruptors, PDS II</li></ul>
+<p>(B), (C) strong tech path: Blue + Red (+ red skip)</p>
+<ul><li>Dreadnought II, Non-Euclidian Shielding, War Sun ?</li></ul>
+<p>(D) crazy tech path: Yellow + Blue</p>
+<ul><li>Cruiser II, Fighter II, Carrier II or Dreadnought II</li></ul>
+</div></div>
+ 
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Emirates of Hacan</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>Highest commodity number</p>
+<p>Can trade with anyone</p>
+<p>Able to trade action cards</p>
+<p>Adaptable to the objectives</p>
+<p>Quantum Datahub Node can steal a win during the final turns</p>
+<h2>FEARS</h2>
+<p>No one picks Trade SC, so you always have to</p>
+<p>Metagame (collusion against you)</p>
+<p>Mentak (can be a very good friend or a big pain)</p>
+<h2>GAME PLAN</h2>
+<p>Pick Trade early and often</p>
+<p>Use your early game advantage, before you lose it: make transactions early, sell anything, buy all Trade Agreements make money and bank it</p>
+<p>Save yourtrade goods for the ”spend” objectives - don’t spend it all on fleets, use planets for build</p>
+<p>Maintain a well defended pie slice, score objectives</p>
+<p>Be friends with everybody, you are a passive race</p>
+<p>Tax people forrefreshing trade goods (mid game)</p>
+<p>Look for opportunities to make a profit and try not to be seen as a major threat</p>
+<p>Remember you can sell action cards at any moment, know your cards and their timing</p>
+<p>You are the best faction at winning from behind</p>
+<p>Optimal tech path: Blue + Yellow (+ yellow skip)</p>
+<ul>
+<li>Neural Motivator, Dreadnought II, Quantum Datahub N.</li>
+<li>Space Dock II, Fighter II</li>
+</ul>
+<p>Alternative tech path: Blue + Green (+ green skip)</p>
+<ul>
+<li>Neural Motivator, Dreadnought II, Production Biomes,</li>
+<li>Infantry II and Fighter II or Carrier II</li>
+</ul>
+<p>Situational tech path: Green + Yellow (+ g & y skip)</p>
+<ul>
+<li>Quantum Datahub Node, Production Biomes</li>
+<li>Space Dock II, Fighter II, Infantry II</li>
+</ul>
+</div></div>
+ 
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Embers of Muaat</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>Starts with war sun</p>
+<p>Very valuable promissory note</p>
+<p>Has a lotto trade and can threaten well</p>
+<h2>FEARS</h2>
+<p>War sun vulnerability to</p>
+<ul>
+<li>counter-attacks</li>
+<li>Direct Hit action cards</li>
+<li>assign to non-fighter ship abilities</li>
+<li>pick target abilities</li>
+</ul>
+<p>Mobile opponents (your HS is vulnerable early)</p>
+<p>Lack of influence</p>
+<p>Yssaril, Yin, L1z1x, Xxcha, Mentak, Creuss, Sardakk (late)</p>
+<h2>GAME PLAN</h2>
+<p>Early game faction: quickly get a slightly bigger slice and,then just protectit with your war suns and a PDS network - letthe objectives guide you</p>
+<p>War sun is a negotiation tool, don’t make enemies</p>
+<p>Sell War Sun tech across the table for anything that will get you a VP (remember fleet supply cost)</p>
+<p>Don’t lose the war sun early, get the second one R2</p>
+<p>Accept that you will have a command token problem - you won’t be able to fix it because of other more important ones, so don’t use your Star Forge to stall, use it only to protect your war sun</p>
+<p>Use Warfare to protect your war sun from counter-attacks</p>
+<p>If you get a Sabotage save it for Direct Hits</p>
+<p>Optimal tech path: Blue + Yellow (+ blue skip)</p>
+<ul><li>Gravity Drive, PDS II, Graviton Laser System</li></ul>
+<p>Alternative tech path: Red + Yellow (+ red skip)</p>
+<ul><li>War Sun II is an alternative to Gravity Drive, but only if you get a red skip, otherwise it’s not worth it</li></ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Clan of Saar</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>No need to defend home system</p>
+<p>Mobility</p>
+<p>Flexibility</p>
+<p>Can hide in asteroid fields</p>
+<h2>GOOD AGAINST</h2>
+<p>Slow startraces: Arborec (early),Jol-Nar(early), Muaat(early), Xxcha (early), Winnu</p>
+<h2>FEARS</h2>
+<p>Infantry clusters: Sol, Arborec (late game)</p>
+<p>PDS networks: Xxcha,Jol-Nar(late game)</p>
+<p>Yin (flagship, infantry), Muaat(war suns)</p>
+<p>Late game (very large fleets with special units)</p>
+<h2>GAME PLAN</h2>
+<p>Keep moving and getting trade goods on the move</p>
+<p>Use asteroid fields as a safe spotto hide</p>
+<p>ChaseVPs fast and loose - Imperial is yourfriend</p>
+<p>The secondary of Warfare doesn’t work for you so get Warfare yourself whenever you can</p>
+<p>You consume a lot of command tokens, so influence and Leadership are important</p>
+<p>Build units each time you activate, outnumber your opponents (you need big fleet supply)</p>
+<p>Don’tlose your space dock (have atleast 2 in play)</p>
+<p>Going for Mecatol Rex can work nicely for you</p>
+<p>Early game race -take the lead and win by round 5</p>
+<p>Optimal tech path: Yellow + Blue (+ yellow skip)</p>
+<ul><li>Chaos Mapping, Floating Factory II, then Dreadnought II and Fighter II or Carrier II</li></ul>
+</div></div>
+ 
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Federation of Sol</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: LOW</h2>
+<h2>STRENGTHS</h2>
+<p>mobility,reinforcing, holding planets</p>
+<p>easy to take and hold Mecatol</p>
+<h2>GOOD AGAINST</h2>
+<p>Winnu, Saar</p>
+<h2>FEARS</h2>
+<p>losing carriers early</p>
+<p>lack of influence</p>
+<p>Bombardment: Letnev, Muaat, Sardakk, L1z1x</p>
+<p>other infantry factions: Yin, Arborec, Nekro</p>
+<p>Creuss - could get to Mecatol first</p>
+<h2>GAME PLAN</h2>
+<p>you are the best “Mecatol” faction, so go forit</p>
+<p>take planets aggressively over the first 2 rounds (get and hold objective required planets)</p>
+<p>you will have a command token problem, so focus on high influence planets, (infantry is cheap)</p>
+<p>reinforce key planets with Orbital Drop</p>
+<p>small mobile fleets and lots of infantry allow you to spread out and make it very difficult for others to uproot you</p>
+<p>you will have a production capacity problem, so try to build a second production center</p>
+<p>don’ttrade your Political Secret</p>
+<p>early game faction - take the lead,rush to victory (late game space combats will be a problem)</p>
+<p>optimal tech path: Blue + Green</p>
+<ul>
+<li>take Gravity Drive and Spec Ops II as soon as possible</li>
+<li>then Hyper Metabolism, Dreadnought II or go deep blue</li>
+<li> Carrier II and Fighter II are situational</li>
+</ul>
+</div></div>
+ 
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Ghosts of Creuss</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>Insane mobility</p>
+<p>High commodity count</p>
+<p>Home system is 1 extra move for others</p>
+<h2>GOOD AGAINST</h2>
+<p>Naalu,Yin, Muaat(Dimensional Splicer)</p>
+<p>Muaat, Winnu, Arborec (R1 blockade Home System)</p>
+<h2>FEARS</h2>
+<p>Being perceived as a threat or nuisance</p>
+<p>Early aggression</p>
+<p>4 commodities factions can upset yourtrades</p>
+<p>Xxcha, Mentak</p>
+<h2>GAME PLAN</h2>
+<p>Early: don’t over extend, don’t be aggressive, stay in your pie slice, don’t make enemies R1</p>
+<p>Don’t evertake the lead, setup a big late game, prepare for stage 2 and secret objectives</p>
+<p>You need influence - a lot of command tokens, so you can always be ready for opportunities</p>
+<p>Pay someone to play your promissory note early so you won’t have to get Wormhole Generator</p>
+<p>Get a Creuss wormhole in a good system (in your pie slice),then build a forward space dock there</p>
+<p>You need Action Cards, you are a surprise faction</p>
+<p>Optimal tech path: Green + Blue</p>
+<ul>
+<li>Neural Motivator, Infantry II, Fighter II, Carrier II</li>
+<li>Sarween Tools, Dreadnought II</li>
+</ul>
+<p>Alternative tech path: Red + Blue</p>
+<ul><li>Dimensional Splicer, PDS II, Dreadnought II, Space Dock II</li></ul>
+<p>Alternative tech path: Red + Yellow(+ red skip)</p>
+<ul><li>Dimensional Splicer, PDS II, War Sun, Space Dock II</li></ul>
+</div></div>
+ 
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">L1Z1X Mindset</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: LOW</h2>
+<h2>STRENGTHS</h2>
+<p>Having 2 capacity dreadnoughts that hit on a 4 is the best reason to pick this race</p>
+<p>The best startin the game (outside of Jol-Nar)</p>
+<p>Best race attaking planets</p>
+<p>Your ability to take a space dock,then produce units makes you very scary</p>
+<h2>GOOD AGAINST</h2>
+<p>Fighter screens (your flagship): Naalu, Saar, Muaat</p>
+<p>Ground forces (Harrow): Sol, Arborec, Yin</p>
+<h2>FEARS</h2>
+<p>Being perceived as a threat</p>
+<p>PDS II: Mentak, Xxcha,Jol-Nar</p>
+<p>Letnev, Sardakk</p>
+<h2>GAME PLAN</h2>
+<p>Mid game faction: build a Super-Dreadnaught 2 fleet and get 6 action cards ready for a big round 3</p>
+<p>Keep taking planets and focus on objectives and influence (you need command tokens)</p>
+<p>Don’t focus on holding the planets because you can easily take them back</p>
+<p>5 capacity flagship and 2 capacity dreadnoughts means you don’t need carriers</p>
+<p>Very good at scoring secret obj. and stage 2 obj.</p>
+<p>Optimal tech path: Blue + (whatever skip you get)</p>
+<ul>
+<li>get Super-Dreadnaught 2 quickly (double tech)</li>
+<li>Inheritance Systems is an option only if you get a yellow skip and only if it’s necessary</li>
+</ul>
+<p>Alternative tech path: Yellow+ (Red or Green)</p>
+<ul>
+<li>get Inheritance Systems quickly (double tech)</li>
+<li>then Super-Dreadnaught II, then whatever you need more, War Sun (if you have resources to build)</li>
+</ul>
+</div></div>
+ 
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Mentak Coalition</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: AVERAGE</h2>
+<h2>STRENGTHS</h2>
+<p>Mirror Computing (best tech in game)</p>
+<p>Synergy between tech / abilities (best in game)</p>
+<p>Good faction abilities and promissory note</p>
+<p>Fastroute to desired tech</p>
+<h2>GOOD AGAINST</h2>
+<p>Letnev, L1z1x (your flagship)</p>
+<p>Hacan, Saarin early game (Pillage)</p>
+<h2>FEARS</h2>
+<p>Being perceived as a nuisance</p>
+<p>PDS II: Xxcha,Jol-Nar, maybe Arborec</p>
+<p>Nekro (flagship & ability), Naalu (fighter swarm)</p>
+<h2>GAME PLAN</h2>
+<p>Rush to Cruiser II (try round 1 with a green skip)</p>
+<p>Use your mobility to take powerful systems</p>
+<p>Save as much trade goods as you can until you get Mirror Computing,then use them to rebuild your fleet and for “spend” public objectives</p>
+<p>Be aggressive early when you have the advantage, bankTG’s and prepare forthe stage II objectives</p>
+<p>Defend your home system with your flagship and a PDS II network</p>
+<p>Take Trade S.C. often,refresh all your neighbors</p>
+<p>The “meta-game” is your Achilles’ heel</p>
+<p>Don’t Pillage every single time, also take their commodities instead of TG’s if possible</p>
+<p>Use Promise of Protection to gain atleast 1 ally in a 5-6 player game</p>
+<p>Optimal tech path: Yellow + Red (+ green skip)</p>
+<ul><li>Cruiser II, PDS II, Mirror Computing</li></ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Naalu Collective</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: Average</h2>
+<h2>STRENGTHS</h2>
+<p>Crystal Fighters and Neuroglive are powerful</p>
+<p>Scoring first can win you the game</p>
+<p>Free retreats are great</p>
+<h2>GOOD AGAINST</h2>
+<p>Infantry (your flagship), Saar(after Neuroglaive)</p>
+<h2>FEARS</h2>
+<p>Early aggression</p>
+<p>Graviton Laser System: Xxcha, L1z1x (flagship)</p>
+<p>Space Dock II: Yin, Letnev, Mentak, Creuss</p>
+<p>Sol, Saar(flagship), Nekro (flagship)</p>
+<p>After you getNeuroglaive only Letnev can hurt you</p>
+<h2>GAME PLAN</h2>
+<p>Build 2 Space docks in a double planet system to help with fighter production (next to your home)</p>
+<p>Develop a fighter screen network, making it very difficultto invade your space (after you get Neuroglive, with a few fighters placed in key systems, you can block the movement of your competitors and you can start extorting)</p>
+<p>The only ships you need are fighters and carriers</p>
+<p>Focus on influence (fighters are cheap) and take Leadership every time it’s available</p>
+<p>Always have command tokens ready for Foresight</p>
+<p>Don’t ever give yourfaction promissory note</p>
+<p>Take the lead, stay in the lead and win by initiative</p>
+<p>Optimal tech path: Green + (Blue orYellow)</p>
+<ul>
+<li>rush Crystal Fighter II (b skip), Neuroglive (g skip)</li>
+<li>then Carrier II, Space Dock II or Infantry II depending on what skip you get(blue or yellow)</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Nekro Virus</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>Gains technology through combat</p>
+<p>Very command token rich</p>
+<p>Powerful in the late game due to command token wealth and the ability to stealracialtech and/or unit upgrades</p>
+<h2>GOOD AGAINST</h2>
+<p>Value tech races:Jol-Nar, L1z1x, Mentak, Sol,Xxcha</p>
+<h2>FEARS</h2>
+<p>Haters and lots oftech objectives</p>
+<p>Letnev, Winnu (flagship), Xxcha (flagship)</p>
+<p>Pick target abilities: Sardakk,Yin, Creuss</p>
+<h2>GAME PLAN</h2>
+<p>Don’t hunt people justforthe tech ifit doesn’t help you score objectives</p>
+<p>Influence is notthat usefulto you</p>
+<p>Build your economy with Trade, Leadership, or Technology early, and getrich enough from the secondaries overtime</p>
+<p>Always take Trade ifitis available</p>
+<ul>
+<li>ask people to send destroyers to be your neighbor, offer deals in theirfavor</li>
+<li>later you can killthe destroyer and gettech</li>
+</ul>
+<p>Take Mecatol Rex and other key systems, the other players will have to attack you</p>
+<p>Bully, but avoid all-out war on multiple fronts</p>
+<p>Sell yourracial promissory note to assure an ally</p>
+<p>Your flagship with a stack of ground forces is one ofthe best defensive set-ups in the game, so use it on your home system or on Mecatol Rex</p>
+<p>Choose wisely the racialtechs you wantto copy, look for synergy</p>
+<p>You want Transit Diodes and any infantry upgrade</p>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Sardakk N'orr</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: Average</h2>
+<h2>STRENGTHS</h2>
+<p>+1 to all combat rolls</p>
+<p>+1 to ship rolls when flagship is present</p>
+<p>Bombard 4*2 on Dreadnought</p>
+<h2>GOOD AGAINST</h2>
+<p>Muaat, Letnev, L1z1x, Jol-Nar (Exotrireme II ability)</p>
+<p>Arborec,Yin (Bombard, Valkyrie, infantry +1)</p>
+<h2>FEARS</h2>
+<p>Lots oftech objectives</p>
+<p>Being perceived as a threat</p>
+<p>Nekro, Sol (capacity,Orbital Drop)</p>
+<h2>GAME PLAN</h2>
+<p>Focus on building your economy (resources) as you start from behind</p>
+<p>Unrelenting is bestrealized with fighters and infantry, so mobility is very useful - also a double dock system is a good idea (maybe home system)</p>
+<p>Sell your promissory note across the table as much as possible (when they need it: before combats)</p>
+<p>Your fleets are your whole advantage, so do not lose fights else you lose your advantage</p>
+<p>You win through efficient aggression and diplomacy</p>
+<p>Convince the table you are weak and plan for a come from behind win</p>
+<p>Your flagship with a fighter screen is very strong, butis not essentialto your game</p>
+<p>There is no synergy between yourfaction techs and abilities - you have to choose a path, so tech based on the objectives and the otherfactions</p>
+<p>Tech skips are very valuable for you</p>
+<p>Double tech asmuch as possible; aimunit upgrades</p>
+<p>Optimal tech path: Blue + Green</p>
+<ul><li>Neural Motivator, Fighter II, Infantry II, Carrier II</li></ul>
+<p>Alternative tech path: Blue + Yellow</p>
+<ul><li>Dreadnought II, Carrier II, Space Dock II</li></ul>
+<p>Valkyrie P.W. is an option only with 2 red skips</p>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Universities of Jol-Nar</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: LOW</h2>
+<h2>STRENGTHS</h2>
+<p>The most flexible faction in the game</p>
+<p>You start with the best fleet</p>
+<p>You start with the most tech</p>
+<p>You can get whatever tech you want round 2</p>
+<p>Tech objectives are almost free points for you</p>
+<h2>FEARS</h2>
+<p>The meta game</p>
+<p>Early aggression</p>
+<p>Saar, Sardakk, Nekro, Mentak, Yin</p>
+<h2>GAME PLAN</h2>
+<p>Get a tech per turn, build defense, score objectives</p>
+<p>If you decide to take Mecatol Rex do it early</p>
+<p>You can’t take and hold planets very well (early game), so build your economy through trading</p>
+<p>Sell your promissory note every turn, be clear about what tech you give and make sure that you will get it back</p>
+<p>You can get War Sun in round 2, but if you intend to do it, don’t sell your promissory until you getit</p>
+<p>Don’t take an early lead, play nice, make trades and hit big objectives in the lastrounds</p>
+<p>Infantry (ground combat) is your Achilles’ heel</p>
+<p>Your-1 is less important with bigger ships</p>
+<p>You can pick any tech path, butthis is the safest:</p>
+<ul><li>Hyper Met., E-Res Siphons, PDS II, Dreadnought II</li></ul>
+<p>Some of the alternative tech paths:</p>
+<ul>
+<li>War Sun, E-Res Siphons, Fighter II</li>
+<li>Cruiser II, E-Res Siphons, Integrated Ec, Infantry II</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Winnu</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: Average</h2>
+<h2>STRENGTHS</h2>
+<p>Taking Mecatol with no influence (situational)</p>
+<p>Building a free space dock + PDS on Mecatol</p>
+<p>Choose your starting tech, but you only get one</p>
+<p>Otherthan that,this race is super weak</p>
+<p>It is only playable with 3 or 4 players because of the double Strategy Card pick</p>
+<h2>FEARS</h2>
+<p>Aggression at any time</p>
+<p>Factions that can get Mecatol before you: Saar, Sol, Creuss</p>
+<p>Mobile opponents (your HS is vulnerable early): Creuss,Yssaril, Mentak</p>
+<p>Bombardment: Letnev, Muaat, Sardakk, L1z1x</p>
+<p>Good infantry: Sol, Sardakk</p>
+<h2>GAME PLAN</h2>
+<p>Your pie slice must have two systems with planets on the path to Mecatol, and one ofthese planets should be a yellow skip</p>
+<p>Not a Mecatolfaction,rather a Mecatol deterrent</p>
+<p>Try to take Mecatol first and hold it as much as you can, but prepare to also score elsewhere</p>
+<p>Round 1 you must get Warfare (or Politics), and you must build a second carrier and 2 infantry</p>
+<p>You have no abilities, you are the weakest faction:</p>
+<ul>
+<li>secure your home system with a lot of infantry</li>
+<li>trade for any advantage you can find, beg for it</li>
+<li>when somebody tries to take advantage of your weakness ask for help from the others</li>
+<li>try to get promissory notes from the others</li>
+<li>don’t evertake the lead</li>
+</ul>
+<p>Optimal tech path: Yellow + Blue (+ yellow skip)</p>
+<ul>
+<li>Hegemonic Trade Policy is your only strength, so your starting tech must be Sarwin Tools</li>
+<li>then Space Dock II, Gravity Drive, Carrier II</li>
+</ul>
+<p>Situational tech path: Blue + Yellow</p>
+<ul>
+<li>if you are speaker and if Hacan or Xxcha is playing you might get the blue tech first,then go yellow</li>
+<li>R1 pick Technology --> get Gravity Drive</li>
+<li>get the extra resource for a carrier and 2 infantry</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Xxcha Kingdom</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: HIGH</h2>
+<h2>STRENGTHS</h2>
+<p>Trade, negotiation, difficultto attack</p>
+<p>Diplomacy is similarto Warfare for you (early)</p>
+<p>People mustrespect you and they are better off being yourfriend than your enemy</p>
+<p>You have valuable services that people will pay for at certain points in the game</p>
+<h2>GOOD AGAINST</h2>
+<p>Fighter screens: Naalu, Sol (early), Muaat</p>
+<p>Saar, Arborec (early</p>
+<h2>FEARS</h2>
+<p>No one picks Diplomacy SC (early game)</p>
+<p>Duranium Armor: Letnev (faction techs, flagship)</p>
+<p>Ground force clusters: Sol, Arborec,Yin</p>
+<p>L/W Deflector, mobility: Creuss,Yssaril (flagship)</p>
+<h2>GAME PLAN</h2>
+<p>Your abilities are defensive, you don’t score well</p>
+<p>Your flagship is your only offensive ability, get it as fast as possible, but don’t lose it early</p>
+<p>Quickly grab a slightly bigger slice and lock it with a PDS network (don’t get PDS II until you need it, but you have to be ready forit)</p>
+<p>Don’t overinvestinto defense,rememberto score</p>
+<p>Focus on influence (command tokens for abilities)</p>
+<p>Sell your abilities: Quash and Instinct Training</p>
+<p>For mobility get Cruiser II, or put Space Docks 2 on the borders and expand from there</p>
+<ul><li>alternative: Gravity Drive if you get a blue skip R1</li></ul>
+<p>Standard tech path: Yellow + Green (+ yellow skip)</p>
+<ul>
+<li>Neural Motivator, Cruiser II, Nullification Field</li>
+<li>PDS II, Instinct Training, Infantry II</li>
+</ul>
+<p>optimal tech path: Yellow + Blue (+ blue skip R1)</p>
+<ul>
+<li>Gravity Drive, Plasma Scoring, PDS II</li>
+<li>Nullification Field, Dreadnought II, Fighter II</li>
+</ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Yin Brotherhood</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: AVERAGE</h2>
+<h2>STRENGTHS</h2>
+<p>Solid racial abilities and a great starting fleet</p>
+<p>You are very good at winning ground combat</p>
+<p>You are very good at holding planets</p>
+<p>You are usually awkward to attack and most people will prefer notto mess with you</p>
+<p>0/2 or 1/2 planets are greatin your hands due to yourracial ability</p>
+<h2>GOOD AGAINST</h2>
+<p>Planets with 1-2 infantry: all in the early game</p>
+<p>Saar, Sol (early), Muaat(early)</p>
+<h2>FEARS</h2>
+<p>Not being seen as dangerous</p>
+<p>PDS: Xxcha,Jol-Nar, Mentak</p>
+<p>Infantry flood: Arborec (late), Sol (late)</p>
+<p>Bombard: L1z1x, Letnev, Muaat(late), Sardakk</p>
+<h2>GAME PLAN</h2>
+<p>Defensive faction with a strong starting fleet</p>
+<ul>
+<li>use your advantage before the others get strong</li>
+<li>get many planets as fast as possible + Mecatol</li>
+<li>it is easier for you to defend than to take planets</li>
+</ul>
+<p>Focus on influence (planets with 0/2 are perfect)</p>
+<p>For defense: spread destroyers through your pie slice and putthe flagship in your home system</p>
+<p>Always have atleast one 0/2 planet available for Indoctrination even after you pass</p>
+<p>Always take Leadership and Warfare if available</p>
+<p>You have the ability to cause significant damage for a very low cost, so that makes you dangerous:</p>
+<ul><li>threaten everyone without actually having to follow through</li></ul>
+<p>Optimal tech path: Yellow + Green (+ yellow skip)</p>
+<ul>
+<li>Transit Diodes, put a Space Dock II on Mecatol</li>
+<li>then get Infantry II</li>
+</ul>
+<p>Alternative tech path: Green + Yellow(+ red skip)</p>
+<ul>
+<li>Neural Motivator, Cruiser II, Infantry II</li>
+<li>Daxcive Animators + Cruiser II = sniping planets</li>
+</ul>
+<p>Situational tech path: Red + Yellow</p>
+<ul><li>PDS II, Cruiser II, Space Dock II</li></ul>
+</div></div>
+
+<div class="clTopic clGuideFaction"><div class="clTopicName clShadowText">Yssaril Tribes</div>
+<div class="clTopicText">
+<h2>DIFFICULTY: LOW</h2>
+<h2>STRENGTHS</h2>
+<p>A hand full of useful action cards late game makes this a scary race to attack</p>
+<p>Starting with 5 influence in your home system gives you some flexibility</p>
+<p>A great start combined with a fast flagship</p>
+<h2>FEARS</h2>
+<p>Drawing the wrong action cards</p>
+<p>Xxcha (Instinct Training)</p>
+<p>Multiple attacks on multiple fronts will consume your deck fast</p>
+<h2>GAME PLAN</h2>
+<p>Get the secondary of Politics as often as possible</p>
+<p>Craft a powerful hand of action cards and craft a game plan around them and the objectives, look for synergies</p>
+<p>Focus on influence as you will wantthe secondary of Imperial as well -this faction is very good at scoring secret objectives</p>
+<p>Consider stalling Warfare turn 1 and stalling Leadership turns 2-3 if you have the opportunity (this can greatly hinder the other players)</p>
+<p>You don’t have to take Mecatol Rex to win, but it might make sense at certain points</p>
+<p>Your flagship has movement 2, so use it</p>
+<ul><li>it can also be used to sneak into a neighboring undefended home system (see ability)</li></ul>
+<p>Don’t ever give your promissory note (as a non-binding deal, you can sell cards via Spy Net, but only try this if you really trust the buyer)</p>
+<p>Stay under the radar - end with a 4 points surprise</p>
+<p>Optimal tech path: Green + Blue (+ blue skip)</p>
+</ul>
+<li>T. Plating, Hyper Metabolism, Mageon Implants</li>
+<li>then Gravity Drive, Infantry II, Fighter II</li>
+</ul>
+</div></div>
+ 
+</div>
+
+</div> <!-- End of Glossary div -->
+
+<!-- <img id="idGoToTop" src="img/arrow.png" onclick="fctToTop()"/> -->
+    
+<!-- SCRIPTS -->
+    <!-- Files -->
+    <script src="strategy.js"></script>
+</body>
+</html>
