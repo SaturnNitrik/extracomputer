@@ -37,7 +37,7 @@ var gWord = [
   ["Set player", "", "Spieler Auswahl", "Выберите игрока"],
   [" strategy", "", " Strategie", "стратегия"],
   ["Pass", "Passer", "Passen", "Пас"],
-  [", select your Strategy", ", choisir une Stratégie", ", strategiekarte wählen", "выберите карту стратегии"],
+  [", select your Strategy", ", choisir une Stratégie", ", strategiekarte wählen", ", выберите карту стратегии"],
   ["Select 2 strategies to swap", "Choisir 2 strategies à inverser", "2 Strategien zum Tauschen auswählen", "Поменяйте местами две карты стратегии"],
   ["The Custodians left Mecatol Rex", "Les Gardiens ont quitté Mecatol Rex", "Die Hüter haben Mecatol Rex verlassen", "Хранители покинули Мекатол Рекс"],
   ["The Custodians are still guarding Mecatol Rex", "Les Gardiens sont toujours sur Mecatol Rex", "Die Hüter bewachen Mecatol Rex noch", "Хранители все еще защищают Мекатол Рекс"],
