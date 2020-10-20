@@ -160,7 +160,14 @@ var factionList = [
 ["Winnu", "Winnu", "Winnu", "Винну", IMG_FOLDER + "winnu.png", "", "Winnu"],
 ["Xxcha Kingdoms", "Royaume Xxcha", "Xxcha Königreich", "Королевство Ззча", IMG_FOLDER + "xxcha.png", "", "Xxcha"],
 ["Yin Brotherhood", "Fraternité de Yin", "Yin Brunderschaft", "Братство Инь", IMG_FOLDER + "yin.png", "", "Yin"],
-["Yssaril Tribes", "Tribus Yssaril", "Yssaril-Stämme", "Племена Иссарилов", IMG_FOLDER + "yssrail.png", "", "Yssaril"]
+["Yssaril Tribes", "Tribus Yssaril", "Yssaril-Stämme", "Племена Иссарилов", IMG_FOLDER + "yssrail.png", "", "Yssaril"],
+["Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", IMG_FOLDER + "mahact.png", "", "Mahact"],
+["Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", IMG_FOLDER + "naaz.png", "", "Naaz"],
+["Titans of Ul", "Titans of Ul", "Titans of Ul", "Titans of Ul", IMG_FOLDER + "titans.png", "", "Titans"],
+["The Nomad", "The Nomad", "The Nomad", "The Nomad", IMG_FOLDER + "nomad.png", "", "Nomad"],
+["Empyrean", "Empyrean", "Empyrean", "Empyrean", IMG_FOLDER + "empyrean.png", "", "Empyrean"],
+["Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", IMG_FOLDER + "vuil.png", "", "Vuil'Raith"],
+["Argent Flight", "Argent Flight", "Argent Flight", "Argent Flight", IMG_FOLDER + "argent.png", "", "Argent"]
 ];
 
 const HACAN_FACTION = 4;
@@ -177,7 +184,7 @@ var playerColorList = [
 "red",
 "yellow",
 "orange",
-"grey"
+"hotpink"
 ];
 
 var gGenericChoice = [
