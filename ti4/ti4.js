@@ -156,7 +156,7 @@ var factionList = [
 ["Naalu Collective", "Collectif Naalu", "Naalo-Kollektiv", "Клубок Наалу", IMG_FOLDER + "naalu.png", "", "Naalu"],
 ["Nekro Virus", "Virus Nekro", "Nekro-Virus", "Некровирус", IMG_FOLDER + "nekro.png", "", "Nekro"],
 ["Sardak Norr", "Sardakk N'orr", "Sardakk N'orr", "Сардак Н’орр", IMG_FOLDER + "sardak.png", "", "Sardak"],
-["Universities of Jol-Nar", "Universités de Jol-Nar", "Universitiät von Jol-Nar", "Жол-Нарские университеты", IMG_FOLDER + "jol.png", "", "Jol-Nar"],
+["Universities of Jol-Nar", "Universités de Jol-Nar", "Universitiät von Jol-Nar", "Жол-Нарские университеты", IMG_FOLDER + "jol.png", "", "Jol"],
 ["Winnu", "Winnu", "Winnu", "Винну", IMG_FOLDER + "winnu.png", "", "Winnu"],
 ["Xxcha Kingdoms", "Royaume Xxcha", "Xxcha Königreich", "Королевство Ззча", IMG_FOLDER + "xxcha.png", "", "Xxcha"],
 ["Yin Brotherhood", "Fraternité de Yin", "Yin Brunderschaft", "Братство Инь", IMG_FOLDER + "yin.png", "", "Yin"],
@@ -167,7 +167,7 @@ var factionList = [
 ["Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", IMG_FOLDER + "naaz.png", "", "Naaz"],
 ["The Nomad", "The Nomad", "The Nomad", "The Nomad", IMG_FOLDER + "nomad.png", "", "Nomad"],
 ["Titans of Ul", "Titans of Ul", "Titans of Ul", "Titans of Ul", IMG_FOLDER + "titans.png", "", "Titans"],
-["Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", IMG_FOLDER + "vuil.png", "", "Vuil'Raith"],
+["Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", IMG_FOLDER + "vuil.png", "", "Vuil"],
 ];
 
 const HACAN_FACTION = 4;
