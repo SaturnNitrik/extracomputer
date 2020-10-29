@@ -108,6 +108,11 @@ function fctSwitchLang(l)
         cln = itm.cloneNode(true);
         cln.id = "";
         cln.textContent = factionList[i][FACTION_NAME];
+
+        if(i >= POK_FACTION)
+        {
+          cln.classList.add("clPoKFaction");
+        }
         document.getElementById("idFactionList").appendChild(cln);
     }
 
@@ -458,6 +463,7 @@ function fctNext(s)
         fctSaveGame();
         
         vpInit();
+        fctInfluInit();
         loadTurnOrderPage();
         fctNewTurn();
 

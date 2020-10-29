@@ -26,7 +26,7 @@ function pageInit()
     // document.getElementsByClassName("tab")[0].style.display = "none";
     document.getElementsByClassName("clNavBar")[0].style.display = "none";
     fctShowSetupScreen(0);
-    
+
     // Populate start screens
     var itm = document.getElementById("idTmpColor");
     var cln;
@@ -324,6 +324,7 @@ function fctLoadGame()
 
     /* Victory points */
     vpInit();
+    fctInfluInit();
     var clVPCount = document.getElementsByClassName("clVPCount");
     for( i=0; i< gSetupNbPlayer; i++)
         clVPCount[i].textContent = (fctLoadItem("VP"+i)*1).pad(2);

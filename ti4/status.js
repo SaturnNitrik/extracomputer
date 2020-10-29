@@ -60,6 +60,26 @@ function fctVPEdit(el, edit)
     fctSaveVP(index, newValue);
 }
 
+function fctInfluInit()
+{
+    //Set player Influence
+    var clPlayerCase = document.getElementsByClassName("clInfluPlayerCase");
+    for(idx = 0; idx < clPlayerCase.length; idx++)
+    {
+        if(idx < gSetupNbPlayer)
+            clPlayerCase[idx].style.display = "inline-table";
+        else
+            clPlayerCase[idx].style.display = "none";
+    }
+    
+    var clFactionIcon = document.getElementsByClassName("clInfluFactionIcon");
+    for( i=0; i<gSetupNbPlayer ; i++)
+    {
+        clPlayerCase[i].style.borderColor = playerColorList[gPlayerData[i][PLAYER_COLOR]];
+        clFactionIcon[i].style.backgroundImage = 'url('+factionList[gPlayerData[i][PLAYER_FACTION]][FACTION_ICON]+')';
+    }
+}
+
 function fctStatusPhase()
 {  
     var i,j;
