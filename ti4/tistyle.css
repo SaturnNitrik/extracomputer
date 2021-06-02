@@ -1321,7 +1321,7 @@ button:disabled{
     background-color: rgba(1, 1, 1, 0.7);
 }
 
-.filterDivLaw, .filterDivOther, .filterDivObj {
+.filterDivLaw, .filterDivOther, .filterDivStrategy, .filterDivObj {
     float: left;
     background-color: #112B9B;
     color: #ffffff;

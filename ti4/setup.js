@@ -142,6 +142,15 @@ function fctSwitchLang(l)
         j++;
     }
     
+    /* Update Strategy Cards */
+    itm = document.getElementById("idModalStrategy").getElementsByClassName("filterDivStrategy");
+    j=0;
+    for(i=1; i < itm.length; i++)
+    {
+        itm[i].textContent = gStrategy[j][gLang];
+        j++;
+    }
+
     /* Update Proposal */
     itm = document.getElementById("idModalOther").getElementsByClassName("filterDivOther");
     j=0;

@@ -25,13 +25,14 @@ const W_AGAINST = 17;
 const W_ADD_PLANET = 18;
 const W_ADD_LAW = 19;
 const W_ADD_OBJECTIVE = 20;
-const W_ADD_PROPOSAL = 21;
-const W_CAST_VOTE = 22;
-const W_ABSTAIN = 23;
-const W_PHASE_END = 24;
-const W_CONCLUSION = 25;
-const W_CHOOSEACTION = 26;
-const W_RESOLVEACTIONS = 27;
+const W_ADD_STRATEGY = 21;
+const W_ADD_PROPOSAL = 22;
+const W_CAST_VOTE = 23;
+const W_ABSTAIN = 24;
+const W_PHASE_END = 25;
+const W_CONCLUSION = 26;
+const W_CHOOSEACTION = 27;
+const W_RESOLVEACTIONS = 28;
 
 var gWord = [
   ["Set player", "", "Spieler Auswahl", "Выберите игрока"],
@@ -55,6 +56,7 @@ var gWord = [
   ["Add Planet", "Ajouter Planète", "Füge Planeten hinzu", "Добавить планету"],
   ["Add Law", "Ajouter Loi", "Füge Gesetz hinzu", "Добавить закон"],
   ["Add Objective", "Ajouter Objectif", "Add Objective", "Добавить цель"],
+  ["Add Strategy", "Add Strategy", "Add Strategy", "Add Strategy"],
   ["Add Proposal", "Ajouter Proposition", "Add Proposal", "Добавить предложение"],
   [", cast your vote", " doit voter", ", gebe deine Stimme ab", "проголосуйте"],
   ["Abstain", "Abstention", "Enthalten", "Воздержаться"],
