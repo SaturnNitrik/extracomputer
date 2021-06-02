@@ -21,7 +21,7 @@ var strategyList = [
 ["Leadership", "Gouvern.", "Führungsstärke", "Лидерство", 255, STRATEGY_AVAILABLE, "red",0],
 ["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия", 255, STRATEGY_AVAILABLE, "orange",0],
 ["Politics", "Politique", "Politik", "Политика", 255, STRATEGY_AVAILABLE, "yellow",0],
-["Construct.", "Construct.", "Infrastruktur", "Строительство", 255, STRATEGY_AVAILABLE, "green",0],
+["Construction", "Construction", "Infrastruktur", "Строительство", 255, STRATEGY_AVAILABLE, "green",0],
 ["Trade", "Commerce", "Handel", "Торговля", 255, STRATEGY_AVAILABLE, "Cyan",0],
 ["Warfare", "Guerre", "Kriegsführung", "Война", 255, STRATEGY_AVAILABLE, "dodgerBlue",0],
 ["Technology", "Techno.", "Technologie", "Исследования", 255, STRATEGY_AVAILABLE, "blue",0],

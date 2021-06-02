@@ -111,7 +111,6 @@ var gPlanet = [
 ["[0.0.0]", "homeworld"],
 ];
 
-
 var gLaw = [
 ["Anti-Intellectual Revolution", "Révolution Anti-Intellectuelle", "Antiintellektuelle Revolution", "Анти-технологическая революция"],
 ["Articles of War",              "Articles of War", "Articles of War", "Articles of War"],
@@ -196,6 +195,17 @@ var gSecretObj = [
 ["Threaten Enemies", "Menacez vos ennemies", "Bedränge den Feind", "Угрожайте врагам"],
 ["Turn Their Fleets to Dust", "Réduisez leurs flottes en cendres", "Vernichte Ihre Flotten", "Обратите флот в пыль"],
 ["Unveil Flagship", "Révélez un Vaisseau Amiral", "Enthülle dein Flagschiff", "Покажите флагман в деле"],
+];
+
+var gStrategy = [
+["Leadership", "Gouvern.", "Führungsstärke", "Лидерство"],
+["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия"],
+["Politics", "Politique", "Politik", "Политика"],
+["Construction", "Construction", "Infrastruktur", "Строительство"],
+["Trade", "Commerce", "Handel", "Торговля"],
+["Warfare", "Guerre", "Kriegsführung", "Война"],
+["Technology", "Techno.", "Technologie", "Исследования"],
+["Imperial", "Intrigue", "Imperium", "Экспансия"],
 ];
 
 const FACTION_NAME_EN = 0;

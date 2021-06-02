@@ -790,6 +790,7 @@
             <button class="clVoteType" onclick="FctNewVote('ElectPlanet')"><span class="_en">Elect Planet</span><span class="_fr">Elire une planète</span><span class="_de">Wähle einen Planeten</span><span class="_ru">Выбор планеты</span></button>
             <button class="clVoteType" onclick="FctNewVote('ElectLaw')"><span class="_en">Elect Law</span><span class="_fr">Elire une loi</span><span class="_de">Wähle Gesetz</span><span class="_ru">Выбор закона</span></button>
             <button class="clVoteType" onclick="FctNewVote('ElectObj')"><span class="_en">Elect Secret Objective</span><span class="_fr">Elire un objectif secret</span><span class="_de">Wähle ein geheimes Ziel</span><span class="_ru">Выбор секретной цели</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ElectStrategy')"><span class="_en">Elect Strategy Card</span><span class="_fr">Elect Strategy Card</span><span class="_de">Elect Strategy Card</span><span class="_ru">Elect Strategy Card</span></button>
             <button class="clVoteType" onclick="FctNewVote('ElectOther')"><span class="_en">Elect other proposal</span><span class="_fr">Elire une proposition autre</span><span class="_de">Wähle einen anderen Vorschlag</span><span class="_ru">Выдвинуть другое предложение</span></button>
             <br />
             <button class="clVoteType" onclick="fctAgendaNext()"><span class="_en">Skip</span><span class="_fr">Passer</span><span class="_de">Nächster</span><span class="_ru">Пропустить</span></button>
@@ -1309,6 +1310,18 @@
         </div>
     </div>
     
+    <div id="idModalStrategy" class="modal">
+        <div class="modalcontent">
+            <h2 class="clModal classCenter _en">Select a strategy card</h2>
+            <h2 class="clModal classCenter _fr">Select a strategy card</h2>
+            <h2 class="clModal classCenter _de">Select a strategy card</h2>
+            <h2 class="clModal classCenter _ru">Select a strategy card</h2>
+            <div id="idStrategyList" class="classPlanetList">
+                <div class="filterDivStrategy showflex" onclick="fctProposal(this, gWord[W_ADD_STRATEGY][gLang])">TEMPLATE</div>
+            </div>
+        </div>
+    </div>
+
     <div id="idModalOther" class="modal">
         <div class="modalcontent">
             <h2 class="clModal classCenter _en">Select a proposal</h2>

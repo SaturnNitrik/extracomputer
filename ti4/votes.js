@@ -59,6 +59,17 @@ function votesInit()
     /* hide template */
     itm.style.display = "none";
     
+    /* Load Strategy Cards */
+    itm = document.getElementById("idModalStrategy").getElementsByClassName("filterDivStrategy")[0];
+    for(i=0; i < gStrategy.length; i++)
+    {
+        cln = itm.cloneNode(true);
+        cln.textContent = gStrategy[i][gLang];
+        document.getElementById("idStrategyList").appendChild(cln);
+    }
+    /* hide template */
+    itm.style.display = "none";
+
     /* Load Proposal */
     itm = document.getElementById("idModalOther").getElementsByClassName("filterDivOther")[0];
     for(i=0; i < gGenericChoice.length; i++)
@@ -76,6 +87,7 @@ function votesInit()
 var idModalPlanet = document.getElementById('idModalPlanet');
 var idModalLaw = document.getElementById('idModalLaw');
 var idModalObj = document.getElementById('idModalObj');
+var idModalStrategy = document.getElementById('idModalStrategy');
 var idModalOther = document.getElementById('idModalOther');
 
 // Get the button that opens the modal
@@ -238,7 +250,19 @@ function FctNewVote(voteType)
                 w3RemoveClass(x[i], "displayNone");
             }
             break;
+        
+        case 'ElectStrategy':
+            classVoteFrame[0].style.display = "table-cell";
+            classVoteName[0].textContent = gWord[W_ADD_STRATEGY][gLang];
+            classVoteTotalInfluence[0].textContent = "+";
             
+            var x = document.getElementsByClassName("filterDiv");
+
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "displayNone");
+            }
+            break;
+
         default:
             classVoteFrame[0].style.display = "table-cell";
             classVoteName[0].textContent = gWord[W_ADD_PROPOSAL][gLang];
@@ -291,6 +315,11 @@ function FctSelectVote(evt)
     else if(evt.getElementsByClassName("classVoteName")[0].textContent == gWord[W_ADD_OBJECTIVE][gLang])
     {
         idModalObj.style.display = "block";
+        gNewVoteElement = evt;
+    }
+    else if(evt.getElementsByClassName("classVoteName")[0].textContent == gWord[W_ADD_STRATEGY][gLang])
+    {
+        idModalStrategy.style.display = "block";
         gNewVoteElement = evt;
     }
     else if(evt.getElementsByClassName("classVoteName")[0].textContent == gWord[W_ADD_PROPOSAL][gLang])
@@ -503,6 +532,7 @@ function fctProposal(el, type)
     idModalPlanet.style.display = "none";
     idModalLaw.style.display = "none";
     idModalObj.style.display = "none";
+    idModalStrategy.style.display = "none";
     idModalOther.style.display = "none";
     
     /*Set name of the proposal */
