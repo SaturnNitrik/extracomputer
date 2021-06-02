@@ -17,25 +17,26 @@ const STRATEGY_PLAYED = 2;
 const STRATEGY_PASSED = 3;
 const STRATEGY_SECONDPICK = 100;
 var strategyList = [
-["idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", 255, STRATEGY_DISABLED, "red", 0],
-["Leadership", "Gouvern.", "Führungsstärke", "Лидерство", 255, STRATEGY_AVAILABLE, "red",0],
-["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия", 255, STRATEGY_AVAILABLE, "orange",0],
-["Politics", "Politique", "Politik", "Политика", 255, STRATEGY_AVAILABLE, "yellow",0],
-["Construction", "Construction", "Infrastruktur", "Строительство", 255, STRATEGY_AVAILABLE, "green",0],
-["Trade", "Commerce", "Handel", "Торговля", 255, STRATEGY_AVAILABLE, "Cyan",0],
-["Warfare", "Guerre", "Kriegsführung", "Война", 255, STRATEGY_AVAILABLE, "dodgerBlue",0],
-["Technology", "Techno.", "Technologie", "Исследования", 255, STRATEGY_AVAILABLE, "blue",0],
-["Imperial", "Intrigue", "Imperium", "Экспансия", 255, STRATEGY_AVAILABLE, "purple",0],
+ ["idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", 255, STRATEGY_DISABLED, "red", 0],
+ ["Leadership", "Gouvern.", "Führungsstärke", "Лидерство", "Liderazgo", 255, STRATEGY_AVAILABLE, "red", 0],
+ ["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия", "Diplomacia", 255, STRATEGY_AVAILABLE, "orange", 0],
+ ["Politics", "Politique", "Politik", "Политика", "Política", 255, STRATEGY_AVAILABLE, "yellow", 0],
+ ["Construct.", "Construct.", "Infrastruktur", "Строительство", "Construcción", 255, STRATEGY_AVAILABLE, "green", 0],
+ ["Trade", "Commerce", "Handel", "Торговля", "Comercio", 255, STRATEGY_AVAILABLE, "Cyan", 0],
+ ["Warfare", "Guerre", "Kriegsführung", "Война", "Guerra", 255, STRATEGY_AVAILABLE, "dodgerBlue", 0],
+ ["Technology", "Techno.", "Technologie", "Исследования", "Tecnología", 255, STRATEGY_AVAILABLE, "blue", 0],
+ ["Imperial", "Intrigue", "Imperium", "Экспансия", "Imperialismo", 255, STRATEGY_AVAILABLE, "purple", 0]
 ];
 const STRATEGY_NAME_EN = 0;
 const STRATEGY_NAME_FR = 1;
 const STRATEGY_NAME_GE = 2;
 const STRATEGY_NAME_RU = 3;
+const STRATEGY_NAME_SP = 4;
 var   STRATEGY_NAME =  0;
-const STRATEGY_PLAYER = 4;
-const STRATEGY_STATUS = 5;
-const STRATEGY_COLOR = 6;
-const STRATEGY_TG = 7;
+const STRATEGY_PLAYER = 5;
+const STRATEGY_STATUS = 6;
+const STRATEGY_COLOR = 7;
+const STRATEGY_TG = 8;
 
 var gActivePhase = 255;
 const PHASE_GALAXY = 1;
