@@ -173,14 +173,14 @@ var gSecretObj = [
 ];
 
 var gStrategy = [
-["Leadership", "Gouvern.", "Führungsstärke", "Лидерство"],
-["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия"],
-["Politics", "Politique", "Politik", "Политика"],
-["Construction", "Construction", "Infrastruktur", "Строительство"],
-["Trade", "Commerce", "Handel", "Торговля"],
-["Warfare", "Guerre", "Kriegsführung", "Война"],
-["Technology", "Techno.", "Technologie", "Исследования"],
-["Imperial", "Intrigue", "Imperium", "Экспансия"],
+["Leadership", "Gouvern.", "Führungsstärke", "Лидерство", "Liderazgo"],
+["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия", "Diplomacia"],
+["Politics", "Politique", "Politik", "Политика", "Política"],
+["Construction", "Construction", "Infrastruktur", "Строительство", "Construcción"],
+["Trade", "Commerce", "Handel", "Торговля", "Comercio"],
+["Warfare", "Guerre", "Kriegsführung", "Война", "Guerra"],
+["Technology", "Techno.", "Technologie", "Исследования", "Tecnología"],
+["Imperial", "Intrigue", "Imperium", "Экспансия", "Imperialismo"],
 ];
 
 const FACTION_NAME_EN = 0;
