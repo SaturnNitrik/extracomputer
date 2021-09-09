@@ -6,6 +6,7 @@ var gClockRun = 0;
 var gGameDuration = 0;
 var gLastActivity = 0;
 var gCurrentPlayerTimer = 0;
+var gDecisionTimer = 10;
 
 function pageInit()
 {
@@ -49,34 +50,35 @@ function pageInit()
 
     /* Check saved data */
     if(!fctCheckSavedData())
-        document.getElementById("idContinueButton").disabled = true;
+      document.getElementById("idContinueButton").disabled = true;
 
     flexFont();
 
     // Language
     gLang = fctLoadItem("gLang");
     if(gLang)
-        fctSwitchLang(gLang);
+      fctSwitchLang(gLang);
     else
-        fctSwitchLang("_en");
+      fctSwitchLang("_en");
 
     /* Load news */
     if( cNewsShow == true)
-        document.getElementById("idNewsWindow").innerHTML = cNews;
+      document.getElementById("idNewsWindow").innerHTML = cNews;
     else
-        document.getElementById("idNewsWindow").style.display = false;
+      document.getElementById("idNewsWindow").style.display = false;
 
     /* Offline / online version */
     if(cOFFLINE)
     {
-        fctDisplayAll("clOnline", "none");
-        fctDisplayAll("clOffline", "");
+      fctDisplayAll("clOnline", "none");
+      fctDisplayAll("clOffline", "");
     }
     else
     {
-        fctDisplayAll("clOnline", "");
-        fctDisplayAll("clOffline", "none");
+      fctDisplayAll("clOnline", "");
+      fctDisplayAll("clOffline", "none");
     }
+    fctDecision();
 }
 
 function fctStartMenu()
@@ -137,69 +139,95 @@ function fctClock(mode)
         gLastActivity = gGameDuration;
 }
 
+function fctDecision()
+{
+  gDecisionTimer = document.getElementById("idOptionDecisionTimer").value;
+  document.getElementById("idDecisionValue").textContent = gDecisionTimer;
+}
+
 function fctOneSecond()
 {
-    if(gClockRun == 1)
+  if(gClockRun == 1)
+  {
+    gGameDuration++;
+    gCurrentPlayerTimer++;
+    gDecisionTimer--;
+
+    if(gDecisionTimer == 5)
     {
-        gGameDuration++;
-        gCurrentPlayerTimer++;
+      document.getElementById("idDecisionValue").style.color = "red";
     }
-
-    fctTransformTime(gGameDuration);
-
-    var clock = fctTransformTime(gGameDuration);
-
-    if(gClockRun == 1)
-        document.getElementById("idGameDuration").textContent = clock;
-    else if(gClockRun == 0)
+    // Wait 4s as 0, then reset
+    else if(gDecisionTimer == -3)
     {
-        document.getElementById("idGameDuration").textContent = clock;
-        gClockRun--;
+      document.getElementById("idDecisionValue").style.color = "";
+      fctDecision();
+    }
+  }
+
+  var clock = fctTransformTime(gGameDuration);
+
+  if(gClockRun == 1)
+  {
+    document.getElementById("idGameDuration").textContent = clock;
+
+    if(gDecisionTimer > 0)
+    {
+      document.getElementById("idDecisionValue").textContent = gDecisionTimer;
+      document.getElementById("idDecisionTimer").style.width= ((gDecisionTimer/document.getElementById("idOptionDecisionTimer").value)*100) + "%";
     }
     else
     {
-        document.getElementById("idGameDuration").textContent = "-Pause-";
-        gClockRun = 0;
+      document.getElementById("idDecisionValue").textContent = "Decide !";
     }
-    
-    /* Toggle active player */
-    var ph = fctGetPhase();
-    if( ph == PHASE_ACTION)
-    {
-        var c = document.getElementsByClassName("classStrategyFrameCurrent");
-        if(c.length > 0)
-            if(gGameDuration%2)
-                c[0].getElementsByClassName("classStrategyRankText")[0].style.opacity = 0.3;
-            else
-                c[0].getElementsByClassName("classStrategyRankText")[0].style.opacity = 1;
+  }
+  else if(gClockRun == 0)
+  {
+    document.getElementById("idGameDuration").textContent = clock;
+    gClockRun--;
+  }
+  else
+  {
+    document.getElementById("idGameDuration").textContent = "-Pause-";
+    gClockRun = 0;
+  }
 
-        if(document.getElementById("idPlyerTimerCheck").checked)
-            var t = gCurrentPlayerTimer;
-        else
-            var t = gCurrentPlayerTimer + gPlayerData[strategyList[gActivePlayer][STRATEGY_PLAYER]][PLAYER_CLOCK];
-            
-        document.getElementById("idFactoinClk").textContent = fctTransformTime(t);
-        
-    }
-    if(ph == PHASE_GALAXY)
-    {
-        /* Chnage galaxy animation */
-        document.getElementById("idGalaxyAnim").src = "ti4/img/g" + (((gGameDuration-2)%7)+1) + ".png";
-        
-        /* Disable the inactivity timer */
-        gLastActivity = gGameDuration;
-    }
-    
-    /* Check inactivity */
-    if( (gGameDuration - gLastActivity) == (document.getElementById("idOptionInactivityTimer").value*60))
-        fctInactivity(1);
-    else if( (gGameDuration - gLastActivity) == (document.getElementById("idOptionInactivityTimer").value*60*2))
-    {
-        /* Increase timer to not loop call this function */
-        gGameDuration++;
-        fctInactivity(2);
-    }
-    
+  /* Toggle active player */
+  var ph = fctGetPhase();
+  if( ph == PHASE_ACTION)
+  {
+    var c = document.getElementsByClassName("classStrategyFrameCurrent");
+    if(c.length > 0)
+      if(gGameDuration%2)
+        c[0].getElementsByClassName("classStrategyRankText")[0].style.opacity = 0.3;
+      else
+        c[0].getElementsByClassName("classStrategyRankText")[0].style.opacity = 1;
+
+    if(document.getElementById("idPlyerTimerCheck").checked)
+      var t = gCurrentPlayerTimer;
+    else
+      var t = gCurrentPlayerTimer + gPlayerData[strategyList[gActivePlayer][STRATEGY_PLAYER]][PLAYER_CLOCK];
+
+    document.getElementById("idFactoinClk").textContent = fctTransformTime(t);
+  }
+  if(ph == PHASE_GALAXY)
+  {
+    /* Chnage galaxy animation */
+    document.getElementById("idGalaxyAnim").src = "ti4/img/g" + (((gGameDuration-2)%7)+1) + ".png";
+
+    /* Disable the inactivity timer */
+    gLastActivity = gGameDuration;
+  }
+
+  /* Check inactivity */
+  if( (gGameDuration - gLastActivity) == (document.getElementById("idOptionInactivityTimer").value*60))
+    fctInactivity(1);
+  else if( (gGameDuration - gLastActivity) == (document.getElementById("idOptionInactivityTimer").value*60*2))
+  {
+    /* Increase timer to not loop call this function */
+    gGameDuration++;
+    fctInactivity(2);
+  }
 }
 
 function fctTransformTime(t)

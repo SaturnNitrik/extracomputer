@@ -264,19 +264,21 @@
             <h2 class="clModal classCenter _fr">Paramètres du joueur</h2>
             <h2 class="clModal classCenter _de">Spiel Einstellungen </h2>
             <h2 class="clModal classCenter _ru">Параметры игрока</h2>
-      <h2 class="clModal classCenter _sp">Parametros de Juego</h2>
+            <h2 class="clModal classCenter _sp">Parametros de Juego</h2>
             <br/>
             <h3 class="clModal classCenter _en">Units Color</h3>
             <h3 class="clModal classCenter _fr">Couleur des unités</h3>
             <h3 class="clModal classCenter _de">Farbe der Einheiten</h3>
             <h3 class="clModal classCenter _ru">Цвет фигурок отрядов</h3>
-      <h3 class="clModal classCenter _sp">Color de las Unidades</h3>
+            <h3 class="clModal classCenter _sp">Color de las Unidades</h3>
             <div id="idColorList" class="clColorList">
                 <div id="idTmpColor" class="clSetColor show" onclick="fctSelectItem(this)"></div>
             </div>
             <br/>
-            <h3 class="clModal classCenter">Faction</h3>
-      <h3 class="clModal classCenter _sp">Facción</h3>
+            <h3 class="clModal classCenter _en">Faction</h3>
+            <h3 class="clModal classCenter _fr">Faction</h3>
+            <h3 class="clModal classCenter _de">Faction</h3>
+            <h3 class="clModal classCenter _sp">Facción</h3>
             <div id="idFactionList" class="clFactionList">
                 <div  id="idTmpFaction" class="clSetFaction show" onclick="fctSelectItem(this)">TEMPLATE</div>
             </div>
@@ -457,26 +459,31 @@
     <!-- NAV MENU -->
     <!-- --------------------------------------------- -->
     <div class="clNavBar">
-        <span class="clClk clNavItem" onclick="fctClock('toggle')">
-            <span id="idGameDuration" class= "clTime">0</span>
-        </span>
-        <span id="idPhaseFrame"  class="clPhase clNavItem">Loading...</span>
-        <span class="clNavItem clAbout dropdown" id="idAboutTabButton" onmouseover="resetSubMenu('idAboutMenu')">
-          <div  id="idAboutMenu" class="dropdown-content">
-            <a onclick="showOptionPanel()">Options</a>
-            <a onclick="FctAbout('infoFAQ')"><span class="_en">F.A.Q</span><span class="_fr">F.A.Q</span><span class="_de">F.A.Q</span><span class="_ru">Часто задаваемые вопросы</span><span class="_sp">F.A.Q</span></a>
-            <a onclick="FctAbout('infoAbout')"><span class="_en">About</span><span class="_fr">A propos</span><span class="_de">Über</span><span class="_ru">О приложении</span><span class="_sp">Acerca de</span></a>
-            <a onclick="FctAbout('infoChangeLog')"><span class="_en">Changelog</span><span class="_fr">Versions</span><span class="_de">Änderungen</span><span class="_ru">Список изменений</span><span class="_sp">Versión</span></a>
-            <a onclick="parent.open('http://extraboard.net/contact/')">Contact</a>
+      <div class="clClkBar clNavItem">
+        <span class="clClk ">
+          <span id="idGameDuration" class= "clTime" onclick="fctClock('toggle')">0</span>
+          <div class="progress" onclick="fctDecision()">
+            <div id="idDecisionTimer" class="progress-bar" role="progressbar" style="width:70%"></div>
+            <div id="idDecisionValue" class= "progressValue">70</div>
           </div>
         </span>
+      </div>
+      <span id="idPhaseFrame"  class="clPhase clNavItem">Loading...</span>
+      <span class="clNavItem clAbout dropdown" id="idAboutTabButton" onmouseover="resetSubMenu('idAboutMenu')">
+        <div  id="idAboutMenu" class="dropdown-content">
+          <a onclick="showOptionPanel()">Options</a>
+          <a onclick="FctAbout('infoFAQ')"><span class="_en">F.A.Q</span><span class="_fr">F.A.Q</span><span class="_de">F.A.Q</span><span class="_ru">Часто задаваемые вопросы</span><span class="_sp">F.A.Q</span></a>
+          <a onclick="FctAbout('infoAbout')"><span class="_en">About</span><span class="_fr">A propos</span><span class="_de">Über</span><span class="_ru">О приложении</span><span class="_sp">Acerca de</span></a>
+          <a onclick="FctAbout('infoChangeLog')"><span class="_en">Changelog</span><span class="_fr">Versions</span><span class="_de">Änderungen</span><span class="_ru">Список изменений</span><span class="_sp">Versión</span></a>
+          <a onclick="parent.open('http://extraboard.net/contact/')">Contact</a>
+        </div>
+      </span>
     </div>
 
     <!-- --------------------------------------------- -->
     <!-- STRATEGY TRACKER TAB -->
     <!-- --------------------------------------------- -->
     <div id="idTurnOrderTab" class="tabcontent">
-        
         <div  class="classCenter">
             <h2 id="idPlayerToChoose" type="text" value="t"></h2>
         </div>
@@ -1331,7 +1338,7 @@
             <button id="idAgendaNext" class="clMarginAutoOnly" onclick="fctAgendaNext()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span></button>
         </div>
     </div>
-    
+
     <div id="idModalPlanet" class="modal">
         <div class="modalcontent">
             <h2 class="clModal classCenter _en">Select a planet</h2>
@@ -1351,7 +1358,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="idModalLaw" class="modal">
         <div class="modalcontent">
             <h2 class="clModal classCenter _en">Select a law</h2>
@@ -1364,7 +1371,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="idModalObj" class="modal">
         <div class="modalcontent">
             <h2 class="clModal classCenter _en"> Select a revealed Secret Objective </h2>
@@ -1377,7 +1384,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="idModalStrategy" class="modal">
         <div class="modalcontent">
             <h2 class="clModal classCenter _en">Select a strategy card</h2>
@@ -1403,11 +1410,11 @@
             </div>
         </div>
     </div>
-    
+
     <!-- --------------------------------------------- -->
     <!-- BATTLE SIMULATOR TAB -->
     <!-- --------------------------------------------- -->
-    
+
     <div id="SpaceBattle" class="tabcontent">
         <table>
           <tr>
@@ -1419,7 +1426,7 @@
         </table>
     
     </div>
-    
+
     <!-- --------------------------------------------- -->
     <!-- END GAME TAB -->
     <!-- --------------------------------------------- -->
@@ -1559,6 +1566,25 @@
                     <span class="_de">Wenn nicht angewählt, wird die Gesamtzeit pro Spieler angezeigt.</span>
                     <span class="_ru">Если отключено, будет показано общее время на ходы.</span>
                     <span class="_sp">Si no esta marcado, el tiempo total por jugador se mostrará.</span>
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="clLine">
+                <div class="clModalText">
+                    <span class="clBold _en">Decision bar (seconds)</span>
+                    <span class="clBold _fr">Barre de décision(secondes)</span>
+                    <span class="clBold _de">Decision timer (seconds)</span>
+                    <span class="clBold _ru">Decision timer (seconds)</span>
+                    <span class="clBold _sp">Decision timer (seconds)</span>
+                    <input id="idOptionDecisionTimer"  class="clFloatRight clNumberInput" type="number" min="20" max="180" value="90"/>
+                    <br/>
+                    <span class="_en">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
+                    <span class="_fr">Barre de progrès pour empécher l'analysis-paralysis. Periodique ou cliquer pour relancer.</span>
+                    <span class="_de">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
+                    <span class="_ru">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
+                    <span class="_sp">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
                     <br/>
                 </div>
             </div>

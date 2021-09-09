@@ -23,6 +23,7 @@ var gSpeakerPlayerIdx = 255;
 var gPreviousSpeaker = 255;
 var gSetupNbPlayer = 255;
 var gVPBarStyle = "flex";
+var gDecisionTimeLimit = 90;
 
 
 function fctStartScreen(entry)
@@ -41,7 +42,7 @@ function fctStartScreen(entry)
         fctLoadGame();
         
         document.getElementsByClassName("header")[0].style.display = "flex";
-        document.getElementsByClassName("clNavBar")[0].style.display = "block";
+        document.getElementsByClassName("clNavBar")[0].style.display = "flex";
     }
     else if ( (entry == '_fr') || (entry == '_en') || (entry == '_de') || (entry == '_ru') || (entry == "_sp"))
     {
@@ -558,6 +559,8 @@ function fctShowVPBar(el)
 
 function fctCloseOptions()
 {
+    fctDecision();
+    
     fctSwitchOptionPanel();
     
     /* init interface */

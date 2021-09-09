@@ -463,43 +463,48 @@ input:checked + .checker:before {
 }
 
 .clVPCount{
-    font-stretch: expanded;
-    cursor: pointer;
+  font-stretch: expanded;
+  cursor: pointer;
 }
 
 .clArrow2{
-    width: 1rem;
-    height: 1rem;
-    margin-top: 0.8rem;
-    margin-left: 0.1rem;
-    margin-right: 0.02rem;
-    display: none;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.8rem;
+  margin-left: 0.1rem;
+  margin-right: 0.02rem;
+  display: none;
 }
 
 /* NAVBAR ********************************************/
 .clNavBar {
-    overflow: hidden;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    border-right: transparent;
-    border-left: transparent;
+  overflow: hidden;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: transparent;
+  border-left: transparent;
+  display: inline;
+  justify-content: space-between;
 }
 
 .clNavItem {
-    display: inline-block;
-    width: 33vw;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  display: block;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.clClkBar{
+  display: inline-block;
 }
 
 /* TABS ********************************************/
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    border-right: transparent;
-    border-left: transparent;
+  overflow: hidden;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: transparent;
+  border-left: transparent;
 }
 
 /* Style the buttons inside the tab */
@@ -546,10 +551,75 @@ input:checked + .checker:before {
 
 .clTime{
     vertical-align: middle;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-family: 'Share Tech Mono', monospace;
-    line-height: 4vh;
-    margin-left: 20px;
+    margin-left: 5px;
+}
+
+.clDecisionBar{
+  display: inline;
+  font-size: 1.2em;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 4vh;
+  width: 30%
+}
+
+.clDecisionBarIn{
+  border-radius:16px;
+  background-color:white;
+}
+
+
+.progress{
+  display: inline-flex;
+  width: inherit;
+  height:20px;
+  overflow:hidden;
+  background-color:none;
+  border-radius:6px;
+  border-color:white;
+  border-style:solid;
+  border-width:1px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  transform: rotate(180deg);
+}
+
+.progressValue{
+  width: inherit;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  text-align: center;
+  transform: rotate(180deg);
+}
+
+.progress-bar{
+  float:right;
+  width:0%;
+  height:100%;
+  font-size:12px;
+  line-height:20px;
+  color:#fff;
+  text-align:center;
+  background-color:white;
+  -webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);
+  -webkit-transition:width .6s ease;
+  -o-transition:width .6s ease;
+  transition:width .6s ease
+}
+
+.progress-bar-striped,.progress-striped .progress-bar{
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    -webkit-background-size:40px 40px;background-size:40px 40px
+}
+
+.progress-bar.active,.progress.active .progress-bar{
+  -webkit-animation:progress-bar-stripes 2s linear infinite;
+  -o-animation:progress-bar-stripes 2s linear infinite;
+  animation:progress-bar-stripes 2s linear infinite
 }
 
 .clTime:hover{ background-color: #ddd;}
@@ -560,39 +630,34 @@ input:checked + .checker:before {
     font-family: "Audiowide";
     font-size: x-large;
     line-height: 4vh;
+    flex-grow: 4;
     text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    width: 80%
 }
 
 .clAbout{
-    background-image: url(img/icon_white.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 5vw;
-    height: 4vh;
-    float: right;
+  background-image: url(img/icon_white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  flex-grow: 1;
 }
 
 .clAbout:hover{
-    background-color: transparent;
-    //opacity: 0.5;
+  background-color: transparent;
 }
 
 .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .dropdown {
-    display: inline-block;
-    text-shadow: none;
-    font-family: "Audiowide";
+  display: inline-block;
+  text-shadow: none;
+  font-family: "Audiowide";
 }
 
 

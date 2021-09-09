@@ -57,6 +57,7 @@ var gWord = [
     ["Add Planet", "Ajouter Planète", "Füge Planeten hinzu", "Добавить планету", "Añadir Planeta"],
     ["Add Law", "Ajouter Loi", "Füge Gesetz hinzu", "Добавить закон", "Añadir Ley"],
     ["Add Objective", "Ajouter Objectif", "Add Objective", "Добавить цель", "Añadir Objetivo"],
+    ["Add Strategy", "Ajouter Strategie", "Add Strategy", "Add Strategy", "Add Strategy"],
     ["Add Proposal", "Ajouter Proposition", "Add Proposal", "Добавить предложение", "Añadir Propuesta"],
     [", cast your vote", " doit voter", ", gebe deine Stimme ab", "проголосуйте", "Haz tu Voto"],
     ["Abstain", "Abstention", "Enthalten", "Воздержаться", "Abstención"],
