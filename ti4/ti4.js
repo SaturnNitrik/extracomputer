@@ -236,13 +236,14 @@ var factionList = [
 ["Xxcha Kingdoms", "Royaume Xxcha", "Xxcha Königreich", "Королевство Ззча", "El Reino de Xxcha", IMG_FOLDER + "xxcha.png", "", "Xxcha"],
 ["Yin Brotherhood", "Fraternité de Yin", "Yin Brunderschaft", "Братство Инь", "La Hermandad del Yin", IMG_FOLDER + "yin.png", "", "Yin"],
 ["Yssaril Tribes", "Tribus Yssaril", "Yssaril-Stämme", "Племена Иссарилов", "Las Tribus de Yssaril", IMG_FOLDER + "yssrail.png", "", "Yssaril"],
-["Argent Flight", "Argent Flight", "Argent Flight", "Argent Flight", "La Bandada Argéntea", IMG_FOLDER + "argent.png", "", "Argent"],
-["Empyrean", "Empyrean", "Empyrean", "Empyrean", "Los Empíreos", IMG_FOLDER + "empyrean.png", "", "Empyrean"],
-["Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", "Los Genechiceros de Mahact", IMG_FOLDER + "mahact.png", "", "Mahact"],
-["Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "La Alianza Naaz-Rokha", IMG_FOLDER + "naaz.png", "", "Naaz"],
-["The Nomad", "The Nomad", "The Nomad", "The Nomad", "Los Nomadas", IMG_FOLDER + "nomad.png", "", "Nomad"],
-["Titans of Ul", "Titans of Ul", "Titans of Ul", "Titans of Ul", "Los Titanes de Ul", IMG_FOLDER + "titans.png", "", "Titans"],
-["Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "La Cábala de Vuil'Raith", IMG_FOLDER + "vuil.png", "", "Vuil"],
+["Argent Flight", "Nuée Argentée", "Argent Flight", "Argent Flight", "La Bandada Argéntea", IMG_FOLDER + "argent.png", "", "Argent"],
+["Empyrean", "Empyréens", "Empyrean", "Empyrean", "Los Empíreos", IMG_FOLDER + "empyrean.png", "", "Empyrean"],
+["Mahact Gene-Sorcerers", "Sorciers Mahact", "Mahact Gene-Sorcerers", "Mahact Gene-Sorcerers", "Los Genechiceros de Mahact", IMG_FOLDER + "mahact.png", "", "Mahact"],
+["Naaz-Rokha Alliance", "Alliance Naaz-Rokha", "Naaz-Rokha Alliance", "Naaz-Rokha Alliance", "La Alianza Naaz-Rokha", IMG_FOLDER + "naaz.png", "", "Naaz"],
+["The Nomad", "Le Nomade", "The Nomad", "The Nomad", "Los Nomadas", IMG_FOLDER + "nomad.png", "", "Nomad"],
+["Titans of Ul", "Titans d'Ul", "Titans of Ul", "Titans of Ul", "Los Titanes de Ul", IMG_FOLDER + "titans.png", "", "Titans"],
+["Vuil'Raith Cabal", "Cabale de Vuil'Raith", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "La Cábala de Vuil'Raith", IMG_FOLDER + "vuil.png", "", "Vuil"],
+["The Council Keleres", "Le Conseil Keleres", "The Council Keleres", "The Council Keleres", "The Council Keleres", IMG_FOLDER + "keleres.png", "", "Keleres"],
 ];
 
 const HACAN_FACTION = 4;
@@ -250,6 +251,7 @@ const NAALU_FACTION = 9;
 const NEKRO_FACTION = 10;
 const WINNU_FACTION = 13;
 const POK_FACTION = 17;
+const CODEX_FACTION = 24;
 
 
 var playerColorList = [

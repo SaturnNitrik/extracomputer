@@ -1,5 +1,5 @@
 /* Author: Stephane Demots */
-const cVERSION = (6)*100 + (1);
+const cVERSION = (6)*100 + (2);
 const cOFFLINE = 0;
 
 var gClockRun = 0;
@@ -212,7 +212,7 @@ function fctOneSecond()
   }
   if(ph == PHASE_GALAXY)
   {
-    /* Chnage galaxy animation */
+    /* Change galaxy animation */
     document.getElementById("idGalaxyAnim").src = "ti4/img/g" + (((gGameDuration-2)%7)+1) + ".png";
 
     /* Disable the inactivity timer */

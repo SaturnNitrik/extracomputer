@@ -112,7 +112,11 @@ function fctSwitchLang(l)
         cln.id = "";
         cln.textContent = factionList[i][FACTION_NAME];
 
-        if(i >= POK_FACTION)
+        if(i >= CODEX_FACTION)
+        {
+          cln.classList.add("clCodexFaction");
+        }
+        else if(i >= POK_FACTION)
         {
           cln.classList.add("clPoKFaction");
         }

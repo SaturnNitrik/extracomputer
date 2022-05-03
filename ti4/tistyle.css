@@ -264,6 +264,10 @@ body {
   color: gold;
 }
 
+.clCodexFaction{
+  color: turquoise;
+}
+
 .highlight {
     border: 4px solid orange;
 }
