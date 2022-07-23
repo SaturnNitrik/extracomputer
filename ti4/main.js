@@ -11,11 +11,11 @@ var gDecisionTimer = 10;
 function pageInit()
 {
     document.getElementById("idLoading").style.display = "none";
-    
+
     // ABOUT to right side
     // document.getElementById("idAboutTabButton").style.cssFloat="right";
     document.getElementById("idVersion").textContent= (cVERSION/100);
-       
+
     /* Hide all tabs at init */
     var i, tab;
     tab = document.getElementsByClassName("tabcontent");
@@ -231,7 +231,7 @@ function fctOneSecond()
 }
 
 function fctTransformTime(t)
-{ 
+{
     var sec = Math.floor((t%60));
     var min = Math.floor((t%3600)/60);
     var hour = Math.floor(t/3600);
@@ -267,10 +267,10 @@ function fctSaveGameXXX()
 function fctSaveGame()
 {
     var i;
-    
+
     /* Version */
     fctSaveItem("cVERSION", cVERSION);
-    
+
     /* players */
     fctSaveItem("gSetupNbPlayer", gSetupNbPlayer);
     for(i=0; i < gSetupNbPlayer; i++)
@@ -293,7 +293,7 @@ function fctSaveGame()
     /* Agenda */
     fctSaveItem("gAgendaPhase", gAgendaPhase);
     fctSaveItem("gAgendaStep",gAgendaStep);
-    
+
     /* VP */
     var clVPCount = document.getElementsByClassName("clVPCount");
     for( i=0; i< gSetupNbPlayer; i++)
@@ -326,7 +326,7 @@ function fctSaveVP(i, v)
 function fctLoadGame()
 {
     var i;
-    
+
     /* Players */
     gSetupNbPlayer = fctLoadItem("gSetupNbPlayer")*1;
     for(i=0; i < gSetupNbPlayer; i++)
@@ -369,10 +369,10 @@ function fctLoadGame()
 
     /* Change option panel to game mode */
     fctSwitchOptionPanel();
-    
+
     /* Load page first, since elements will be edited next */
     loadTurnOrderPage();
-    
+
     for(i=0; i < strategyList.length; i++)
     {
         strategyList[i][STRATEGY_PLAYER] = fctLoadItem("strategyList" + i + STRATEGY_PLAYER)*1;
@@ -386,7 +386,7 @@ function fctLoadGame()
         var clFactionChooser = document.getElementById("idTurnOrderTab").getElementsByClassName("classFactionChooser");
         for(i=0; i< clStrategyFrame.length; i++)
             w3AddClass(clStrategyFrame[i], "clFrameLoading");
-        
+
         var clFrameLoading = document.getElementById("idTurnOrderTab").getElementsByClassName("clFrameLoading");
         for(i=0; i< clFrameLoading.length; i++)
             if ( (strategyList[i][STRATEGY_STATUS] != STRATEGY_DISABLED) && (strategyList[i][STRATEGY_PLAYER] < 8))
@@ -398,16 +398,16 @@ function fctLoadGame()
                     strategyList[0][STRATEGY_NAME] = fctLoadItem("strategyNaalu");
                     document.getElementById("idNaaluStrategy").textContent = strategyList[0][STRATEGY_NAME] ;
                 }
-                
+
                 clFactionChooser[i].textContent = getPlayerFaction(strategyList[i][STRATEGY_PLAYER],FACTION_NAME);
                 clFrameLoading[i].className = clFrameLoading[i].className.replace("classStrategyFrame", "classStrategyFrameSelected");
-                
+
                 var el = document.getElementsByClassName("classFactionIcon");
                 el[i].src = factionList[gPlayerData[strategyList[i][STRATEGY_PLAYER]][PLAYER_FACTION]][FACTION_ICON];
             }
-            
+
         fctInitActionPhase();
-        
+
         for(i=0; i < strategyList.length; i++)
         {
             if(strategyList[i][STRATEGY_STATUS] == STRATEGY_PASSED)
@@ -418,17 +418,17 @@ function fctLoadGame()
 
         for(i=0; i< 9; i++)
             w3RemoveClass(clFrameLoading[0], "clFrameLoading");
-        
+
         gActivePlayer = fctLoadItem("gActivePlayer")*1;
         gActivePlayer--;
         FctNextPlayerAction();
-        
+
         openTab('noButton', 'idTurnOrderTab');
     }
     else if (fctGetPhase() == PHASE_STRATEGY)
     {
         openTab('noButton', 'idTurnOrderTab');
-        
+
         /* Reload the turn */
         gTurnCounter--;
         fctNewTurn();
@@ -438,7 +438,7 @@ function fctLoadGame()
         fctStatusPhase();
     }
     else if (fctGetPhase() == PHASE_AGENDA)
-    {        
+    {
         fctSetPhase(PHASE_AGENDA);
         fctPrepareAgenda(gAgendaStep);
     }
@@ -467,7 +467,7 @@ function fctInactivity(lvl)
 {
     document.getElementById("idInactivityValue1").textContent = document.getElementById("idOptionInactivityTimer").value;
     document.getElementById("idInactivityValue2").textContent = document.getElementById("idOptionInactivityTimer").value*2;
-    
+
     if (lvl == 1)
         document.getElementById("idInactivityModal").style.display = "block";
     else
@@ -481,7 +481,7 @@ function fctInactivity(lvl)
 function FctAbout(tab)
 {
     openTab(document.getElementById("idAboutTabButton"), tab);
-    
+
     /* Hide submenu */
     document.getElementById("idAboutMenu").style.display = "none";
 }
@@ -525,7 +525,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -545,13 +545,13 @@ flexFont = function () {
 
 window.onresize = function(event) {
     flexFont();
-    
+
     /*if (window.innerWidth < window.innerHeight)
         alert("This website is designed to be used on landscape mode");*/
 };
 
 window.addEventListener('beforeunload', function (e) {
-    
+
     if(gActivePhase != 255)
     {
         // Cancel the event as stated by the standard.

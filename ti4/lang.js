@@ -44,7 +44,7 @@ var gWord = [
     ["Select 2 strategies to swap", "Choisir 2 strategies à inverser", "2 Strategien zum Tauschen auswählen", "Поменяйте местами две карты стратегии", "Elige 2 Estrategias para intercambiar" ,"选择两个策略卡进行交换"],
     ["The Custodians left Mecatol Rex", "Les Gardiens ont quitté Mecatol Rex", "Die Hüter haben Mecatol Rex verlassen", "Хранители покинули Мекатол Рекс", "Los Custodios han dejado Mecatol Rex" ,"托管人标记还在麦卡托雷克斯"],
     ["The Custodians are still guarding Mecatol Rex", "Les Gardiens sont toujours sur Mecatol Rex", "Die Hüter bewachen Mecatol Rex noch", "Хранители все еще защищают Мекатол Рекс", "Los Custodios siguen cuidando Mecatol Rex" ,"托管人标记已从麦卡托雷克斯移除"],
-    ["Galaxy Phase", "Phase Galaxie", "Galaxy-Phase", "Галактическая фаза", "Fase de la Galaxia" ,"银河阶段"],
+    ["Galaxy Phase", "Phase Galaxie", "Galaxy-Phase", "Галактическая фаза", "Fase de la Galaxia" ,"設置星系阶段"],
     ["Strategy Phase", "Phase Stratégie", "Strategie-Phase", "Фаза стратегии", "Fase de Estrategia" ,"策略阶段"],
     ["Action Phase", "Phase d'Action", "Aktions-Phase", "Фаза действий", "Fase de  Acción" ,"行动阶段"],
     ["Status Phase", "Phase de Status", "Status-Phase", "Фаза статуса", "Fase de Estado" ,"势态阶段"],

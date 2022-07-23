@@ -32,11 +32,12 @@ const STRATEGY_NAME_FR = 1;
 const STRATEGY_NAME_GE = 2;
 const STRATEGY_NAME_RU = 3;
 const STRATEGY_NAME_SP = 4;
+const STRATEGY_NAME_CN = 5;
 var   STRATEGY_NAME =  0;
-const STRATEGY_PLAYER = 5;
-const STRATEGY_STATUS = 6;
-const STRATEGY_COLOR = 7;
-const STRATEGY_TG = 8;
+const STRATEGY_PLAYER = 6;
+const STRATEGY_STATUS = 7;
+const STRATEGY_COLOR = 8;
+const STRATEGY_TG = 9;
 
 var gActivePhase = 255;
 const PHASE_GALAXY = 1;
