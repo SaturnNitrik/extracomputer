@@ -27,7 +27,7 @@ var gDecisionTimeLimit = 90;
 
 
 function fctStartScreen(entry)
-{    
+{
     if(entry == 'newgame')
     {
         /* Show next screen */
@@ -38,13 +38,13 @@ function fctStartScreen(entry)
         /* Show next screen */
         fctShowSetupScreen(255);
         document.getElementById("idStartScreen").style.display = "none";
-        
+
         fctLoadGame();
-        
+
         document.getElementsByClassName("header")[0].style.display = "flex";
         document.getElementsByClassName("clNavBar")[0].style.display = "flex";
     }
-    else if ( (entry == '_fr') || (entry == '_en') || (entry == '_de') || (entry == '_ru') || (entry == "_sp"))
+    else if ( (entry == '_fr') || (entry == '_en') || (entry == '_de') || (entry == '_ru') || (entry == "_sp")|| (entry == "_cn"))
     {
         fctSwitchLang(entry);
     }
@@ -57,7 +57,7 @@ function fctStartScreen(entry)
 function fctShowSetupScreen(e)
 {
     var clGameScreen = document.getElementsByClassName("clGameScreen");
-    
+
     for(var i=0; i<clGameScreen.length;i++)
     {
         if(i!=e)
@@ -69,14 +69,15 @@ function fctShowSetupScreen(e)
 
 function fctSwitchLang(l)
 {
-    
+
     /* hide all before loading */
     fctDisplayAll('_fr', "none");
     fctDisplayAll('_en', "none");
     fctDisplayAll('_de', "none");
     fctDisplayAll('_ru', "none");
     fctDisplayAll("_sp", "none");
-    
+    fctDisplayAll("_cn", "none");
+
     switch(l)
     {
         case '_fr': gLang = LANG_FR; break;
@@ -84,18 +85,19 @@ function fctSwitchLang(l)
         case '_de': gLang = LANG_DE; break;
         case '_ru': gLang = LANG_RU; break;
         case '_sp': gLang = LANG_SP; break;
+        case '_cn': gLang = LANG_CN; break;
     }
-    
+
     /* reload variable */
     FACTION_NAME = FACTION_NAME_EN + gLang;
     STRATEGY_NAME = STRATEGY_NAME_EN + gLang;
-    
+
     /* Show all corresponding language items */
     fctDisplayAll(l, "");
-    
+
     /* Check Faction list */
     itm = document.getElementsByClassName("clSetFaction");
-    
+
     while(itm.length > 1)
     {
         itm[1].parentNode.removeChild(itm[1]);
@@ -138,7 +140,7 @@ function fctSwitchLang(l)
         itm[i].textContent = gLaw[j][gLang];
         j++;
     }
-    
+
 
     /* Update Objectives */
     itm = document.getElementById("idModalObj").getElementsByClassName("filterDivObj");
@@ -148,7 +150,7 @@ function fctSwitchLang(l)
         itm[i].textContent = gSecretObj[j][gLang];
         j++;
     }
-    
+
     /* Update Strategy Cards */
     itm = document.getElementById("idModalStrategy").getElementsByClassName("filterDivStrategy");
     j=0;
@@ -166,7 +168,7 @@ function fctSwitchLang(l)
         itm[i].textContent = gGenericChoice[j][gLang];
         j++;
     }
-    
+
     /* idAbstain */
     document.getElementById("idAbstain").textContent = gWord[W_ABSTAIN][gLang];
 
@@ -180,10 +182,10 @@ function FctSetupNbPlayer(newNbPlayerValue)
     var i;
     var slidervalue = newNbPlayerValue;
     document.getElementById("idPlayerSlider").textContent = slidervalue;
-    
+
     /* Update map */
     document.getElementById("idTable").style.backgroundImage = 'url(ti4/img/'+(slidervalue*1)+'p.png)';
-    
+
     /* Hide all */
     fctDisplayAll("classSetPlayerFrame", "none");
     var classSetPlayerFrame = document.getElementsByClassName("classSetPlayerFrame");
@@ -200,7 +202,7 @@ function FctSetupNbPlayer(newNbPlayerValue)
         default: classSetPlayerFrame[2].style.display = "block";
                  classSetPlayerFrame[4].style.display = "block";
     }
-    
+
     /* Reset the hidded ones */
     for( var y=0; y<classSetPlayerFrame.length; y++ )
     {
@@ -215,7 +217,7 @@ function FctSetupNbPlayer(newNbPlayerValue)
                     w3AddClass(clSetItem[i], "show");
                 }
             }
-           
+
             var color;
             for(i=0; i < playerColorList.length; i++)
             {
@@ -233,13 +235,13 @@ function FctSetupNbPlayer(newNbPlayerValue)
                 {
                     w3AddClass(clSetItem[i], "show");
                 }
-            } 
-           
+            }
+
             classSetPlayerFrame[y].getElementsByClassName("classPlayerRaceName")[0].textContent = "Set player";
             classSetPlayerFrame[y].style.backgroundImage = 'url(ti4/img/player.png)';
         }
     }
-    
+
     fctUpdateButton();
 }
 
@@ -249,7 +251,7 @@ function FctSetPlayer(el)
     w3AddClass(el, "SetPlayer");
     document.getElementById("idModalSetPlayer").style.display = "block";
     document.getElementById("idConfirmPlayer").disabled = true;
-    
+
     /* If player already set, display its parameters */
     var faction = el.getElementsByClassName("classPlayerRaceName")[0].textContent;
     if(faction != "Set player")
@@ -263,7 +265,7 @@ function FctSetPlayer(el)
                 w3AddClass(clSetItem[i], "highlight");
             }
         }
-       
+
         var color;
         for(i=0; i < playerColorList.length; i++)
         {
@@ -281,7 +283,7 @@ function FctSetPlayer(el)
                 w3AddClass(clSetItem[i], "show");
                 w3AddClass(clSetItem[i], "highlight");
             }
-        } 
+        }
     }
 }
 
@@ -292,7 +294,7 @@ function fctSelectItem(el)
     for(var i=0; i < clSetItem.length; i++)
         w3RemoveClass(clSetItem[i], "highlight");
     w3AddClass(el, "highlight");
-    
+
     if (document.getElementsByClassName("highlight").length == 2)
         document.getElementById("idConfirmPlayer").disabled = false;
     else
@@ -302,15 +304,15 @@ function fctSelectItem(el)
 function fctConfirm(x)
 {
     var i;
-    
+
     /* Hide modal */
     document.getElementById("idModalSetPlayer").style.display = "none";
-    
+
     /* Get player frame to update */
     var el = document.getElementsByClassName("SetPlayer")[0];
 
     var newfaction = document.getElementsByClassName("highlight")[1].textContent;
-    
+
     if(newfaction == "???")
     {
         var d17, reroll;
@@ -319,25 +321,25 @@ function fctConfirm(x)
         {
             reroll = false;
             d17 = Math.floor(Math.random() * factionList.length);
-            
+
             for(i=0; i < classPlayerRaceName.length; i++)
             {
                 if(classPlayerRaceName[i].textContent == factionList[d17][FACTION_NAME])
                     reroll = true;
             }
         }while(reroll);
-        
+
         newfaction = factionList[d17][FACTION_NAME];
-        
+
         var clSetFaction = document.getElementsByClassName("clSetFaction");
         for(i=0; i < clSetFaction.length; i++)
             if(clSetFaction[i].textContent == newfaction)
                 w3RemoveClass(clSetFaction[i], "show");
     }
-    
+
     el.getElementsByClassName("classPlayerRaceName")[0].textContent = newfaction;
     el.style.backgroundImage = 'url('+factionList[fctGetFactionIdx(newfaction)][FACTION_ICON]+')';
-    
+
     /* Remove previous color if any */
     for(i=0; i < playerColorList.length; i++)
     {
@@ -351,7 +353,7 @@ function fctConfirm(x)
         if(document.getElementsByClassName("highlight")[0].classList.contains(playerColorList[i]))
             w3AddClass(el, playerColorList[i]);
     }
-    
+
     var clSetItem = document.getElementsByClassName("clSetColor");
     for(i=0; i < clSetItem.length; i++)
     {
@@ -361,19 +363,19 @@ function fctConfirm(x)
             w3RemoveClass(clSetItem[i], "show");
         }
     }
-    
+
     clSetItem = document.getElementsByClassName("clSetFaction");
     for(i=0; i < clSetItem.length; i++)
-    {        
+    {
         if(clSetItem[i].classList.contains("highlight"))
         {
             w3RemoveClass(clSetItem[i], "highlight");
             if (clSetItem[i].textContent != "???") w3RemoveClass(clSetItem[i], "show");
-        } 
+        }
     }
 
     w3RemoveClass(el, "SetPlayer");
-    
+
     fctUpdateButton();
 }
 
@@ -382,9 +384,9 @@ function fctUpdateButton()
 {
     var clPlayerRaceName = document.getElementsByClassName("classPlayerRaceName");
     var newNbPlayerValue = (document.getElementById("idPlayerSlider").textContent*1);
-    
+
     var count = 0;
-    
+
     /* Then show needed */
     switch(newNbPlayerValue*1)
     {
@@ -397,7 +399,7 @@ function fctUpdateButton()
         default: if(clPlayerRaceName[2].textContent != "Set player") count++;
                  if(clPlayerRaceName[4].textContent != "Set player") count++;
     }
-    
+
     if(count == newNbPlayerValue)
         document.getElementById("idStartGame").disabled = false;
     else
@@ -410,16 +412,16 @@ function fctNext(s)
     {
         var clSetPlayerFrame = document.getElementsByClassName("classSetPlayerFrame");
         var i;
-        
+
         gSetupNbPlayer = 0;
-        
+
         for(i=0; i < clSetPlayerFrame.length; i++)
             if(clSetPlayerFrame[i].style.display != "none")
                 gSetupNbPlayer++;
 
         // Player 1
         fctFillPlayer(0,2);
-        
+
         // Player 2
         if(gSetupNbPlayer <= 3)         fctFillPlayer(1,4);
         else                            fctFillPlayer(1,0);
@@ -430,54 +432,54 @@ function fctNext(s)
         else if(gSetupNbPlayer == 5)    fctFillPlayer(2,4);
         else if(gSetupNbPlayer == 6)    fctFillPlayer(2,4);
         else if(gSetupNbPlayer >= 7)    fctFillPlayer(2,1);
-        
+
         // Player 4
         if(gSetupNbPlayer == 4)         fctFillPlayer(3,6);
         else if(gSetupNbPlayer == 5)    fctFillPlayer(3,5);
         else if(gSetupNbPlayer == 6)    fctFillPlayer(3,5);
         else if(gSetupNbPlayer >= 7)    fctFillPlayer(3,4);
-        
+
         // Player 5
         if(gSetupNbPlayer == 5)         fctFillPlayer(4,6);
         else if(gSetupNbPlayer == 6)    fctFillPlayer(4,6);
         else if(gSetupNbPlayer >= 7)    fctFillPlayer(4,5);
-        
+
         // Player 6
         if(gSetupNbPlayer == 6)         fctFillPlayer(5,3);
         else if(gSetupNbPlayer == 7)    fctFillPlayer(5,6);
         else if(gSetupNbPlayer == 8)    fctFillPlayer(5,7);
-        
+
         // Player 7
         if(gSetupNbPlayer == 7)         fctFillPlayer(6,3);
         else if(gSetupNbPlayer == 8)    fctFillPlayer(6,6);
-        
+
         // Player 8
         if(gSetupNbPlayer == 8)         fctFillPlayer(7,3);
-        
-        
+
+
         document.getElementById("idStartScreen").style.display = "none";
-        
+
         /* Hack the value to not trigger the animation */
         gActivePhase = PHASE_INIT;
-        
+
         /* Option window */
         document.getElementById("idModalOptions").style.display = "block";
     }
     else
     {
-        // Open Setup tab at init  
+        // Open Setup tab at init
         openTab('noButton', 'idTurnOrderTab');
         document.getElementById("idStartScreen").style.display = "none";
 
         //block the tab
         // document.getElementById("idInitTab").className += " active";
-        
+
         document.getElementsByClassName("header")[0].style.display = gVPBarStyle;
         //document.getElementsByClassName("tab")[0].style.display = "block";
         document.getElementsByClassName("clNavBar")[0].style.display = "block";
-        
+
         fctSaveGame();
-        
+
         vpInit();
         fctInfluInit();
         loadTurnOrderPage();
@@ -494,12 +496,12 @@ function showOptionPanel()
 
 function fctFillPlayer(pIdx, fIdx)
 {
-    var clSetPlayerFrame = document.getElementsByClassName("classSetPlayerFrame"); 
+    var clSetPlayerFrame = document.getElementsByClassName("classSetPlayerFrame");
     var clPlayerRaceName = document.getElementsByClassName("classPlayerRaceName");
 
     gPlayerData[pIdx][PLAYER_COLOR] = fctGetColorIdx(clSetPlayerFrame[fIdx]);
     gPlayerData[pIdx][PLAYER_FACTION] = fctGetFactionIdx(clPlayerRaceName[fIdx].textContent);
-    
+
 }
 
 function fctGetFactionIdx(txt)
@@ -513,7 +515,7 @@ function fctGetColorIdx(el)
 {
     for(var i=0; i < playerColorList.length; i++)
         if(el.classList.contains(playerColorList[i]))
-            return i; 
+            return i;
 }
 
 function getPlayerFaction(p, n)
@@ -550,12 +552,12 @@ function fctFullScreen(el)
 }
 
 function fctShowVPBar(el)
-{   
-    if(el.checked)   
+{
+    if(el.checked)
         gVPBarStyle = "flex";
     else
         gVPBarStyle = "none";
-    
+
     if(fctGetPhase() > PHASE_GALAXY)
         document.getElementById("idVPMeter").style.display = gVPBarStyle;
 }
@@ -564,16 +566,16 @@ function fctShowVPBar(el)
 function fctCloseOptions()
 {
     fctDecision();
-    
+
     fctSwitchOptionPanel();
-    
+
     /* init interface */
     if(fctGetPhase() == PHASE_INIT)
     {
         // Back to start screen + show Galaxy Setup
         openTab('noButton', 'idStartScreen');
         fctShowSetupScreen(3);
-        
+
         /* Start timer */
         fctSetPhase(PHASE_GALAXY);
     }
