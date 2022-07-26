@@ -65,6 +65,6 @@ var gWord = [
     ["Game ends", "Fin de partie", "Spiel zu Ende", "Конец игры", "Fin del Juego" ,"游戏结束"],
     ["A new age begins...", "Un nouvel âge commence...", "Ein neues Zeitalter beginnt", "Начало новой эпохи...", "Una Nueva Era Comienza..." ,"新纪元开始..."],
     ["Choosing action", "Choix d'action", "Wähle Aktion", "Выбор действия", "Elige tu Acción" ,"选择行动"],
-    ["Resolving action(s)...", "Résolution d'action(s)...", "Aktionen ausführen", "Выполнение действия...", "Resolviendo Acción(es)..." ,"加载行动..."],
+    ["Resolving action(s)...", "Résolution d'action(s)...", "Aktionen ausführen", "Выполнение действия...", "Resolviendo Acción(es)..." ,"请行动..."],
   ["", "", ""],
 ];
