@@ -17,15 +17,15 @@ const STRATEGY_PLAYED = 2;
 const STRATEGY_PASSED = 3;
 const STRATEGY_SECONDPICK = 100;
 var strategyList = [
- ["idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", 255, STRATEGY_DISABLED, "red", 0],
- ["Leadership", "Gouvern.", "Führungsstärke", "Лидерство", "Liderazgo", "领导力",  255, STRATEGY_AVAILABLE, "red", 0],
- ["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия", "Diplomacia", "外交",  255, STRATEGY_AVAILABLE, "orange", 0],
- ["Politics", "Politique", "Politik", "Политика", "Política", "政治",  255, STRATEGY_AVAILABLE, "yellow", 0],
- ["Construct.", "Construct.", "Infrastruktur", "Строительство", "Construcción", "建设",  255, STRATEGY_AVAILABLE, "green", 0],
- ["Trade", "Commerce", "Handel", "Торговля", "Comercio", "贸易",  255, STRATEGY_AVAILABLE, "Cyan", 0],
- ["Warfare", "Guerre", "Kriegsführung", "Война", "Guerra", "战争",  255, STRATEGY_AVAILABLE, "dodgerBlue", 0],
- ["Technology", "Techno.", "Technologie", "Исследования", "Tecnología", "科技",  255, STRATEGY_AVAILABLE, "blue", 0],
- ["Imperial", "Intrigue", "Imperium", "Экспансия", "Imperialismo", "皇权",  255, STRATEGY_AVAILABLE, "purple", 0]
+ ["idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", "idNaaluFr", 255, STRATEGY_DISABLED, "red", 0],
+ ["Leadership", "Gouvern.", "Führungsstärke", "Лидерство", "Liderazgo", "领导力", "Przywództwo", 255, STRATEGY_AVAILABLE, "red", 0],
+ ["Diplomacy", "Diplomacie", "Diplomatie", "Дипломатия", "Diplomacia", "外交", "Dyplomacja", 255, STRATEGY_AVAILABLE, "orange", 0],
+ ["Politics", "Politique", "Politik", "Политика", "Política", "政治", "Polityka", 255, STRATEGY_AVAILABLE, "yellow", 0],
+ ["Construct.", "Construct.", "Infrastruktur", "Строительство", "Construcción", "建设", "Budowa", 255, STRATEGY_AVAILABLE, "green", 0],
+ ["Trade", "Commerce", "Handel", "Торговля", "Comercio", "贸易", "Handel", 255, STRATEGY_AVAILABLE, "Cyan", 0],
+ ["Warfare", "Guerre", "Kriegsführung", "Война", "Guerra", "战争", "Wojna", 255, STRATEGY_AVAILABLE, "dodgerBlue", 0],
+ ["Technology", "Techno.", "Technologie", "Исследования", "Tecnología", "科技", "Technologia", 255, STRATEGY_AVAILABLE, "blue", 0],
+ ["Imperial", "Intrigue", "Imperium", "Экспансия", "Imperialismo", "皇权", "Imperium", 255, STRATEGY_AVAILABLE, "purple", 0]
 ];
 const STRATEGY_NAME_EN = 0;
 const STRATEGY_NAME_FR = 1;
@@ -33,11 +33,12 @@ const STRATEGY_NAME_GE = 2;
 const STRATEGY_NAME_RU = 3;
 const STRATEGY_NAME_SP = 4;
 const STRATEGY_NAME_CN = 5;
+const STRATEGY_NAME_PL = 6;
 var   STRATEGY_NAME =  0;
-const STRATEGY_PLAYER = 6;
-const STRATEGY_STATUS = 7;
-const STRATEGY_COLOR = 8;
-const STRATEGY_TG = 9;
+const STRATEGY_PLAYER = 7;
+const STRATEGY_STATUS = 8;
+const STRATEGY_COLOR = 9;
+const STRATEGY_TG = 10;
 
 var gActivePhase = 255;
 const PHASE_GALAXY = 1;

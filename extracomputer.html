@@ -5,6 +5,7 @@
     <title lang="fr">Extracomputer pour Twilight Imperium IV - Extraboard.net</title>
     <title lang="sp">Extracomputer para Twilight Imperium IV - Extraboard.net</title>
     <title lang="cn">Extracomputer for Twilight Imperium IV - Extraboard.net</title>
+    <title lang="pl">Extracomputer dla Twilight Imperium IV - Extraboard.net</title>
     <link rel="stylesheet" type="text/css" href="ti4/tistyle.css">
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
@@ -42,6 +43,7 @@
             <h2 class="_ru">Игровой помощник</h2>
             <h2 class="_sp">Asistente de Juego</h2>
             <h2 class="_cn">游戏伴侣</h2>
+            <h2 class="_pl">Pełne wsparcie dla gry</h2>
             <h2 class="clOffline orange">- Offline Version -</h2>
             <div id="idNewsWindow" class="clOnline"></div>
             <br/>
@@ -53,6 +55,7 @@
             <h2 class="_ru">Кликните на иконку для запуска помощника</h2>
             <h2 class="_sp">Click en el icono para comenzar</h2>
             <h2 class="_cn">点击XC图标开始游戏</h2>
+            <h2 class="_pl">Kliknij ikonę by rozpocząć</h2>
             <br/>
             <div class="_ru">
                 <p>ЭТОТ САЙТ НЕ ОФИЦИАЛЬНЫЙ И НЕ БЫЛ ОДОБРЕН FANTASY FLIGHT GAMES.</p>
@@ -84,6 +87,11 @@
                 <p>帝国曙光 IV是Fantasy Flight Games设计开发的游戏。 Copyrights <a href="https://www.fantasyflightgames.com">Fantasy Flight Games</a>.</p>
                 <p>奈克洛保证网站无病毒.</p>
            </div>
+            <div class="_pl">
+                <p>TA STRONA NIE JEST OFICJALNA I NIE ZOSTAŁA ZATWIERDZONA PRZEZ FANTASY FLIGHT GAMES.
+                <p>Twilight Imperium IV - gra wydana przez Fantasy Flight Games. Prawa autorskie <a href="https://www.fantasyflightgames.com">Fantasy Flight Games</a>.</p>
+                <p>Gwarancja braku Nekrowirusów.</p>
+           </div>
         </div>
         <div id="idMenuScreen" class="clGameScreen show clTitle">
             <img src="ti4/img/tilogo.png" alt="TWILIGHT IMPERIUM IV">
@@ -97,6 +105,7 @@
                 <span class="_ru">Новая игра</span>
                 <span class="_sp">Nuevo Juego</span>
                 <span class="_cn">开始新游戏</span>
+                <span class="_pl">Nowa gra</span>
             </button>
             <p id="idNoContinue">
                 <span class="_en">Saved game from previous version is not compatible</span>
@@ -105,6 +114,7 @@
                 <span class="_ru">Сохраненная игра из предыдущей версии не поддерживается</span>
                 <span class="_sp">Juegos guardados de una version previa, no son compatibles</span>
                 <span class="_cn">不兼容之前版本的存档</span>
+                <span class="_pl">Zapisana gra z poprzedniej wersji nie jest kompatybilna</span>
             </p>
             <button id="idContinueButton" class="clStartButton" onclick="fctStartScreen('continue')">
                 <span class="_en">Continue game</span>
@@ -113,6 +123,7 @@
                 <span class="_ru">Продолжить игру</span>
                 <span class="_sp">Continuar Juego</span>
                 <span class="_cn">继续游戏</span>
+                <span class="_pl">Kontynuuj grę</span>
             </button>
             <button class="clStartButton" onclick="fctStartScreen('instructions')">
                 <span class="_en">How to use</span>
@@ -121,45 +132,59 @@
                 <span class="_ru">Как пользоваться</span>
                 <span class="_sp">Manual de Uso</span>
                 <span class="_cn">使用帮助</span>
+                <span class="_pl">Jak grać</span>
             </button>
-            <button class="clStartButton" onclick="parent.open('http://extraboard.net/ti4/extracomputer_stats')"><span class="_en">Statistics</span><span class="_fr">Statistiques</span><span class="_de">Statistiken</span><span class="_ru">Статистика</span><span class="_sp">Estadíticas</span><span class="_cn">统计数据</span></button>
+            <button class="clStartButton" onclick="parent.open('http://extraboard.net/ti4/extracomputer_stats')"><span class="_en">Statistics</span><span class="_fr">Statistiques</span><span class="_de">Statistiken</span><span class="_ru">Статистика</span><span class="_sp">Estadíticas</span><span class="_cn">统计数据</span><span class="_pl">Statystyki</span></button>
             <button class="clStartButton _en" onclick="parent.open('http://extraboard.net/ti4/glossary')">Online glossary</button>
             <button class="clStartButton _fr" onclick="parent.open('http://extraboard.net/ti4/glossaire')">Glossaire en ligne</button>
             <button class="clStartButton _de" onclick="parent.open('http://extraboard.net/ti4/glossary')">Online Glossar</button>
             <button class="clStartButton _ru" onclick="parent.open('http://extraboard.net/ti4/glossary')">Глоссарий</button>
             <button class="clStartButton _sp" onclick="parent.open('http://extraboard.net/ti4/glossary')">Glosario en linea</button>
             <button class="clStartButton _cn" onclick="parent.open('http://extraboard.net/ti4/glossary')">词汇表</button>
+            <button class="clStartButton _pl" onclick="parent.open('http://extraboard.net/ti4/glossary')">Glosariusz online</button>
             <button class="clStartButton clOffline" onclick="parent.open('http://extraboard.net')">Extraboard.net</button>
             <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _sp" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _cn" onclick="fctStartScreen('_fr')">Français</button>
+            <button class="clStartButton clLangButton _pl" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _fr" onclick="fctStartScreen('_de')">Deutsch</button>
             <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_de')">Deutsch</button>
             <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_de')">Deutsch</button>
             <button class="clStartButton clLangButton _sp" onclick="fctStartScreen('_de')">Deutsch</button>
             <button class="clStartButton clLangButton _cn" onclick="fctStartScreen('_de')">Deutsch</button>
+            <button class="clStartButton clLangButton _pl" onclick="fctStartScreen('_de')">Deutsch</button>
             <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_en')">English</button>
             <button class="clStartButton clLangButton _fr" onclick="fctStartScreen('_en')">English</button>
             <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_en')">English</button>
             <button class="clStartButton clLangButton _sp" onclick="fctStartScreen('_en')">English</button>
             <button class="clStartButton clLangButton _cn" onclick="fctStartScreen('_en')">English</button>
+            <button class="clStartButton clLangButton _pl" onclick="fctStartScreen('_en')">English</button>
             <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_ru')">Мирный русский</button>
             <button class="clStartButton clLangButton _fr" onclick="fctStartScreen('_ru')">Мирный русский</button>
             <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_ru')">Мирный русский</button>
             <button class="clStartButton clLangButton _sp" onclick="fctStartScreen('_ru')">Мирный русский</button>
             <button class="clStartButton clLangButton _cn" onclick="fctStartScreen('_ru')">Мирный русский</button>
+            <button class="clStartButton clLangButton _pl" onclick="fctStartScreen('_ru')">Мирный русский</button>
             <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_sp')">Español</button>
             <button class="clStartButton clLangButton _fr" onclick="fctStartScreen('_sp')">Español</button>
             <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_sp')">Español</button>
             <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_sp')">Español</button>
             <button class="clStartButton clLangButton _cn" onclick="fctStartScreen('_sp')">Español</button>
+            <button class="clStartButton clLangButton _pl" onclick="fctStartScreen('_sp')">Español</button>
             <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_cn')">中文</button>
             <button class="clStartButton clLangButton _fr" onclick="fctStartScreen('_cn')">中文</button>
             <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_cn')">中文</button>
             <button class="clStartButton clLangButton _sp" onclick="fctStartScreen('_cn')">中文</button>
             <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_cn')">中文</button>
+            <button class="clStartButton clLangButton _pl" onclick="fctStartScreen('_cn')">中文</button>
+            <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_pl')">Polski</button>
+            <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_pl')">Polski</button>
+            <button class="clStartButton clLangButton _fr" onclick="fctStartScreen('_pl')">Polski</button>
+            <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_pl')">Polski</button>
+            <button class="clStartButton clLangButton _sp" onclick="fctStartScreen('_pl')">Polski</button>
+            <button class="clStartButton clLangButton _cn" onclick="fctStartScreen('_pl')">Polski</button>
             <br/><br/>
             <div class="_en">
                 <p>THIS WEBSITE IS NOT OFFICIAL AND HAS NOT BEEN APPROVED BY FANTASY FLIGHT GAMES.</p>
@@ -179,7 +204,7 @@
                 <p>Разработано Стефаном Демотсом, так же известном как Stéphane "Saturn Nitrik" Démots</p>
                 <p>Русская версия Антон Синько</p>
             </div>
-      <div class="_sp">
+            <div class="_sp">
                 <p>ESTE SITIO WEB NO ES OFICIAL Y NO HA SIDO APROBADO POR FANTASY FLIGHT GAMES.</p>
                 <p>Desarrollado por Stéphane "Saturn Nitrik" Démots</p>
                 <p>Versión en español de Sabathius</p>
@@ -189,16 +214,22 @@
                 <p>由 Stéphane "Saturn Nitrik" Démots 开发</p>
                 <p>来自柳五的中文版</p>
             </div>
+            <div class="_pl">
+                <p>TA STRONA NIE JEST OFICJALNA I NIE ZOSTAŁA ZATWIERDZONA PRZEZ FANTASY FLIGHT GAMES.</p>
+                <p>Opracowane przez Stéphane "Saturn Nitrik" Démots</p>.
+                <p>Polska wersja Wojciech Ziomek</p>.
+            </div>
         </div>
         <div id="idSetPlayersScreen" class="clGameScreen">
             <h1 class="_en">The game</h1><h1 class="_fr">La partie</h1><h1 class="_de">Die Partie</h1><h1 class="_ru">Игра</h1><h1 class="_sp">El Juego</h1><h1 class="_cn">游戏</h1>
             <div >
                 <span class="clMiddleText _en">Number of players:</span>
-                <span class="clMiddleText _fr">Nombre de joueurs:</span>
+                <span class="clMiddleText _fr">Nombre de <jo></jo>ueurs:</span>
                 <span class="clMiddleText _de">Anzahl der Spieler</span>
                 <span class="clMiddleText _ru">Количество игроков</span>
                 <span class="clMiddleText _sp">Número de jugadores:</span>
                 <span class="clMiddleText _cn">玩家人数:</span>
+                <span class="clMiddleText _pl">Liczba graczy:</span>
 
                 <span class="clNbPlayer" style="vertical-align:middle;" id="idPlayerSlider" type="text" value="6">6</span>
             </div>
@@ -218,6 +249,8 @@
             <p class="_sp"><i style="color:grey">El mapa mostrado es solo una indicacion, y no es importante para esta herramienta</i></p>
             <p class="_cn">注意: 请严格按照玩家座位来选！！</p>
             <p class="_cn"><i style="color:grey">这里地图只是提示作用</i></p>
+            <p class="_en">WAŻNE: Szanuj rozmieszczenie graczy wokół stołu</p>
+            <p class="_en"><i style="color:grey">Układ mapy jest tylko orientacyjny i nie ma znaczenia dla narzędzia</i></p>
 
             <div id="idGameTable" class="classPlayerSetup">
                 <div id="idTopTable" class="clTopTable">
@@ -266,8 +299,8 @@
                 </div>
             </div>
             <br/>
-            <button onclick="location.reload()"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbrechen</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span></button>
-            <button id="idStartGame" onclick="fctNext(1)"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">继续</span></button>
+            <button onclick="location.reload()"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbrechen</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span><span class="_pl">Anuluj</span></button>
+            <button id="idStartGame" onclick="fctNext(1)"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">继续</span><span class="_pl">Dalej</span></button>
         </div>
 
         <div id="idGetReadyScreen" class="clGameScreen">
@@ -277,6 +310,7 @@
             <h1 class="classCenter _ru">Создайте карту галактики</h1>
             <h1 class="classCenter _sp">Construcción de la Galaxia</h1>
             <h1 class="classCenter _cn">自定义星际版图</h1>
+            <h1 class="classCenter _pl">Utwórz mapę galaktyki</h1>
             <br/>
             <img id="idGalaxyAnim" class="clMarginAutoOnly" src="ti4/img/g1.png" alt="galaxy">
 
@@ -288,6 +322,7 @@
                 <span class="_ru">Начать первый раунд</span>
                 <span class="_sp">Inicio del Primer Turno</span>
                 <span class="_cn">第一轮</span>
+                <span class="_pl">Rozpocznij Pierwszą Rundę</span>
             </button>
         </div>
 
@@ -301,6 +336,7 @@
             <h2 class="clModal classCenter _ru">Параметры игрока</h2>
             <h2 class="clModal classCenter _sp">Parametros de Juego</h2>
             <h2 class="clModal classCenter _cn">玩家设置</h2>
+            <h2 class="clModal classCenter _pl">Parametry gracza</h2>
             <br/>
             <h3 class="clModal classCenter _en">Units Color</h3>
             <h3 class="clModal classCenter _fr">Couleur des unités</h3>
@@ -308,6 +344,7 @@
             <h3 class="clModal classCenter _ru">Цвет фигурок отрядов</h3>
             <h3 class="clModal classCenter _sp">Color de las Unidades</h3>
             <h3 class="clModal classCenter _cn">玩家颜色</h3>
+            <h3 class="clModal classCenter _pl">Kolor figurek</h3>
             <div id="idColorList" class="clColorList">
                 <div id="idTmpColor" class="clSetColor show" onclick="fctSelectItem(this)"></div>
             </div>
@@ -317,12 +354,13 @@
             <h3 class="clModal classCenter _de">Faction</h3>
             <h3 class="clModal classCenter _sp">Facción</h3>
             <h3 class="clModal classCenter _cn">种族</h3>
+            <h3 class="clModal classCenter _pl">Rasa</h3>
             <div id="idFactionList" class="clFactionList">
                 <div  id="idTmpFaction" class="clSetFaction show" onclick="fctSelectItem(this)">TEMPLATE</div>
             </div>
             <br/>
             <div class="classCenter clMarginAutoOnly">
-                <button id="idConfirmPlayer" onclick="fctConfirm(1)"><span class="_en">Confirm</span><span class="_fr">Confirmer</span><span class="_de">Bestätigen</span><span class="_ru">Подтвердить</span><span class="_sp">Confirmar</span><span class="_cn">确认</span></button>
+                <button id="idConfirmPlayer" onclick="fctConfirm(1)"><span class="_en">Confirm</span><span class="_fr">Confirmer</span><span class="_de">Bestätigen</span><span class="_ru">Подтвердить</span><span class="_sp">Confirmar</span><span class="_cn">确认</span><span class="_pl">Potwierdź</span></button>
             </div>
         </div>
     </div>
@@ -430,6 +468,23 @@
                 <button onclick="fctClose('idModalInstructions')">Close</button>
             </div>
         </div>
+        <div class="modalcontent _pl">
+            <h2 class="clModal classCenter">Prezentacja</h2>
+            <p class="clModal classCenter">ExtraComputer jest narzędziem fanowskim przeznaczonym do używania na ekranie obok rozgrywki w Twilight Imperium.</p>
+            <img class="clMarginAuto" src="ti4/img/instructions2.png" alt="instructions">
+            <p class="clModal classCenter">Wsparciem może być dowolny, odpowiednio duży ekran: TV, komputer, projektor, tablet.</p>
+            <p class="clModal classCenter">ExtraComputer przejmuje odpowiedzialność za niektóre procesy, aby poprawić płynność i szybkość gry:</p>
+            <ul class="clCenterlist classCenter">
+                <li>Wybór strategii</li>
+                <li>Sterowanie inicjatywą</li>
+                <li>Licznik Punktów Zwycięstwa</li>
+                <li>System głosowania Rady Galaktycznej</li>
+            </ul>
+            <br/>
+            <div class="classCenter">
+                <button onclick="fctClose('idModalInstructions')">Zamknij</button>
+            </div>
+        </div>
     </div>
 
     <!-- --------------------------------------------- -->
@@ -527,9 +582,9 @@
       <span class="clNavItem clAbout dropdown" id="idAboutTabButton" onmouseover="resetSubMenu('idAboutMenu')">
         <div  id="idAboutMenu" class="dropdown-content">
           <a onclick="showOptionPanel()">Options</a>
-          <a onclick="FctAbout('infoFAQ')"><span class="_en">F.A.Q</span><span class="_fr">F.A.Q</span><span class="_de">F.A.Q</span><span class="_ru">Часто задаваемые вопросы</span><span class="_sp">F.A.Q</span><span class="_cn">F.A.Q</span></a>
-          <a onclick="FctAbout('infoAbout')"><span class="_en">About</span><span class="_fr">A propos</span><span class="_de">Über</span><span class="_ru">О приложении</span><span class="_sp">Acerca de</span><span class="_cn">关于</span></a>
-          <a onclick="FctAbout('infoChangeLog')"><span class="_en">Changelog</span><span class="_fr">Versions</span><span class="_de">Änderungen</span><span class="_ru">Список изменений</span><span class="_sp">Versión</span><span class="_cn">版本</span></a>
+          <a onclick="FctAbout('infoFAQ')"><span class="_en">F.A.Q</span><span class="_fr">F.A.Q</span><span class="_de">F.A.Q</span><span class="_ru">Часто задаваемые вопросы</span><span class="_sp">F.A.Q</span><span class="_cn">F.A.Q</span><span class="_pl">F.A.Q</span></a>
+          <a onclick="FctAbout('infoAbout')"><span class="_en">About</span><span class="_fr">A propos</span><span class="_de">Über</span><span class="_ru">О приложении</span><span class="_sp">Acerca de</span><span class="_cn">关于</span><span class="_pl">O aplikacji</span></a>
+          <a onclick="FctAbout('infoChangeLog')"><span class="_en">Changelog</span><span class="_fr">Versions</span><span class="_de">Änderungen</span><span class="_ru">Список изменений</span><span class="_sp">Versión</span><span class="_cn">版本</span><span class="_pl">Changelog</span></a>
           <a onclick="parent.open('http://extraboard.net/contact/')">Contact</a>
         </div>
       </span>
@@ -690,8 +745,8 @@
                 <div class="clFocusBlockH">
                     <button id="idActionS1" class="StratButton clFlexGrow1 clActionButton" onclick="FctAction(this)">Strategy</button>
                     <button id="idActionS2" class="StratButton clFlexGrow1 clActionButton" onclick="FctAction(this)">Strategy2</button>
-                    <button id="idActionTactical" class="StratButton clFlexGrow1 clActionButton" onclick="FctAction(this)"><span class="_en">Tactical / Component</span><span class="_fr">Tactique / Elément</span><span class="_de">Taktik / Komponente</span><span class="_ru">Тактическое / Компонентное</span><span class="_sp">Tactica / Componente</span><span class="_cn">战术 / 配件</span></button>
-                    <button id="idActionPass" class="StratButton clFlexGrow1 clActionButton" onclick="FctAction(this)"><span class="_en">Pass</span><span class="_fr">Passer</span><span class="_de">Passen</span><span class="_ru">Пас</span><span class="_sp">Pasar</span><span class="_cn">跳过</span></button>
+                    <button id="idActionTactical" class="StratButton clFlexGrow1 clActionButton" onclick="FctAction(this)"><span class="_en">Tactical / Component</span><span class="_fr">Tactique / Elément</span><span class="_de">Taktik / Komponente</span><span class="_ru">Тактическое / Компонентное</span><span class="_sp">Tactica / Componente</span><span class="_cn">战术 / 配件</span><span class="_pl">Taktyczna / Komponentu</span></button>
+                    <button id="idActionPass" class="StratButton clFlexGrow1 clActionButton" onclick="FctAction(this)"><span class="_en">Pass</span><span class="_fr">Passer</span><span class="_de">Passen</span><span class="_ru">Пас</span><span class="_sp">Pasar</span><span class="_cn">跳过</span><span class="_pl">Pas</span></button>
                  </div>
                 <div class="clFocusBlockV">
                     <span id="idActionTxt" class="clh2 classCenter clFlexGrow3 clAction1 clFocusBlockH">
@@ -699,15 +754,15 @@
                         &nbsp; &nbsp;
                         <span id="idSpin"class="loader">&nbsp;</span>
                     </span>
-                    <button id="idActionEnd" class="StratButton clFlexGrow1" onclick="fctResolveAction()"><span class="_en">Next player</span><span class="_fr">Joueur suivant</span><span class="_de">Nächster Spieler</span><span class="_ru">Следующий игрок</span><span class="_sp">Siguiente Jugador</span><span class="_cn">下一玩家</span></button></div>
+                    <button id="idActionEnd" class="StratButton clFlexGrow1" onclick="fctResolveAction()"><span class="_en">Next player</span><span class="_fr">Joueur suivant</span><span class="_de">Nächster Spieler</span><span class="_ru">Следующий игрок</span><span class="_sp">Siguiente Jugador</span><span class="_cn">下一玩家</span><span class="_pl">Następny gracz</span></button></div>
             </div>
         </div>
         <br/>
         <div class="classCenter">
-            <button id="idStrategyDone" class="DoneButton clMarginAutoOnly" onclick="fctStrategyDone()"><span class="_en">Done</span><span class="_fr">Terminer</span><span class="_de">Fertig</span><span class="_ru">Готово</span><span class="_sp">Hecho</span><span class="_cn">结束</span></button>
-            <button class="classCenter clMarginAutoOnly clStratEndButton" onclick="fctRstStrategyPhase()"><span class="_en">Reset the phase</span><span class="_fr">Recommencer la phase</span><span class="_de">Phase zurücksetzen</span><span class="_ru">Сбросить фазу</span><span class="_sp">Reiniciar Fase</span><span class="_cn">重选</span></button>
-            <button class="classCenter clMarginAutoOnly clStratEndButton" onclick="fctEffectStrategyPhase('block')"><span class="_en">Play End phase card effect</span><span class="_fr">Jouer une carte Fin de phase</span><span class="_de">Spiele Karteneffekt zum Ende der Phase</span><span class="_ru">Разыграть карту с эффектом в конце фазы стратегии</span><span class="_sp">Jugar Efecto de Carta de Final de Fase</span><span class="_cn">打出本阶段结束行动卡</span></button>
-            <button class="classCenter clMarginAutoOnly clStratEndButton" onclick="fctEndStrategyPhase()"><span class="_en">End the phase</span><span class="_fr">Fin de phase</span><span class="_de">Ende der Phase</span><span class="_ru">Закончить фазу</span><span class="_sp">Final de Fase</span><span class="_cn">结束策略阶段</span></button>
+            <button id="idStrategyDone" class="DoneButton clMarginAutoOnly" onclick="fctStrategyDone()"><span class="_en">Done</span><span class="_fr">Terminer</span><span class="_de">Fertig</span><span class="_ru">Готово</span><span class="_sp">Hecho</span><span class="_cn">结束</span><span class="_pl">Gotowe</span></button>
+            <button class="classCenter clMarginAutoOnly clStratEndButton" onclick="fctRstStrategyPhase()"><span class="_en">Reset the phase</span><span class="_fr">Recommencer la phase</span><span class="_de">Phase zurücksetzen</span><span class="_ru">Сбросить фазу</span><span class="_sp">Reiniciar Fase</span><span class="_cn">重选</span><span class="_pl">Reset fazy</span></button>
+            <button class="classCenter clMarginAutoOnly clStratEndButton" onclick="fctEffectStrategyPhase('block')"><span class="_en">Play End phase card effect</span><span class="_fr">Jouer une carte Fin de phase</span><span class="_de">Spiele Karteneffekt zum Ende der Phase</span><span class="_ru">Разыграть карту с эффектом в конце фазы стратегии</span><span class="_sp">Jugar Efecto de Carta de Final de Fase</span><span class="_cn">打出本阶段结束行动卡</span><span class="_pl">Zagraj kartę z efektem na koniec fazy strategii</span></button>
+            <button class="classCenter clMarginAutoOnly clStratEndButton" onclick="fctEndStrategyPhase()"><span class="_en">End the phase</span><span class="_fr">Fin de phase</span><span class="_de">Ende der Phase</span><span class="_ru">Закончить фазу</span><span class="_sp">Final de Fase</span><span class="_cn">结束策略阶段</span><span class="_pl">Koniec fazy</span></button>
         </div>
     </div>
 
@@ -719,10 +774,11 @@
         <h2 class="clModal classCenter _ru">Назначить председателя</h2>
         <h2 class="clModal classCenter _sp">Elegir Portavoz</h2>
         <h2 class="clModal classCenter _cn">设置议长</h2>
+        <h2 class="clModal classCenter _pl">Wybierz mówcę</h2>
         <div id="idSpeakerPlayers" class="clSpeakerWin">
         </div>
         <div class="classCenter">
-            <button id="idRandomSpeaker" class="classCenter clMarginAutoOnly" onclick="fctRandomSpeaker()"><span class="_en">Random</span><span class="_fr">Aléatoire</span><span class="_de">Zufall</span><span class="_ru">Случайно</span><span class="_sp">Aleatorio</span><span class="_cn">随机设置议长</span></button>
+            <button id="idRandomSpeaker" class="classCenter clMarginAutoOnly" onclick="fctRandomSpeaker()"><span class="_en">Random</span><span class="_fr">Aléatoire</span><span class="_de">Zufall</span><span class="_ru">Случайно</span><span class="_sp">Aleatorio</span><span class="_cn">随机设置议长</span><span class="_pl">Losowo</span></button>
         </div>
       </div>
     </div>
@@ -735,10 +791,11 @@
         <h2 class="clModal classCenter _ru">Выбрать игрока</h2>
         <h2 class="clModal classCenter _sp">Seleccione un Jugador</h2>
         <h2 class="clModal classCenter _cn">选择玩家</h2>
+        <h2 class="clModal classCenter _pl">Wybierz gracza</h2>
     <div id="idTelephaticPlayers" class="clSpeakerWin">
         </div>
         <div class="classCenter">
-            <button class="classCenter clMarginAutoOnly" onclick="fctSetTelephatic(255)"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbruch</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span></button>
+            <button class="classCenter clMarginAutoOnly" onclick="fctSetTelephatic(255)"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbruch</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span><span class="_pl">Anuluj</span></button>
         </div>
       </div>
     </div>
@@ -751,31 +808,32 @@
         <h2 class="clModal classCenter _ru">Эффекты В конце фазы стратегии"</h2>
         <h2 class="clModal classCenter _sp">Efectos al Final de la Fase de Estrategia</h2>
         <h2 class="clModal classCenter _cn">策略阶段结束效果</h2>
+        <h2 class="clModal classCenter _pl">Efekty na koniec Fazy Strategii</h2>
         <div class="classPlanetList">
             <div id="idImperialArbiterCard" class="clCard flexfont" onclick="fctStrategyEndEffect(0)">
                 <br/>
-                <div><span class="_en">Imperial Arbiter</span><span class="_fr">Arbitre Imperial</span><span class="_de">Imperialer Schiedsrichter</span><span class="_ru">Имперский арбитр</span><span class="_sp">Arbitrador Imperial</span><span class="_cn">帝国权贵</span></div>
-                <div><span class="_en">(Action card)</span><span class="_fr">(Carte Action)</span><span class="_de">(Aktionskarte)</span><span class="_ru">(Карта действия)</span><span class="_sp">(Carta de Acción (Ley))</span><span class="_cn">(行动卡)</span></div>
+                <div><span class="_en">Imperial Arbiter</span><span class="_fr">Arbitre Imperial</span><span class="_de">Imperialer Schiedsrichter</span><span class="_ru">Имперский арбитр</span><span class="_sp">Arbitrador Imperial</span><span class="_cn">帝国权贵</span><span class="_pl">Imperialny Arbiter</span></div>
+                <div><span class="_en">(Action card)</span><span class="_fr">(Carte Action)</span><span class="_de">(Aktionskarte)</span><span class="_ru">(Карта действия)</span><span class="_sp">(Carta de Acción (Ley))</span><span class="_cn">(行动卡)</span><span class="_pl">(Karta akcji)</span></div>
             </div>
             <div id="idAcquiescenceCard" class="clCard flexfont" onclick="fctStrategyEndEffect(0)">
                 <br/>
-                <div><span class="_en">Acquiescence</span><span class="_fr">Consentement</span><span class="_de">Duldung</span><span class="_ru">Уступка</span><span class="_sp">Consentimiento</span><span class="_cn">默许</span></div>
-                <div><span class="_en">(Winnu Promissory Note)</span><span class="_fr">(Billet Winnu)</span><span class="_de">(Winnu Vertrags-Frakionskarte)</span><span class="_ru">(Карта обещания Винну)</span><span class="_sp">(Promesa Winnu)</span><span class="_cn">维努 期票</span></div>
+                <div><span class="_en">Acquiescence</span><span class="_fr">Consentement</span><span class="_de">Duldung</span><span class="_ru">Уступка</span><span class="_sp">Consentimiento</span><span class="_cn">默许</span><span class="_pl">Ustępliwość</span></div>
+                <div><span class="_en">(Winnu Promissory Note)</span><span class="_fr">(Billet Winnu)</span><span class="_de">(Winnu Vertrags-Frakionskarte)</span><span class="_ru">(Карта обещания Винну)</span><span class="_sp">(Promesa Winnu)</span><span class="_cn">维努 期票</span><span class="_pl">Weksel Winnu</span></div>
             </div>
             <div id="idQuantumDatahubNodeCard" class="clCard flexfont" onclick="fctStrategyEndEffect(0)">
                 <br/>
-                <div><span class="_en">Quantum Datahub Node</span><span class="_fr">Noeud de données quantique</span><span class="_de">Quantennetzwerk</span><span class="_ru">Квантовый Информационный Центр</span><span class="_sp">Centro de Procesamiento Cuantico</span><span class="_cn">量子化数据节点</span></div>
-                <div><span class="_en">(Hacan Technology)</span><span class="_fr">(Technologie Hacan)</span><span class="_de">(Hacan Technologie)</span><span class="_ru">(Технология Хаканских Эмиратов)</span><span class="_sp">(Technologia Hacan)</span><span class="_cn">哈肯 科技</span></div>
+                <div><span class="_en">Quantum Datahub Node</span><span class="_fr">Noeud de données quantique</span><span class="_de">Quantennetzwerk</span><span class="_ru">Квантовый Информационный Центр</span><span class="_sp">Centro de Procesamiento Cuantico</span><span class="_cn">量子化数据节点</span><span class="_pl">Kwantowy węzeł centrali danych</span></div>
+                <div><span class="_en">(Hacan Technology)</span><span class="_fr">(Technologie Hacan)</span><span class="_de">(Hacan Technologie)</span><span class="_ru">(Технология Хаканских Эмиратов)</span><span class="_sp">(Technologia Hacan)</span><span class="_cn">哈肯 科技</span><span class="_pl">(Technologia Hakanów)</span></div>
             </div>
             <div id="idTelepathicCard" class="clCard flexfont" onclick="fctStrategyEndEffect(1)">
                 <br/>
-                <div><span class="_en">Gift of Prescience</span><span class="_fr">Don de prémonition</span><span class="_de">Die Gabe der Hellsicht</span><span class="_ru">Дар Предвидения</span><span class="_sp">Don de la Clarividencia</span><span class="_cn">先知的馈赠</span></div>
-                <div><span class="_en">(Naalu Promissory Note)</span><span class="_fr">(Billet Naalu)</span><span class="_de">(Naalu Vertrags-Fraktionskarte)</span><span class="_ru">(Карта обещания Наалу)</span><span class="_sp">(Promesa Naalu)</span><span class="_cn">纳鲁 期票</span></div>
+                <div><span class="_en">Gift of Prescience</span><span class="_fr">Don de prémonition</span><span class="_de">Die Gabe der Hellsicht</span><span class="_ru">Дар Предвидения</span><span class="_sp">Don de la Clarividencia</span><span class="_cn">先知的馈赠</span><span class="_pl">Dar jasnowidzenia</span></div>
+                <div><span class="_en">(Naalu Promissory Note)</span><span class="_fr">(Billet Naalu)</span><span class="_de">(Naalu Vertrags-Fraktionskarte)</span><span class="_ru">(Карта обещания Наалу)</span><span class="_sp">(Promesa Naalu)</span><span class="_cn">纳鲁 期票</span><span class="_pl">(Weksel Naalu)</span></div>
             </div>
         </div>
         <br/><br/>
         <div class="classCenter">
-            <button class="classCenter clMarginAutoOnly" onclick="fctEffectStrategyPhase('none')"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span></button>
+            <button class="classCenter clMarginAutoOnly" onclick="fctEffectStrategyPhase('none')"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span><span class="_pl">Wróć</span></button>
         </div>
       </div>
     </div>
@@ -788,12 +846,13 @@
         <h2 class="clModal classCenter _ru">Поменять карты стратегий</h2>
         <h2 class="clModal classCenter _sp">Intercambiar Estrategias</h2>
         <h2 class="clModal classCenter _cn">交换策略卡</h2>
+        <h2 class="clModal classCenter _pl">Zamień karty strategii</h2>
 
         <div id="idSwapList" class="clMarginAutoOnly">
             <div class="clSwapStrat" onclick="fctSwap(this)">template</div>
         </div>
         <div class="classCenter">
-            <button id="idSwapEndButton" class="classCenter clMarginAutoOnly" onclick="fctSwapStop()"><span class="_en">Done</span><span class="_fr">Terminer</span><span class="_de">Fertig</span><span class="_ru">Готово</span><span class="_sp">Hecho</span><span class="_cn">结束</span></button>
+            <button id="idSwapEndButton" class="classCenter clMarginAutoOnly" onclick="fctSwapStop()"><span class="_en">Done</span><span class="_fr">Terminer</span><span class="_de">Fertig</span><span class="_ru">Готово</span><span class="_sp">Hecho</span><span class="_cn">结束</span><span>Dalej</span></button>
         </div>
       </div>
     </div>
@@ -809,6 +868,7 @@
             <p class="clh3 clOrderTitle classCenter _ru">Порядок инициативы</p>
             <p class="clh3 clOrderTitle classCenter _sp">Orden de Iniciativa</p>
             <p class="clh3 clOrderTitle classCenter _cn">行动顺位</p>
+            <p class="clh3 clOrderTitle classCenter _pl">Kolejność inicjatywy</p>
             <div class="clFocusBlockH">
                 <img class="clArrow3"  src=""></img>
                 <span class="clh3 clFactionStatus">Naalu</span>
@@ -869,7 +929,7 @@
                 <h3 class="clOverable">7. Отремонтируйте отряды</h3>
                 <h3 class="clOverable">8. Верните карты стратегий</h3>
             </div>
-      <div class="clAlignText _sp">
+            <div class="clAlignText _sp">
                 <h3 class="clOverable">1. Anota puntos por 1 ojetivo público y/o 1 objetivo secreto</h3>
                 <h3 class="clOverable">2. Muestra el siguiente objetivo público</h3>
                 <h3 class="clOverable">3. Toma 1 Carta de Acción</h3>
@@ -889,6 +949,16 @@
                 <h3 class="clOverable">7. 修复受伤的单位</h3>
                 <h3 class="clOverable">8. 归还策略卡</h3>
             </div>
+            <div class="clAlignText _pl">
+                <h3 class="clOverable">1. Ukończ 1 cel ogólny i/lub 1 cel tajny</h3>.
+                <h3 class="clOverable">2. Odblokuj kartę Celu ogólnego</h3>.
+                <h3 class="clOverable">3. Weź 1 kartę akcji</h3>.
+                <h3 class="clOverable">4. Zbierz żetony dowodzenia</h3>.
+                <h3 class="clOverable">5. Dobierz 2 żetony dowodzenia i rozdaj żetony rozkazów</h3>.
+                <h3 class="clOverable">6. Przygotuj karty</h3>.
+                <h3 class="clOverable">7. Napraw jednostki</h3>.
+                <h3 class="clOverable">8. Zwróć karty strategii</h3>.
+            </div>
         </div>
         <div id="idStatus2">
             <br/>
@@ -905,7 +975,7 @@
         </div>
 
         <div class="classCenter">
-            <button id="idStatusNext" class="clMarginAutoOnly" onclick="fctStatusNext()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">下一个</span></button>
+            <button id="idStatusNext" class="clMarginAutoOnly" onclick="fctStatusNext()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">下一个</span><span class="_pl">Dalej</span></button>
         </div>
     </div>
 
@@ -915,14 +985,14 @@
     <div id="idAgendaTab" class="tabcontent">
         <div id="idAgendaVotePage" class="clDisplayNone">
             <h2 id="idAgendaIdx" class="classCenter">First Agenda</h2>
-            <button class="clVoteType" onclick="FctNewVote('ForAgainst')"><span class="_en">Elect For/Against</span><span class="_fr">Elire Pour ou Contre</span><span class="_de">Stimme Für / Gegen</span><span class="_ru">Голосование за/против</span><span class="_sp">A favor / En contra</span><span class="_cn">赞同反对投票</span></button>
-            <button class="clVoteType" onclick="FctNewVote('ElectPlayer')"><span class="_en">Elect Player</span><span class="_fr">Elire un joueur</span><span class="_de">Wähle einen Spieler</span><span class="_ru">Выбор игрока</span><span class="_sp">Elige Jugador</span><span class="_cn">选举玩家</span></button>
-            <button class="clVoteType" onclick="FctNewVote('ElectPlanet')"><span class="_en">Elect Planet</span><span class="_fr">Elire une planète</span><span class="_de">Wähle einen Planeten</span><span class="_ru">Выбор планеты</span><span class="_sp">Elige Planeta</span><span class="_cn">选举星球</span></button>
-            <button class="clVoteType" onclick="FctNewVote('ElectLaw')"><span class="_en">Elect Law</span><span class="_fr">Elire une loi</span><span class="_de">Wähle Gesetz</span><span class="_ru">Выбор закона</span><span class="_sp">Elige Ley</span><span class="_cn">选举法律</span></button>
-            <button class="clVoteType" onclick="FctNewVote('ElectObj')"><span class="_en">Elect Secret Objective</span><span class="_fr">Elire un objectif secret</span><span class="_de">Wähle ein geheimes Ziel</span><span class="_ru">Выбор секретной цели</span><span class="_sp">Elige un Objetivo Secreto</span><span class="_cn">选举秘密目标</span></button>
-            <button class="clVoteType" onclick="FctNewVote('ElectOther')"><span class="_en">Elect other proposal</span><span class="_fr">Elire une proposition autre</span><span class="_de">Wähle einen anderen Vorschlag</span><span class="_ru">Выдвинуть другое предложение</span><span class="_sp">Elige Otra Propuesta</span><span class="_cn">选举其他议案</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ForAgainst')"><span class="_en">Elect For/Against</span><span class="_fr">Elire Pour ou Contre</span><span class="_de">Stimme Für / Gegen</span><span class="_ru">Голосование за/против</span><span class="_sp">A favor / En contra</span><span class="_cn">赞同反对投票</span><span class="_pl">Głosowanie Za/Przeciw</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ElectPlayer')"><span class="_en">Elect Player</span><span class="_fr">Elire un joueur</span><span class="_de">Wähle einen Spieler</span><span class="_ru">Выбор игрока</span><span class="_sp">Elige Jugador</span><span class="_cn">选举玩家</span><span class="_pl">Wyłońcie Gracza</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ElectPlanet')"><span class="_en">Elect Planet</span><span class="_fr">Elire une planète</span><span class="_de">Wähle einen Planeten</span><span class="_ru">Выбор планеты</span><span class="_sp">Elige Planeta</span><span class="_cn">选举星球</span><span class="_pl">Wbierzcie Planetę</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ElectLaw')"><span class="_en">Elect Law</span><span class="_fr">Elire une loi</span><span class="_de">Wähle Gesetz</span><span class="_ru">Выбор закона</span><span class="_sp">Elige Ley</span><span class="_cn">选举法律</span><span class="_pl">Wbierzcie Prawo</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ElectObj')"><span class="_en">Elect Secret Objective</span><span class="_fr">Elire un objectif secret</span><span class="_de">Wähle ein geheimes Ziel</span><span class="_ru">Выбор секретной цели</span><span class="_sp">Elige un Objetivo Secreto</span><span class="_cn">选举秘密目标</span><span class="_pl">Wybór Tajnego Celu</span></button>
+            <button class="clVoteType" onclick="FctNewVote('ElectOther')"><span class="_en">Elect other proposal</span><span class="_fr">Elire une proposition autre</span><span class="_de">Wähle einen anderen Vorschlag</span><span class="_ru">Выдвинуть другое предложение</span><span class="_sp">Elige Otra Propuesta</span><span class="_cn">选举其他议案</span><span class="_pl">Dobierzcie kartę głosowania</span></button>
             <br />
-            <button class="clVoteType" onclick="fctAgendaNext()"><span class="_en">Skip</span><span class="_fr">Passer</span><span class="_de">Nächster</span><span class="_ru">Пропустить</span><span class="_sp">Pasar</span><span class="_cn">跳过</span></button>
+            <button class="clVoteType" onclick="fctAgendaNext()"><span class="_en">Skip</span><span class="_fr">Passer</span><span class="_de">Nächster</span><span class="_ru">Пропустить</span><span class="_sp">Pasar</span><span class="_cn">跳过</span><span class="_pl">Pomiń</span></button>
         </div>
         <div id="idAgendaStepPage">
           <p class="clh3 classCenter _en">Influence counters</p>
@@ -934,6 +1004,7 @@
           <!-- check translations !! -->
           <p class="clh3 classCenter _sp">Calcular Influencia</p>
           <p class="clh3 classCenter _cn">影响力指示器</p>
+          <p class="clh3 classCenter _pl">Liczniki wpływu</p>
           <!-- check translations !! -->
           <br/>
           <div id="idInfluenceBar" class="clInfluenceBar">
@@ -991,6 +1062,7 @@
             <p class="clh3 classCenter _ru">Resolve 2 Agendas</p>
             <p class="clh3 classCenter _sp ">Resolver 2da Agenda</p>
             <p class="clh3 classCenter _cn ">进行两个议程</p>
+            <p class="clh3 classCenter _pl ">Rozpatrz 2 zagadnienia polityczne</p>
             <div class="clAlignText _en">
                 <h3 class="clOverable">1. Reveal and read the Agenda</h3>
                 <h3 class="clOverable">2. Apply "<u>When</u> an agenda is revealed"</h3>
@@ -1041,8 +1113,16 @@
                 <h3 class="clOverable">5. 投票</h3>
                 <h3 class="clOverable">6. 执行结果</h3>
             </div>
+            <div class="clAlignText _pl">
+                <h3 class="clOverable">1. Odkrycie zagadnienia politycznego</h3>
+                <h3 class="clOverable">2. Zastosowanie kart "<u>Kiedy</u> zostanie odkryta karta polityki"</h3>
+                <h3 class="clOverable">3. Zastosowanie kart "<u>Po</u> odkryciu karty polityki"</h3>
+                <h3 class="clOverable">4. Dyskusja</h3>
+                <h3 class="clOverable">5. Głosowanie</h3>
+                <h3 class="clOverable">6. Rozpatrzenie wyniku głosowania</h3>
+            </div>
             <br />
-            <button class="clVoteType" onclick="fctAgendaEnd()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">继续</span></button>
+            <button class="clVoteType" onclick="fctAgendaEnd()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">继续</span><span class="_pl">Dalej</span></button>
         </div>
     </div>
 
@@ -1404,17 +1484,17 @@
         </table>
         <br/>
         <div class="classVoteInterface">
-            <span id="idInfluenceVote" class="classNumKey"><span class="_en">Influence:</span><span class="_fr">Influence:</span><span class="_de">Einfluss:</span><span class="_ru">Влияние:</span><span class="_sp">Influencia:</span><span class="_cn">影响力:</span></span>
+            <span id="idInfluenceVote" class="classNumKey"><span class="_en">Influence:</span><span class="_fr">Influence:</span><span class="_de">Einfluss:</span><span class="_ru">Влияние:</span><span class="_sp">Influencia:</span><span class="_cn">影响力:</span><span class="_pl">Wpływ:</span></span>
             <span class="classNumKey" onclick="FctKeypadInput(1)">+1</span>
             <span class="classNumKey" onclick="FctKeypadInput(2)">+2</span>
             <span class="classNumKey" onclick="FctKeypadInput(3)">+3</span>
             <span class="classNumKey" onclick="FctKeypadInput(4)">+4</span>
             <span class="classNumKey" onclick="FctKeypadInput(6)">+6</span>
             <span class="classNumKey" onclick="FctKeypadInput(0)">=0</span>
-            <span id="idKeyConfirm" class="classNumKey" onclick="FctKeypadInput(255)"><span class="_en">Confirm</span><span class="_fr">Confirmer</span><span class="_de">Bestätigen</span><span class="_ru">Подтвердить</span><span class="_sp">Confirmar</span><span class="_cn">确认</span></span>
+            <span id="idKeyConfirm" class="classNumKey" onclick="FctKeypadInput(255)"><span class="_en">Confirm</span><span class="_fr">Confirmer</span><span class="_de">Bestätigen</span><span class="_ru">Подтвердить</span><span class="_sp">Confirmar</span><span class="_cn">确认</span><span class="_pl">Zatwierdź</span></span>
         </div>
         <div class="classCenter">
-            <button id="idAgendaNext" class="clMarginAutoOnly" onclick="fctAgendaNext()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">继续</span></button>
+            <button id="idAgendaNext" class="clMarginAutoOnly" onclick="fctAgendaNext()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">继续</span><span class="_pl">Dalej</span></button>
         </div>
     </div>
 
@@ -1425,12 +1505,13 @@
             <h2 class="clModal classCenter _de">Wähle einen Planeten</h2>
             <h2 class="clModal classCenter _sp">Selecciona un Planeta</h2>
             <h2 class="clModal classCenter _cn">选择一个星球</h2>
+            <h2 class="clModal classCenter _pl">Wybierz planetę</h2>
             <div id="idPlanetFilters" class="clfilterBar">
-                <button class="btnFilter activeFilter" onclick="filterSelection('all')"><span class="_en">All</span><span class="_fr">Toutes</span><span class="_de">Alle</span><span class="_ru">Все</span><span class="_sp">Todos</span><span class="_cn">全部</span></button>
-                <button class="btnFilter" onclick="filterSelection('homeworld')"><span class="_en">Homeworld</span><span class="_fr">Mondes d'origines</span><span class="_de">Heimatwelt</span><span class="_ru">Родная система</span><span class="_sp">Sistema de Origen</span><span class="_cn">母星</span></button>
-                <button class="btnFilter" onclick="filterSelection('cultural')"><span class="_en">Cultural</span><span class="_fr">Culturelles</span><span class="_de">Kulturell</span><span class="_ru">Культурная</span><span class="_sp">Cultural</span><span class="_cn">文化</span></button>
-                <button class="btnFilter" onclick="filterSelection('hazardous')"><span class="_en">Hazardous</span><span class="_fr">Dangereuses</span><span class="_de">Gefährlich</span><span class="_ru">Опасная</span><span class="_sp">Inhóspito</span><span class="_cn">危险</span></button>
-                <button class="btnFilter" onclick="filterSelection('industrial')"><span class="_en">Industrial</span><span class="_fr">Industrielles</span><span class="_de">Industriell</span><span class="_ru">Промышленная</span><span class="_sp">Industrial</span><span class="_cn">工业</span></button>
+                <button class="btnFilter activeFilter" onclick="filterSelection('all')"><span class="_en">All</span><span class="_fr">Toutes</span><span class="_de">Alle</span><span class="_ru">Все</span><span class="_sp">Todos</span><span class="_cn">全部</span><span class="_pl">Wszystkie</span></button>
+                <button class="btnFilter" onclick="filterSelection('homeworld')"><span class="_en">Homeworld</span><span class="_fr">Mondes d'origines</span><span class="_de">Heimatwelt</span><span class="_ru">Родная система</span><span class="_sp">Sistema de Origen</span><span class="_cn">母星</span><span class="_pl">Systemy macierzyste</span></button>
+                <button class="btnFilter" onclick="filterSelection('cultural')"><span class="_en">Cultural</span><span class="_fr">Culturelles</span><span class="_de">Kulturell</span><span class="_ru">Культурная</span><span class="_sp">Cultural</span><span class="_cn">文化</span><span class="_pl">Kulturowe</span></button>
+                <button class="btnFilter" onclick="filterSelection('hazardous')"><span class="_en">Hazardous</span><span class="_fr">Dangereuses</span><span class="_de">Gefährlich</span><span class="_ru">Опасная</span><span class="_sp">Inhóspito</span><span class="_cn">危险</span><span class="_pl"></span><span class="_pl">Niegościnne</span></button>
+                <button class="btnFilter" onclick="filterSelection('industrial')"><span class="_en">Industrial</span><span class="_fr">Industrielles</span><span class="_de">Industriell</span><span class="_ru">Промышленная</span><span class="_sp">Industrial</span><span class="_cn">工业</span><span class="_pl">Przemysłowe</span></button>
             </div>
             <br/>
             <div id="idPlanetList" class="classPlanetList">
@@ -1447,6 +1528,7 @@
             <h2 class="clModal classCenter _ru">Выберите закон</h2>
             <h2 class="clModal classCenter _sp">Selecciona una Ley</h2>
             <h2 class="clModal classCenter _cn">选择一个法律</h2>
+            <h2 class="clModal classCenter _pl">Wybierz prawo</h2>
             <div id="idLawList" class="classPlanetList">
                 <div class="filterDivLaw showflex" onclick="fctProposal(this, gWord[W_ADD_LAW][gLang])">TEMPLATE</div>
             </div>
@@ -1461,6 +1543,7 @@
             <h2 class="clModal classCenter _ru"> Выберите раскрытую карту секретной цели </h2>
             <h2 class="clModal classCenter _sp"> Selecciona y revela un Objetivo Secreto </h2>
             <h2 class="clModal classCenter _cn"> 选择一个秘密目标 </h2>
+            <h2 class="clModal classCenter _pl"> Wybierz odkryty tajny cel </h2>
             <div id="idObjList" class="classPlanetList">
                 <div class="filterDivObj showflex" onclick="fctProposal(this, gWord[W_ADD_OBJECTIVE][gLang])">TEMPLATE</div>
             </div>
@@ -1475,6 +1558,7 @@
             <h2 class="clModal classCenter _ru">Select a strategy card</h2>
             <h2 class="clModal classCenter _sp">Selecciona una carta de Estrategia</h2>
             <h2 class="clModal classCenter _cn">选择一个策略卡</h2>
+            <h2 class="clModal classCenter _pl">Wybierz kartę strategii</h2>
             <div id="idStrategyList" class="classPlanetList">
                 <div class="filterDivStrategy showflex" onclick="fctProposal(this, gWord[W_ADD_STRATEGY][gLang])">TEMPLATE</div>
             </div>
@@ -1489,6 +1573,7 @@
             <h2 class="clModal classCenter _ru">Выбрать предложение</h2>
             <h2 class="clModal classCenter _sp">Elige una propuesta</h2>
             <h2 class="clModal classCenter _cn">选择一个议案</h2>
+            <h2 class="clModal classCenter _pl">Wybierz zagadnienie polityczne</h2>
             <div id="idOtherList" class="classPlanetList">
                 <div class="filterDivOther showflex" onclick="fctProposal(this, gWord[W_ADD_PROPOSAL][gLang])">TEMPLATE</div>
             </div>
@@ -1524,6 +1609,7 @@
                 <span class="_ru">Преклонитесь перед новым Галактическим Императором</span>
                 <span class="_sp">Jura tu sumisión al nuevo Emperador Galáctico</span>
                 <span class="_cn">宣誓效忠新的银河皇帝</span>
+                <span class="_pl">Pokłońcie się przed nowym Imperatorem Galaktycznym</span>
             </h2>
             <div id="idEndScreen">
                 <img id="idEmperor" src="ti4/img/saturn_mini.png">
@@ -1536,6 +1622,7 @@
                           <tr class="_ru"><th></th><th>Faction</th><th>VP</th><th>Timer</th><th>Speaker</th><th>Влияние</th></tr>
                           <tr class="_sp"><th></th><th>Facción</th><th>PV</th><th>Tiempo</th><th>Portavoz</th><th>Influencia</th></tr>
                           <tr class="_cn"><th></th><th>种族</th><th>分数</th><th>计时</th><th>议长</th><th>影响力</th></tr>
+                          <tr class="_pl"><th></th><th>Rasa</th><th>PZ</th><th>Czas</th><th>Mówca</th><th>Wpływ</th></tr>
                         <tr id="idRk0" class="clRk"><td><img class="clRkIcon" src="ti4/img/arborec.png"></td><td class="clRkFaction">Arborec</td><td class="clRkVP">10VP</td><td class="clRkTimer">0</td><td class="clRkSpeaker">0</td><td class="clRkInfluence">0</td></tr>
                           <tr class="clRk"><td><img class="clRkIcon" src="ti4/img/arborec.png"></td><td class="clRkFaction">Arborec</td><td class="clRkVP">10VP</td><td class="clRkTimer">0</td><td class="clRkSpeaker">0</td><td class="clRkInfluence">0</td></tr>
                           <tr class="clRk"><td><img class="clRkIcon" src="ti4/img/arborec.png"></td><td class="clRkFaction">Arborec</td><td class="clRkVP">10VP</td><td class="clRkTimer">0</td><td class="clRkSpeaker">0</td><td class="clRkInfluence">0</td></tr>
@@ -1546,14 +1633,14 @@
                           <tr class="clRk"><td><img class="clRkIcon" src="ti4/img/arborec.png"></td><td class="clRkFaction">Arborec</td><td class="clRkVP">10VP</td><td class="clRkTimer">0</td><td class="clRkSpeaker">0</td><td class="clRkInfluence">0</td></tr>
                         </table>
                         <span id="idEndTiming">
-                            <div><span class="_en">Game duration: </span><span class="_fr">Durée de la partie: </span><span class="_de">Game duration: </span><span class="_ru">Продолжительность игры: </span><span class="_sp">Duración del Juego: </span><span class="_cn">游戏时长: </span><span id="idEndGameDuration"></span></div>
+                            <div><span class="_en">Game duration: </span><span class="_fr">Durée de la partie: </span><span class="_de">Game duration: </span><span class="_ru">Продолжительность игры: </span><span class="_sp">Duración del Juego: </span><span class="_cn">游戏时长: </span><span class="_pl">Czas gry: </span><span id="idEndGameDuration"></span></div>
                             <br/>
-                            <div><span class="_en">Number of rounds: </span><span class="_fr">Nombre de Rounds: </span><span class="_de">Anzahl der Runden: </span><span class="_ru">Количество раундов: </span><span class="_sp">Número de Turnos: </span><span class="_cn">轮数: </span><span id="idEndRound"></span></div>
+                            <div><span class="_en">Number of rounds: </span><span class="_fr">Nombre de Rounds: </span><span class="_de">Anzahl der Runden: </span><span class="_ru">Количество раундов: </span><span class="_sp">Número de Turnos: </span><span class="_cn">轮数: </span><span class="_pl">Liczba rund: </span><span id="idEndRound"></span></div>
                         </span>
                     </div>
                     <br/>
                     <div class="classCenter">
-                        <button onclick="fctEndBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span></button>
+                        <button onclick="fctEndBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span><span class="_pl">Wstecz</span></button>
                     </div>
                 </div>
                 <br/>
@@ -1562,7 +1649,7 @@
     </div>
 
     <div id="idEndButton" onclick="fctEndGame()">
-        <h3 id="idEndTxt" class="classCenter"><span class="_en">End game</span><span class="_fr">Fin</span><span class="_de">Beende Spiel</span><span class="_ru">Закончить игру</span><span class="_sp">Fin del Juego</span><span class="_cn">结束游戏</span></h3>
+        <h3 id="idEndTxt" class="classCenter"><span class="_en">End game</span><span class="_fr">Fin</span><span class="_de">Beende Spiel</span><span class="_ru">Закончить игру</span><span class="_sp">Fin del Juego</span><span class="_cn">结束游戏</span><span class="_pl">Koniec gry</span></h3>
     </div>
 
 
@@ -1579,6 +1666,7 @@
                 <span class="clModalText clBold _ru">Использовать счетчик победных очков в верхней панели</span>
                 <span class="clModalText clBold _sp">Utilizar el contador de Puntos de Victoria</span>
                 <span class="clModalText clBold _cn">顶端显示玩家分数</span>
+                <span class="clModalText clBold _pl">Użyj licznika punktów zwycięstwa na górnym pasku</span>
                 <label class="switch clFloatRight">
                     <input onclick="fctShowVPBar(this)"  type="checkbox" checked>
                     <span class="checker"></span>
@@ -1602,6 +1690,7 @@
                     <span class="_ru">Кнопка "Закончить игру" появится после достижения лимита победных очков</span>
                     <span class="_sp">El botón de Fin de Juego aparecerá al alcanzar el límite</span>
                     <span class="_cn">结束游戏按钮会在目标分达到后结束</span>
+                    <span class="_pl">Przycisk "Koniec gry" pojawia się po osiągnięciu limitu punktów zwycięstwa</span>
                 </div>
             </div>
             <br/>
@@ -1613,6 +1702,7 @@
                 <span class="clModalText clBold _ru">Полноэкранный режим</span>
                 <span class="clModalText clBold _sp">Pantalla completa </span>
                 <span class="clModalText clBold _cn">全屏 </span>
+                <span class="clModalText clBold _pl">Pełny ekran</span>
                 <label id="idOptionFullScreen" class="switch clFloatRight">
                     <input onclick="fctFullScreen(this)"  type="checkbox">
                     <span class="checker"></span>
@@ -1628,6 +1718,7 @@
                     <span class="clBold _ru">Таймер неактивности (в минутах)</span>
                     <span class="clBold _sp">Cronómetro de Inactividad (minutos)</span>
                     <span class="clBold _cn">计时器 (分钟)</span>
+                    <span class="clBold _pl">Licznik czasu bezczynności (w minutach)</span>
                     <input id="idOptionInactivityTimer"  class="clFloatRight clNumberInput" type="number" min="5" max="60" value="15"/>
                     <br/>
                     <span class="_en">Show warning message if no activity for the given duration. It helps to keep the game flows.</span>
@@ -1636,6 +1727,7 @@
                     <span class="_ru">Показывть предупреждающее сообщение, если не было никакой активности за выбранный период времени. Это помогает ускорить игру.</span>
                     <span class="_sp">Mostrar mensaje de advertencia si no hay actividad en el tiempo fijado. Esto ayuda a mantener el juego fluido.</span>
                     <span class="_cn">当玩家长考太久时给出提示，有利于游戏顺利进行.</span>
+                    <span class="_pl">Pokaż komunikat ostrzegawczy, jeśli nie było żadnej aktywności w wybranym okresie czasu. Pomaga to przyspieszyć grę.</span>
                     <br/>
                 </div>
             </div>
@@ -1649,6 +1741,7 @@
                     <span class="clBold _ru">Счетчик времени игрока сбрасывается каждый ход</span>
                     <span class="clBold _sp">El contador de tiempo de cada jugador se reinicia cada turno</span>
                     <span class="clBold _cn">每轮都重设玩家计时器</span>
+                    <span class="clBold _pl">Licznik czasu gracza jest resetowany co turę</span>
                     <label id="idOptionPlayerTimer" class="switch clFloatRight">
                         <input id="idPlyerTimerCheck"  type="checkbox">
                         <span class="checker"></span>
@@ -1660,6 +1753,7 @@
                     <span class="_ru">Если отключено, будет показано общее время на ходы.</span>
                     <span class="_sp">Si no esta marcado, el tiempo total por jugador se mostrará.</span>
                     <span class="_cn">不显示每位玩家游戏行动总时间.</span>
+                    <span class="_pl">Jeśli wyłączony, będzie pokazywany całkowity czas gracza.</span>
                     <br/>
                 </div>
             </div>
@@ -1673,6 +1767,7 @@
                     <span class="clBold _ru">Decision timer (seconds)</span>
                     <span class="clBold _sp">Decision timer (seconds)</span>
                     <span class="clBold _cn">行动倒计时 (秒)</span>
+                    <span class="clBold _pl">Czas na podjęcie decyzji (w sekundach)</span>
                     <input id="idOptionDecisionTimer"  class="clFloatRight clNumberInput" type="number" min="20" max="180" value="90"/>
                     <br/>
                     <span class="_en">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
@@ -1681,6 +1776,7 @@
                     <span class="_ru">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
                     <span class="_sp">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
                     <span class="_cn">防止长考. 循环计时/点击重置.</span>
+                    <span class="_pl">Pasek postępu, aby zapobiec paraliżowi decyzyjnemu. Powtarza się sam lub kliknij, aby zresetować.</span>
                     <br/>
                 </div>
             </div>
@@ -1694,6 +1790,7 @@
                     <span class="clBold _ru">Show detailed voting steps during Agenda phase instead of vote counter</span>
                     <span class="clBold _sp">Durante la fase de Concejo Galáctico, muestra una guia detallada del proceso, en lugar de un contador de votos</span>
                     <span class="clBold _cn">议会阶段，不显示计票器而改为显示投票详细步骤</span>
+                    <span class="clBold _pl">Pokaż szczegółowe kroki głosowania podczas Fazy Dyplomacji zamiast licznika głosów</span>
                     <label id="idOptionAgendaPage" class="switch clFloatRight">
                         <input id="idAgendaPageCheck"  type="checkbox" checked>
                         <span class="checker"></span>
@@ -1707,6 +1804,7 @@
                     <!-- TODO Missing translations !! -->
                     <span class="_sp">Si no esta marcado, se utiliza el viejo y complejo sistema de votación.</span>
                     <span class="_cn">取消选择来使用老版复杂投票系统.</span>
+                    <span class="_pl">Odznacz, aby korzystać ze starego i skomplikowanego systemu głosowania.</span>
                     <br/>
                 </div>
             </div>
@@ -1720,12 +1818,13 @@
                     <i class="_ru">Прмечание: эти опции можно менять в любой момент игры, используя иконку в верхней правой части экрана.</i>
                     <i class="_sp">Nota: Estas opciones se pueden cambiar en cualquier momento durante el juego, en el icono de la parte superior derecha.</i>
                     <i class="_cn">注意： 游戏中可以随时更改这些设置，点击右上角设置图标即可回来设置</i>
+                    <i class="_pl">Uwaga: Opcje te można zmienić w dowolnym momencie gry za pomocą ikony w prawym górnym rogu.</i>
                 </span>
             </div>
             <br/>
             <div class="classCenter">
-                <button id="idOptionsBack" onclick="location.reload()"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbruch</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span></button>
-                <button id="idConfirmOptions" onclick="fctCloseOptions()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">下一步</span></button>
+                <button id="idOptionsBack" onclick="location.reload()"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbruch</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span><span class="_pl">Anuluj</span></button>
+                <button id="idConfirmOptions" onclick="fctCloseOptions()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">下一步</span><span class="_pl">Dalej</span></button>
             </div>
         </div>
     </div>
@@ -1753,10 +1852,11 @@
             <li>Russian by Антон Синько</li>
             <li>Spanish by Sabathius</li>
             <li>Chinese by 柳五</li>
+            <li>Polish by Wojciech Ziomek</li>
         </ul>
             <br/>
         <div class="classCenter">
-            <button class="clMarginAutoOnly" onclick="fctAboutBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span></button>
+            <button class="clMarginAutoOnly" onclick="fctAboutBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span><span class="_pl">Wstecz</span></button>
         </div>
     </div>
 
@@ -1850,8 +1950,22 @@
             <p>自己决定，可以记录每个玩家的投票数，或者记录每个玩家拥有的影响力总数!</p>
             <br/><br/>
         </div>
+        <div class="_pl">
+            <h2>F.A.Q</h2>
+            <p class="clQuestion">Jak przywrócić menu główne?</p>
+            <p>Konieczne jest odświeżenie strony.</p>
+            <p class="clQuestion">Jak wstrzymać grę?</p>
+            <p>Klikając na zegar w lewym górnym rogu.</p>
+            <p class="clQuestion">Jak zmniejszyć liczbę punktów zwycięstwa?</p>
+            <p>Licznik VP resetuje się do 0 po osiągnięciu maksimum, tak więc aby zmiejszyć licznik, należy go przekręcić.</p>
+            <p class="clQuestion">Jak zapisać dwa razy tę samą akcję w fazie akcji?</p>
+            <p>Nie trzeba, wystarczy raz nacisnąć odpowiedni przycisk akcji</p>
+            <p class="clQuestion">Do czego służą liczniki wpływów na stronie fazy agendy?</p>
+            <p>Można je wykorzystać do zliczania całkowitego wpływu lub głosów na gracza. To zależy tylko od Ciebie!</p>
+            <br/><br/>
+        </div>
         <div class="classCenter">
-            <button class="clMarginAutoOnly" onclick="fctAboutBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span></button>
+            <button class="clMarginAutoOnly" onclick="fctAboutBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_de">Zurück</span><span class="_ru">Назад</span><span class="_sp">Volver</span><span class="_cn">返回</span><span class="_pl">Wstecz</span></button>
         </div>
     </div>
 
@@ -1934,7 +2048,7 @@
       <p>v1.0 - 2018.11.07: First release</p>
       <p>v0.0 - 2018.06.06: Start of development</p>
         <div class="classCenter">
-            <button class="clMarginAutoOnly" onclick="fctAboutBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_ru">Назад</span><span class="_cn">返回</span></button>
+            <button class="clMarginAutoOnly" onclick="fctAboutBack()"><span class="_en">Back</span><span class="_fr">Retour</span><span class="_ru">Назад</span><span class="_cn">返回</span><span class="_pl">Wstecz</span></button>
         </div>
     </div>
 
@@ -1973,6 +2087,7 @@
             <span class="_de">Achtung: Keine Aktivität seit </span>
             <span class="_ru">Предупреждение : не было активности </span>
             <span class="_cn">请注意 : 没有任何行动已经 </span>
+            <span class="_pl">UWAGA : Brak aktywności dla </span>
       <span class="_sp">Atención : Sin actividad por </span>
             <span id="idInactivityValue1"></span>
             <span class="_en"> minutes</span>
@@ -1981,16 +2096,17 @@
             <span class="_ru"> минут</span>
             <span class="_sp"> minutos</span>
             <span class="_cn"> 分钟</span>
+            <span class="_pl"> minut</span>
         </p>
     </div>
 
     <div id="idModalStopAlert" class="modalStop">
         <div class="modalcontentStop">
-            <h2 class="clModal classCenter"><span id="idInactivityValue2"></span><span class="_en"> minutes without activity</span><span class="_fr"> minutes sans activité</span><span class="_de"> Minuten ohne Aktivität</span><span class="_ru"> минут без активности</span><span class="_sp"> minutos sin actividad</span><span class="_cn"> 分钟没有行动了</span></h2>
-            <h2 class="clModal classCenter"><span class="_en">The game timer is paused</span><span class="_fr">Le jeu est en pause</span><span class="_ru">Игровой таймер поставлен на паузу</span><span class="_sp">El cronómetro del juego esta en pausa</span><span class="_cn">游戏计时器已经暂停</span></h2>
+            <h2 class="clModal classCenter"><span id="idInactivityValue2"></span><span class="_en"> minutes without activity</span><span class="_fr"> minutes sans activité</span><span class="_de"> Minuten ohne Aktivität</span><span class="_ru"> минут без активности</span><span class="_sp"> minutos sin actividad</span><span class="_cn"> 分钟没有行动了</span><span class="_pl"> minut nieaktywności</span></h2>
+            <h2 class="clModal classCenter"><span class="_en">The game timer is paused</span><span class="_fr">Le jeu est en pause</span><span class="_ru">Игровой таймер поставлен на паузу</span><span class="_sp">El cronómetro del juego esta en pausa</span><span class="_cn">游戏计时器已经暂停</span><span class="_pl">Licznik czasu zatrzymany</span></h2>
             <br/>
             <div class="classCenter">
-                <button onclick="fctClose('idModalStopAlert')"><span class="_en">Continue</span><span class="_fr">Continuer</span><span class="_de">Weiter</span><span class="_ru">Продолжить</span><span class="_sp">Continuar</span><span class="_cn">继续游戏</span></button>
+                <button onclick="fctClose('idModalStopAlert')"><span class="_en">Continue</span><span class="_fr">Continuer</span><span class="_de">Weiter</span><span class="_ru">Продолжить</span><span class="_sp">Continuar</span><span class="_cn">继续游戏</span><span class="_pl">Kontynuuj</span></button>
             </div>
         </div>
 
