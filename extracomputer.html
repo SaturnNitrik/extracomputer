@@ -44,7 +44,6 @@
             <h2 class="_sp">Asistente de Juego</h2>
             <h2 class="_cn">游戏伴侣</h2>
             <h2 class="_pl">Pełne wsparcie dla gry</h2>
-            <h2 class="clOffline orange">- Offline Version -</h2>
             <div id="idNewsWindow" class="clOnline"></div>
             <br/>
             <img width="10%" src="ti4/img/icon_white.png" onclick="fctStartMenu()" alt="Click here">
@@ -134,15 +133,7 @@
                 <span class="_cn">使用帮助</span>
                 <span class="_pl">Jak grać</span>
             </button>
-            <button class="clStartButton" onclick="parent.open('http://extraboard.net/ti4/extracomputer_stats')"><span class="_en">Statistics</span><span class="_fr">Statistiques</span><span class="_de">Statistiken</span><span class="_ru">Статистика</span><span class="_sp">Estadíticas</span><span class="_cn">统计数据</span><span class="_pl">Statystyki</span></button>
-            <button class="clStartButton _en" onclick="parent.open('http://extraboard.net/ti4/glossary')">Online glossary</button>
-            <button class="clStartButton _fr" onclick="parent.open('http://extraboard.net/ti4/glossaire')">Glossaire en ligne</button>
-            <button class="clStartButton _de" onclick="parent.open('http://extraboard.net/ti4/glossary')">Online Glossar</button>
-            <button class="clStartButton _ru" onclick="parent.open('http://extraboard.net/ti4/glossary')">Глоссарий</button>
-            <button class="clStartButton _sp" onclick="parent.open('http://extraboard.net/ti4/glossary')">Glosario en linea</button>
-            <button class="clStartButton _cn" onclick="parent.open('http://extraboard.net/ti4/glossary')">词汇表</button>
-            <button class="clStartButton _pl" onclick="parent.open('http://extraboard.net/ti4/glossary')">Glosariusz online</button>
-            <button class="clStartButton clOffline" onclick="parent.open('http://extraboard.net')">Extraboard.net</button>
+            <button class="clStartButton" onclick="parent.open('http://extraboard.net/ti4/extracomputer_stats')"><span class="_en">Statistics</span><span class="_fr">Statistiques</span><span class="_de">Statistiken</span><span class="_ru">Статистика</span><span class="_sp">Estadíticas</span><span class="_cn">统计数据</span></button>
             <button class="clStartButton clLangButton _en" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _de" onclick="fctStartScreen('_fr')">Français</button>
             <button class="clStartButton clLangButton _ru" onclick="fctStartScreen('_fr')">Français</button>
@@ -224,7 +215,7 @@
             <h1 class="_en">The game</h1><h1 class="_fr">La partie</h1><h1 class="_de">Die Partie</h1><h1 class="_ru">Игра</h1><h1 class="_sp">El Juego</h1><h1 class="_cn">游戏</h1>
             <div >
                 <span class="clMiddleText _en">Number of players:</span>
-                <span class="clMiddleText _fr">Nombre de <jo></jo>ueurs:</span>
+                <span class="clMiddleText _fr">Nombre de joueurs:</span>
                 <span class="clMiddleText _de">Anzahl der Spieler</span>
                 <span class="clMiddleText _ru">Количество игроков</span>
                 <span class="clMiddleText _sp">Número de jugadores:</span>
@@ -1682,6 +1673,7 @@
                     <span class="clBold _ru">Лимит победных очков</span>
                     <span class="clBold _sp">Límite de Puntos de Victoria</span>
                     <span class="clBold _cn">选择游戏目标分数</span>
+                    <span class="clBold _pl">Limit Punktów Zwycięstwa</span>
                     <input id="idOptionVPWin" class="clFloatRight clNumberInput" type="number" min="0" max="20" value="10"/>
                     <br/>
                     <span class="_en">End game button will appear when reaching the limit</span>
@@ -1973,6 +1965,11 @@
     <!-- Changelog TAB -->
     <!-- --------------------------------------------- -->
     <div id="infoChangeLog" class="tabcontent">
+    <p>v6.4 - 2023.05.09:</p>
+        <ul>
+            <li>Polish translation by <a href="https://github.com/wziom">wziom</a> added</li>
+            <li>Online glossary link removed (outdated)</li>
+        </ul>
       <p>v6.3 - 2022.05.04:</p>
         <ul>
             <li>Chinese translation by 柳五 added</li>

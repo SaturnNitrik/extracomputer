@@ -1,5 +1,5 @@
 /* Author: Stephane Demots */
-const cVERSION = (6)*100 + (3);
+const cVERSION = (6)*100 + (4);
 const cOFFLINE = 0;
 
 var gClockRun = 0;
