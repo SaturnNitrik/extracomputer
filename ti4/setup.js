@@ -23,6 +23,7 @@ var gSpeakerPlayerIdx = 255;
 var gPreviousSpeaker = 255;
 var gSetupNbPlayer = 255;
 var gVPBarStyle = "flex";
+var gFactionClockStyle = "unset";
 var gDecisionTimeLimit = 90;
 
 
@@ -116,9 +117,16 @@ function fctSwitchLang(l)
         cln.id = "";
         cln.textContent = factionList[i][FACTION_NAME];
 
-        if(i >= CODEX_FACTION)
+        console.log(cln.textContent);
+        console.log(i);
+
+
+        if (i == CODEX_FACTION || i == DRAHN_FACTION)
         {
           cln.classList.add("clCodexFaction");
+        }
+        else if (i >= DS_FACTION) {
+            cln.classList.add("clDSFaction");
         }
         else if(i >= POK_FACTION)
         {
@@ -562,6 +570,17 @@ function fctShowVPBar(el)
 
     if(fctGetPhase() > PHASE_GALAXY)
         document.getElementById("idVPMeter").style.display = gVPBarStyle;
+}
+
+function fctShowPlayerTimeInActionPhase(el) {
+    if (el.checked)
+        gFactionClockStyle = "unset";
+    else
+        gFactionClockStyle = "hidden";
+
+    if (fctGetPhase() > PHASE_GALAXY)
+        document.getElementById("idFactoinClk").style.visibility = gFactionClockStyle;
+
 }
 
 
