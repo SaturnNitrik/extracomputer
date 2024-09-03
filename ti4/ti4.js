@@ -279,7 +279,7 @@ var factionList = [
 ["The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", IMG_FOLDER + "nokar.png", "", "Nokar"],
 ["The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", IMG_FOLDER + "olradin.png", "", "Olradin"],
 ["The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", IMG_FOLDER + "rhodun.png", "", "Rhodun"],
-["Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", IMG_FOLDER + "roh.png", "", "Roh Dhna"],
+["Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", IMG_FOLDER + "rohdna.png", "", "Roh Dhna"],
 ["The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", IMG_FOLDER + "tnelis.png", "", "Tnelis"],
 ["The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", IMG_FOLDER + "vaden.png", "", "Vaden"],
 ["The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", IMG_FOLDER + "vaylerian.png", "", "Vaylerian"],
