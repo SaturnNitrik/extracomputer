@@ -1659,12 +1659,12 @@
                 <span class="clModalText clBold _cn">顶端显示玩家分数</span>
                 <span class="clModalText clBold _pl">Użyj licznika punktów zwycięstwa na górnym pasku</span>
                 <label class="switch clFloatRight">
-                    <input onclick="fctShowVPBar(this)"  type="checkbox" checked>
+                    <input onclick="fctShowVPBar(this)" type="checkbox" checked>
                     <span class="checker"></span>
                 </label>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="clLine">
                 <div class="clModalText">
                     <span class="clBold _en">Victory Points limit</span>
@@ -1674,8 +1674,8 @@
                     <span class="clBold _sp">Límite de Puntos de Victoria</span>
                     <span class="clBold _cn">选择游戏目标分数</span>
                     <span class="clBold _pl">Limit Punktów Zwycięstwa</span>
-                    <input id="idOptionVPWin" class="clFloatRight clNumberInput" type="number" min="0" max="20" value="10"/>
-                    <br/>
+                    <input id="idOptionVPWin" class="clFloatRight clNumberInput" type="number" min="0" max="20" value="10" />
+                    <br />
                     <span class="_en">End game button will appear when reaching the limit</span>
                     <span class="_fr">Atteindre la limite affiche le bouton de fin de partie</span>
                     <span class="_de">End game button will appear when reaching the limit</span>
@@ -1685,8 +1685,8 @@
                     <span class="_pl">Przycisk "Koniec gry" pojawia się po osiągnięciu limitu punktów zwycięstwa</span>
                 </div>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="clLine">
                 <span class="clModalText clBold _en">Full screen </span>
                 <span class="clModalText clBold _fr">Plein écran</span>
@@ -1696,12 +1696,12 @@
                 <span class="clModalText clBold _cn">全屏 </span>
                 <span class="clModalText clBold _pl">Pełny ekran</span>
                 <label id="idOptionFullScreen" class="switch clFloatRight">
-                    <input onclick="fctFullScreen(this)"  type="checkbox">
+                    <input onclick="fctFullScreen(this)" type="checkbox">
                     <span class="checker"></span>
                 </label>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="clLine">
                 <div class="clModalText">
                     <span class="clBold _en">Inactivity timer (minutes)</span>
@@ -1711,8 +1711,8 @@
                     <span class="clBold _sp">Cronómetro de Inactividad (minutos)</span>
                     <span class="clBold _cn">计时器 (分钟)</span>
                     <span class="clBold _pl">Licznik czasu bezczynności (w minutach)</span>
-                    <input id="idOptionInactivityTimer"  class="clFloatRight clNumberInput" type="number" min="5" max="60" value="15"/>
-                    <br/>
+                    <input id="idOptionInactivityTimer" class="clFloatRight clNumberInput" type="number" min="5" max="60" value="15" />
+                    <br />
                     <span class="_en">Show warning message if no activity for the given duration. It helps to keep the game flows.</span>
                     <span class="_fr">Affiche un message d'alerte en cas d'inactivité. Permet de conserver la fluidité du jeu</span>
                     <span class="_de">Zeige eine Warnmeldung bei Inaktivität. Dies hilft, den Spielfluss aufrecht zu erhalten.</span>
@@ -1720,11 +1720,37 @@
                     <span class="_sp">Mostrar mensaje de advertencia si no hay actividad en el tiempo fijado. Esto ayuda a mantener el juego fluido.</span>
                     <span class="_cn">当玩家长考太久时给出提示，有利于游戏顺利进行.</span>
                     <span class="_pl">Pokaż komunikat ostrzegawczy, jeśli nie było żadnej aktywności w wybranym okresie czasu. Pomaga to przyspieszyć grę.</span>
-                    <br/>
+                    <br />
                 </div>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <div class="clLine">
+                <div class="clModalText">
+                    <span class="clBold _en">Show Faction Timer In Action Phase</span>
+                    <span class="clBold _fr">Show Faction Timer In Action Phase</span>
+                    <span class="clBold _de">Fraktionstimer in der Aktionsphase</span>
+                    <span class="clBold _ru">Show Faction Timer In Action Phase</span>
+                    <span class="clBold _sp">Show Faction Timer In Action Phase</span>
+                    <span class="clBold _cn">Show Faction Timer In Action Phase</span>
+                    <span class="clBold _pl">Show Faction Timer In Action Phase</span>
+                    <label class="switch clFloatRight">
+                        <input onclick="fctShowPlayerTimeInActionPhase(this)" type="checkbox" checked>
+                        <span class="checker"></span>
+                    </label>
+                    <br />
+                    <span class="_en">Shows the timer for a faction also in the action phase, otherwise its only shown in the end screen.</span>
+                    <span class="_fr">Shows the timer for a faction also in the action phase, otherwise its only shown in the end screen.</span>
+                    <span class="_de">Zeigt den Fraktionstimer auch in der Aktionphase, ansonsten ist er nur em Spielende sichtbar.</span>
+                    <span class="_ru">Shows the timer for a faction also in the action phase, otherwise its only shown in the end screen.</span>
+                    <span class="_sp">Shows the timer for a faction also in the action phase, otherwise its only shown in the end screen.</span>
+                    <span class="_cn">Shows the timer for a faction also in the action phase, otherwise its only shown in the end screen.</span>
+                    <span class="_pl">Shows the timer for a faction also in the action phase, otherwise its only shown in the end screen.</span>
+                    <br />
+                </div>
+            </div>
+            <br />
+            <br />
             <div class="clLine">
                 <div class="clModalText">
                     <span class="clBold _en">Player count-up timer resets each turn</span>
@@ -1735,10 +1761,10 @@
                     <span class="clBold _cn">每轮都重设玩家计时器</span>
                     <span class="clBold _pl">Licznik czasu gracza jest resetowany co turę</span>
                     <label id="idOptionPlayerTimer" class="switch clFloatRight">
-                        <input id="idPlyerTimerCheck"  type="checkbox">
+                        <input id="idPlyerTimerCheck" type="checkbox">
                         <span class="checker"></span>
                     </label>
-                    <br/>
+                    <br />
                     <span class="_en">If unchecked, total time per player is shown.</span>
                     <span class="_fr">Si désactivé, le temps total par joueur est affiché.</span>
                     <span class="_de">Wenn nicht angewählt, wird die Gesamtzeit pro Spieler angezeigt.</span>
@@ -1746,11 +1772,11 @@
                     <span class="_sp">Si no esta marcado, el tiempo total por jugador se mostrará.</span>
                     <span class="_cn">不显示每位玩家游戏行动总时间.</span>
                     <span class="_pl">Jeśli wyłączony, będzie pokazywany całkowity czas gracza.</span>
-                    <br/>
+                    <br />
                 </div>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="clLine">
                 <div class="clModalText">
                     <span class="clBold _en">Decision bar (seconds)</span>
@@ -1760,8 +1786,8 @@
                     <span class="clBold _sp">Decision timer (seconds)</span>
                     <span class="clBold _cn">行动倒计时 (秒)</span>
                     <span class="clBold _pl">Czas na podjęcie decyzji (w sekundach)</span>
-                    <input id="idOptionDecisionTimer"  class="clFloatRight clNumberInput" type="number" min="20" max="180" value="90"/>
-                    <br/>
+                    <input id="idOptionDecisionTimer" class="clFloatRight clNumberInput" type="number" min="20" max="180" value="90" />
+                    <br />
                     <span class="_en">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
                     <span class="_fr">Barre de progrès pour empécher l'analysis-paralysis. Periodique ou cliquer pour relancer.</span>
                     <span class="_de">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
@@ -1769,11 +1795,11 @@
                     <span class="_sp">Progress bar to prevent analysis-paralysis. Repeats itself or click to reset.</span>
                     <span class="_cn">防止长考. 循环计时/点击重置.</span>
                     <span class="_pl">Pasek postępu, aby zapobiec paraliżowi decyzyjnemu. Powtarza się sam lub kliknij, aby zresetować.</span>
-                    <br/>
+                    <br />
                 </div>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="clLine">
                 <div class="clModalText">
                     <span class="clBold _en">During Agenda phase, show detailed voting steps instead of vote counter</span>
@@ -1784,10 +1810,10 @@
                     <span class="clBold _cn">议会阶段，不显示计票器而改为显示投票详细步骤</span>
                     <span class="clBold _pl">Pokaż szczegółowe kroki głosowania podczas Fazy Dyplomacji zamiast licznika głosów</span>
                     <label id="idOptionAgendaPage" class="switch clFloatRight">
-                        <input id="idAgendaPageCheck"  type="checkbox" checked>
+                        <input id="idAgendaPageCheck" type="checkbox" checked>
                         <span class="checker"></span>
                     </label>
-                    <br/>
+                    <br />
                     <span class="_en">Uncheck to use the old and complex voting system.</span>
                     <span class="_fr">Désactiver pour utiliser l'ancien systeme complexe de votes.</span>
                     <span class="_de">Uncheck to use the old and complex voting system.</span>
@@ -1797,12 +1823,12 @@
                     <span class="_sp">Si no esta marcado, se utiliza el viejo y complejo sistema de votación.</span>
                     <span class="_cn">取消选择来使用老版复杂投票系统.</span>
                     <span class="_pl">Odznacz, aby korzystać ze starego i skomplikowanego systemu głosowania.</span>
-                    <br/>
+                    <br />
                 </div>
             </div>
-            <br/>
+            <br />
             <div class="classCenter">
-            <br/>
+                <br />
                 <span id="idOptionNote">
                     <i class="_en">Note: These options can be changed any time during the game by the top-right icon.</i>
                     <i class="_fr">Note: Ces options seront accessible pendant la partie par l'îcone en haut à droite.</i>
@@ -1813,7 +1839,7 @@
                     <i class="_pl">Uwaga: Opcje te można zmienić w dowolnym momencie gry za pomocą ikony w prawym górnym rogu.</i>
                 </span>
             </div>
-            <br/>
+            <br />
             <div class="classCenter">
                 <button id="idOptionsBack" onclick="location.reload()"><span class="_en">Cancel</span><span class="_fr">Annuler</span><span class="_de">Abbruch</span><span class="_ru">Отмена</span><span class="_sp">Cancelar</span><span class="_cn">取消</span><span class="_pl">Anuluj</span></button>
                 <button id="idConfirmOptions" onclick="fctCloseOptions()"><span class="_en">Next</span><span class="_fr">Suivant</span><span class="_de">Nächster</span><span class="_ru">Далее</span><span class="_sp">Siguiente</span><span class="_cn">下一步</span><span class="_pl">Dalej</span></button>
