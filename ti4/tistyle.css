@@ -643,7 +643,9 @@ input:checked + .checker:before {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  flex-grow: 1;
+  width: 5vw;
+  height: 4vh;
+  float: right;
 }
 
 .clAbout:hover{
