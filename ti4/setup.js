@@ -117,10 +117,6 @@ function fctSwitchLang(l)
         cln.id = "";
         cln.textContent = factionList[i][FACTION_NAME];
 
-        console.log(cln.textContent);
-        console.log(i);
-
-
         if (i == CODEX_FACTION || i == DRAHN_FACTION)
         {
           cln.classList.add("clCodexFaction");
