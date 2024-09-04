@@ -1,4 +1,4 @@
-﻿/* Author: Stephane Demots */
+/* Author: Stephane Demots */
 var gLang = 0;
 const LANG_EN = 0;
 const LANG_FR = 1;
@@ -251,6 +251,41 @@ var factionList = [
 ["Titans of Ul", "Titans d'Ul", "Titans of Ul", "Titans of Ul", "Los Titanes de Ul", "提坦复苏/泰坦", "Tytani UL", IMG_FOLDER + "titans.png", "", "Titans"],
 ["Vuil'Raith Cabal", "Cabale de Vuil'Raith", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "La Cábala de Vuil'Raith", "乌尔莱斯之祸/鳄鱼", "Koteria Vuil'Raith", IMG_FOLDER + "vuil.png", "", "Vuil"],
 ["The Council Keleres", "Le Conseil Keleres", "The Council Keleres", "The Council Keleres", "The Council Keleres", "克勒雷斯理事会", "The Council Keleres", IMG_FOLDER + "keleres.png", "", "Keleres"],
+["The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", IMG_FOLDER + "axis.png", "", "Axis"],
+["The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", IMG_FOLDER + "bentor.png", "", "Bentor"],
+["The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", IMG_FOLDER + "celdauri.png", "", "Celdauri"],
+["The Cheiran Hordes", "The Cheiran Hordes", "The Cheiran Hordes", "The Cheiran Hordes", "The Cheiran Hordes", "The Cheiran Hordes", "The Cheiran Hordes", IMG_FOLDER + "cheiran.png", "", "Cheiran"],
+["The Savages of Cymiae", "The Savages of Cymiae", "The Savages of Cymiae", "The Savages of Cymiae", "The Savages of Cymiae", "The Savages of Cymiae", "The Savages of Cymiae", IMG_FOLDER + "cymiae.png", "", "Cymiae"],
+["The Dih-Mohn Flotilla", "The Dih-Mohn Flotilla", "The Dih-Mohn Flotilla", "The Dih-Mohn Flotilla", "The Dih-Mohn Flotilla", "The Dih-Mohn Flotilla", "The Dih-Mohn Flotilla", IMG_FOLDER + "dih-mohn.png", "", "Dih-Mohn"],
+["The Edyn Mandate", "The Edyn Mandate", "The Edyn Mandate", "The Edyn Mandate", "The Edyn Mandate", "The Edyn Mandate", "The Edyn Mandate", IMG_FOLDER + "edyn.png", "", "Edyn"],
+["The Florzen Profiteers", "The Florzen Profiteers", "The Florzen Profiteers", "The Florzen Profiteers", "The Florzen Profiteers", "The Florzen Profiteers", "The Florzen Profiteers", IMG_FOLDER + "florzen.png", "", "Florzen"],
+["The Free Systems Compact", "The Free Systems Compact", "The Free Systems Compact", "The Free Systems Compact", "The Free Systems Compact", "The Free Systems Compact", "The Free Systems Compact", IMG_FOLDER + "fsc.png", "", "Free Systems"],
+["The Ghemina Raiders", "The Ghemina Raiders", "The Ghemina Raiders", "The Ghemina Raiders", "The Ghemina Raiders", "The Ghemina Raiders", "The Ghemina Raiders", IMG_FOLDER + "ghemina.png", "", "Ghemina"],
+["The Ghoti Wayfarers", "The Ghoti Wayfarers", "The Ghoti Wayfarers", "The Ghoti Wayfarers", "The Ghoti Wayfarers", "The Ghoti Wayfarers", "The Ghoti Wayfarers", IMG_FOLDER + "ghoti.png", "", "Ghoti"],
+["The GLEdge Union", "The GLEdge Union", "The GLEdge Union", "The GLEdge Union", "The GLEdge Union", "The GLEdge Union", "The GLEdge Union", IMG_FOLDER + "gledge.png", "", "GLEdge"],
+["The Augurs of Ilyxum", "The Augurs of Ilyxum", "The Augurs of Ilyxum", "The Augurs of Ilyxum", "The Augurs of Ilyxum", "The Augurs of Ilyxum", "The Augurs of Ilyxum", IMG_FOLDER + "ilyxum.png", "", "Ilyxum"],
+["The Berserkers of Kjalengard", "The Berserkers of Kjalengard", "The Berserkers of Kjalengard", "The Berserkers of Kjalengard", "The Berserkers of Kjalengard", "The Berserkers of Kjalengard", "The Berserkers of Kjalengard", IMG_FOLDER + "Berserkers.png", "", "Kjalengard"],
+["The Kollecc Society", "The Kollecc Society", "The Kollecc Society", "The Kollecc Society", "The Kollecc Society", "The Kollecc Society", "The Kollecc Society", IMG_FOLDER + "collecc.png", "", "Kollecc"],
+["The Monks of Kolume", "The Monks of Kolume", "The Monks of Kolume", "The Monks of Kolume", "The Monks of Kolume", "The Monks of Kolume", "The Monks of Kolume", IMG_FOLDER + "kolume.png", "", "Kolume"],
+["The Kortali Tribunal", "The Kortali Tribunal", "The Kortali Tribunal", "The Kortali Tribunal", "The Kortali Tribunal", "The Kortali Tribunal", "The Kortali Tribunal", IMG_FOLDER + "kortali.png", "", "Kortali"],
+["The Kyro Sodality", "The Kyro Sodality", "The Kyro Sodality", "The Kyro Sodality", "The Kyro Sodality", "The Kyro Sodality", "The Kyro Sodality", IMG_FOLDER + "kyro.png", "", "Kyro"],
+["The Lanefir Remnants", "The Lanefir Remnants", "The Lanefir Remnants", "The Lanefir Remnants", "The Lanefir Remnants", "The Lanefir Remnants", "The Lanefir Remnants", IMG_FOLDER + "lanefir.png", "", "Lanefir"],
+["The Li-Zho Dynasty", "The Li-Zho Dynasty", "The Li-Zho Dynasty", "The Li-Zho Dynasty", "The Li-Zho Dynasty", "The Li-Zho Dynasty", "The Li-Zho Dynasty", IMG_FOLDER + "li-zho.png", "", "Li-Zho"],
+["The L'tokk Khrask", "The L'tokk Khrask", "The L'tokk Khrask", "The L'tokk Khrask", "The L'tokk Khrask", "The L'tokk Khrask", "The L'tokk Khrask", IMG_FOLDER + "ltokk.png", "", "L tokk"],
+["The Mirveda Protectorate", "The Mirveda Protectorate", "The Mirveda Protectorate", "The Mirveda Protectorate", "The Mirveda Protectorate", "The Mirveda Protectorate", "The Mirveda Protectorate", IMG_FOLDER + "mirveda.png", "", "Mirveda"],
+["The Glimmer of Mortheus", "The Glimmer of Mortheus", "The Glimmer of Mortheus", "The Glimmer of Mortheus", "The Glimmer of Mortheus", "The Glimmer of Mortheus", "The Glimmer of Mortheus", IMG_FOLDER + "glimmer.png", "", "Mortheus"],
+["The Myko-Mentori", "The Myko-Mentori", "The Myko-Mentori", "The Myko-Mentori", "The Myko-Mentori", "The Myko-Mentori", "The Myko-Mentori", IMG_FOLDER + "myko.png", "", "Myko"],
+["The Nivyn Star Kings", "The Nivyn Star Kings", "The Nivyn Star Kings", "The Nivyn Star Kings", "The Nivyn Star Kings", "The Nivyn Star Kings", "The Nivyn Star Kings", IMG_FOLDER + "nivyn.png", "", "Nivyn"],
+["The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", "The Nokar Sellships", IMG_FOLDER + "nokar.png", "", "Nokar"],
+["The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", "The Olradin League", IMG_FOLDER + "olradin.png", "", "Olradin"],
+["The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", "The Zealots of Rhodun", IMG_FOLDER + "rhodun.png", "", "Rhodun"],
+["Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", "Roh'Dhna Mechatronics", IMG_FOLDER + "rohdna.png", "", "Roh Dhna"],
+["The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", "The Tnelis Syndicate", IMG_FOLDER + "tnelis.png", "", "Tnelis"],
+["The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", "The Vaden Banking Clans", IMG_FOLDER + "vaden.png", "", "Vaden"],
+["The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", "The Vaylerian Scourge", IMG_FOLDER + "vaylerian.png", "", "Vaylerian"],
+["The Veldyr Sovereignty", "The Veldyr Sovereignty", "The Veldyr Sovereignty", "The Veldyr Sovereignty", "The Veldyr Sovereignty", "The Veldyr Sovereignty", "The Veldyr Sovereignty", IMG_FOLDER + "veldyr.png", "", "Veldyr"],
+["The Zelian Purifier", "The Zelian Purifier", "The Zelian Purifier", "The Zelian Purifier", "The Zelian Purifier", "The Zelian Purifier", "The Zelian Purifier", IMG_FOLDER + "zelian.png", "", "Zelian"],
+["The Drahn Consortium", "The Drahn Consortium", "The Drahn Consortium", "The Drahn Consortium", "The Drahn Consortium", "The Drahn Consortium", "The Drahn Consortium", IMG_FOLDER + "drahn.png", "", "Drahn"]
 ];
 
 const HACAN_FACTION = 4;
@@ -259,6 +294,8 @@ const NEKRO_FACTION = 10;
 const WINNU_FACTION = 13;
 const POK_FACTION = 17;
 const CODEX_FACTION = 24;
+const DS_FACTION = 25;
+const DRAHN_FACTION = 59;
 
 
 var playerColorList = [
