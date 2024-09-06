@@ -308,5 +308,5 @@ function fctEndBack()
     // Show all 
     document.getElementById("idEndButton").style.display = "block";
     document.getElementById("idVPMeter").style.display = "block";
-    document.getElementsByClassName("clNavBar")[0].style.display = "block";
+    document.getElementsByClassName("clNavBar")[0].style.display = "flex";
 }
