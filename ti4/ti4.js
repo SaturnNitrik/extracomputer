@@ -251,6 +251,11 @@ var factionList = [
 ["Titans of Ul", "Titans d'Ul", "Titans of Ul", "Titans of Ul", "Los Titanes de Ul", "提坦复苏/泰坦", "Tytani UL", IMG_FOLDER + "titans.png", "", "Titans"],
 ["Vuil'Raith Cabal", "Cabale de Vuil'Raith", "Vuil'Raith Cabal", "Vuil'Raith Cabal", "La Cábala de Vuil'Raith", "乌尔莱斯之祸/鳄鱼", "Koteria Vuil'Raith", IMG_FOLDER + "vuil.png", "", "Vuil"],
 ["The Council Keleres", "Le Conseil Keleres", "The Council Keleres", "The Council Keleres", "The Council Keleres", "克勒雷斯理事会", "The Council Keleres", IMG_FOLDER + "keleres.png", "", "Keleres"],
+["Last Bastion", "Last Bastion", "Last Bastion", "Last Bastion", "Last Bastion", "Last Bastion", "Last Bastion", IMG_FOLDER + "bastion.png", "", "Bastion"],
+["The Ral Nel Consortium", "The Ral Nel Consortium", "The Ral Nel Consortium", "The Ral Nel Consortium", "The Ral Nel Consortium", "The Ral Nel Consortium", "The Ral Nel Consortium", IMG_FOLDER + "ralnel.png", "", "Ral Nel"],
+["Crimson Rebellion", "Crimson Rebellion", "Crimson Rebellion", "Crimson Rebellion", "Crimson Rebellion", "Crimson Rebellion", "Crimson Rebellion", IMG_FOLDER + "crimson.png", "", "Crimson"],
+["Deepwrought Scholarate", "Deepwrought Scholarate", "Deepwrought Scholarate", "Deepwrought Scholarate", "Deepwrought Scholarate", "Deepwrought Scholarate", "Deepwrought Scholarate", IMG_FOLDER + "deepwrought.png", "", "Deepwrought"],
+["The Firmament/Obsidian", "The Firmament/Obsidian", "The Firmament/Obsidian", "The Firmament/Obsidian", "The Firmament/Obsidian", "The Firmament/Obsidian", "The Firmament/Obsidian", IMG_FOLDER + "firmament.png", "", "Firmament"],
 ["The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", "The Shipwrights of Axis", IMG_FOLDER + "axis.png", "", "Axis"],
 ["The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", "The Bentor Conglomerate", IMG_FOLDER + "bentor.png", "", "Bentor"],
 ["The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", "The Celdauri Trade Confederation", IMG_FOLDER + "celdauri.png", "", "Celdauri"],
@@ -294,8 +299,9 @@ const NEKRO_FACTION = 10;
 const WINNU_FACTION = 13;
 const POK_FACTION = 17;
 const CODEX_FACTION = 24;
-const DS_FACTION = 25;
-const DRAHN_FACTION = 59;
+const TE_FACTION = 25;
+const DS_FACTION = 30;
+const DRAHN_FACTION = 64;
 
 
 var playerColorList = [
