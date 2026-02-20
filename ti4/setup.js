@@ -121,6 +121,9 @@ function fctSwitchLang(l)
         {
           cln.classList.add("clCodexFaction");
         }
+        else if (i >= TE_FACTION && i < DS_FACTION) {
+            cln.classList.add("clTEFaction");
+        }
         else if (i >= DS_FACTION) {
             cln.classList.add("clDSFaction");
         }

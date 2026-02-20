@@ -272,6 +272,10 @@ body {
     color: orange;
 }
 
+.clTEFaction {
+    color: #6eb5ff;
+}
+
 .highlight {
     border: 4px solid orange;
 }
